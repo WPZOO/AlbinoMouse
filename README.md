@@ -15,8 +15,7 @@ AlbinoMouse is a responsive WordPress theme with a clean and flat design.
 * AlbinoMouse has been translated into seven different languages so far.
 
 ##License##
-AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMouse/blob/master/license.txt). The theme was built on some awesome frameworks and other great includes.  
-Anyway, all code is open source.
+AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMouse/blob/master/license.txt). The theme was built on some awesome frameworks and other great includes. Anyway, all code is open source.
 
 ##Credits##
 ####AlbinoMouse is built on the following frameworks:####
