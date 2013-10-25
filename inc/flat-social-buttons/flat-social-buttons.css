@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "social-media-icons";
+  src:url("fonts/social-media-icons.eot");
+  src:url("fonts/social-media-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/social-media-icons.ttf") format("truetype"),
+    url("fonts/social-media-icons.svg#social-media-icons") format("svg"),
+    url("fonts/social-media-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.sd-button.share-icon:before {
+	font-family: "social-media-icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.sd-button.share-icon:before {
+	padding-right: 5px;
+}
+
+.sd-button.no-text:before {
+	padding: 0 5px;
+}
+
+.sd-content ul {
+	padding: 10px 0;
+}
+
+.sd-content ul:before,
+.sd-content ul:after {
+  display: table;
+  content: " ";
+}
+
+.sd-content ul:after {
+  clear: both;
+}
+
+.sd-content li {
+	display: block;
+	float: left;
+	margin: 0 3px 3px 0;
+}
+
+.sd-button,
+.sd-button:link,
+.sd-button:visited {
+	background: rgba(196,198,199,0.3);
+	color: #888;
+	display: block;
+	padding: 7px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.sd-button:hover {
+	color: #fff;
+}
+
+
+/* Digg */
+.share-digg:hover {
+	background-color: #0092cd;
+}
+
+.share-digg .share-icon:before {
+	content: "j";
+}
+
+/* Email */
+.share-email:hover {
+	background-color: #4c4b4a;
+}
+
+.share-email .share-icon:before {
+	content: "b";
+}
+
+/* Facebook */
+.share-facebook:hover {
+	background-color: #3b5998;
+}
+
+.share-facebook .share-icon:before {
+	content: "c";
+}
+
+/* Google+ */
+.share-google-plus-1:hover {
+	background-color: #dd4b39;
+}
+
+.share-google-plus-1 .share-icon:before {
+	content: "d";
+}
+
+/* LinkedIn */
+.share-linkedin:hover {
+	background-color: #007bb6;
+}
+
+.share-linkedin .share-icon:before {
+	content: "e";
+}
+
+/* Pinterest */
+.share-pinterest:hover {
+	background-color: #cb2027;
+}
+
+.share-pinterest .share-icon:before {
+	content: "f";
+}
+
+/* Pocket */
+.share-pocket:hover {
+	background-color: #ef3e56;
+}
+
+.share-pocket .share-icon:before {
+	content: "l";
+}
+
+/* Print */
+.share-print:hover {
+	background-color: #4c4b4a;
+}
+
+.share-print .share-icon:before {
+	content: "a";
+}
+
+/* Reddit */
+.share-reddit:hover {
+	background-color: #cee3f8;
+	color: #888;
+}
+
+.share-reddit .share-icon:before {
+	content: "g";
+}
+
+/* Tumblr */
+.share-tumblr:hover {
+	background-color: #32506d;
+}
+
+.share-tumblr .share-icon:before {
+	content: "h";
+}
+
+/* Twitter */
+.share-twitter:hover {
+	background-color: #00aced;
+}
+
+.share-twitter .share-icon:before {
+	content: "i";
+}
+
+/* StumbleUpon */
+.share-stumbleupon:hover {
+	background-color: #ea4b24;
+}
+
+.share-stumbleupon .share-icon:before {
+	content: "k";
+}
+
+@media print {
+	.sharedaddy {
+		display: none;
+	}
+}
