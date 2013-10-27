@@ -3,9 +3,25 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.0 (Major Release)
++ AlbinoMouse now built on framework Bootstrap
++ Theme redesign
++ Glyphicons comes with Bootstrap instead of Font Awesome
+- Shortcodes removed because of theme guidelines
+* Breadcrumbs are now standard on pages
++ Aditional page templates
+	No Breadcrumbs
+	No Breadcrumbs and full width
+	Full width
++ New options
+	More sidebar layout options
+	Two different post thumbnail layouts
+	Flat design for Jetpacks social buttons
+	
+
 1.4
 + Added Polish translation made by Michał
-+ FontAwesome now loads from BootstrapCDN
++ Font Awesome now loads from BootstrapCDN
 * Fixed image height on smaller screens
 * Changed to get_permalink for Twitter buttons since the counter doesn't work with wp_shortlink
 + Font visualization on options page
