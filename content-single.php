@@ -2,11 +2,12 @@
 /**
  * @package AlbinoMouse
  */
+ $options = get_option( 'albinomouse' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark">
+		<h1 class="entry-title">
 		<?php if ( is_sticky() ) : ?>
 			<span class="glyphicon glyphicon-fire hidden-xs"></span>
 		<?php elseif ( has_post_format('aside')) : ?>
@@ -30,13 +31,20 @@
 		<?php elseif ( 'post' == get_post_type() ) : ?>
 			<span class="glyphicon glyphicon-file hidden-xs"></span>								
 		<?php endif; ?>
-		<?php the_title(); ?></a></h1>
+		<?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<small>
 				<?php albinomouse_posted_on(); ?>
 			</small>
 		</div><!-- .entry-meta -->
+		
+		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
+			<div class="post-thumbnail-banner">
+			<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
+			</div>
+		<?php endif; ?>
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content clearfix">

@@ -29,7 +29,7 @@ function albinomouse_content_nav( $nav_id ) {
 	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 	?>
-	<nav role="navigation hidden-print" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?> hidden-print">
 		<h1 class="sr-only"><?php _e( 'Post navigation', 'albinomouse' ); ?></h1>
 		<ul class="pager">
 
@@ -105,8 +105,8 @@ function albinomouse_comment( $comment, $args, $depth ) {
 					'add_below' => 'div-comment',
 					'depth'     => $depth,
 					'max_depth' => $args['max_depth'],
-					'before'    => '<div class="reply pull-right">',
-					'after'     => '</div>',
+					'before'    => '<div class="reply pull-right"><small>',
+					'after'     => '</small></div>',
 				) ) );
 			?>
 		</article><!-- .comment-body -->

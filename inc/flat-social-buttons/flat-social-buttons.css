@@ -12,6 +12,10 @@
 
 }
 
+.sharedaddy {
+	font-size: 14px;
+}
+
 .sd-button.share-icon:before {
 	font-family: "social-media-icons";
 	font-style: normal;

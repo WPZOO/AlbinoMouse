@@ -26,7 +26,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header hidden-print<?php if(!isset($options['header-background']) or $options['header-background'] == 'light-gray' ) : ?> header-gray<?php endif; ?>" role="banner">
-		<div class="site-branding container hidden-xs<?php if(!isset($options['site-description']) or $options['site-description'] == '1' ) : ?> with-site-description<?php endif; ?><?php if (!isset($options['branding-alignment']) or $options['branding-alignment'] == 'center' ) : ?> centred<?php endif; ?>">
+		<div class="site-branding container hidden-xs<?php if(!isset($options['site-description']) or $options['site-description'] == '1' ) : ?> with-site-description<?php endif; ?><?php if ($options['branding-alignment'] == 'center' ) : ?> centred<?php endif; ?>">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<?php if(isset($options['logo-upload']) and $options['logo-upload'] != '' ) : ?>
 					<img src="<?php echo $options['logo-upload']; ?>" alt="<?php bloginfo('name'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />

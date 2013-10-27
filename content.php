@@ -41,10 +41,10 @@ $options = get_option( 'albinomouse' );
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		
-		<?php if (has_post_thumbnail() && !isset($options['thumbnail-size']) || $options['thumbnail-size'] == 'banner' ) : ?>
-			<p class="post-thumbnail-banner"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
+			<div class="post-thumbnail-banner"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
-			</a></p>
+			</a></div>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
