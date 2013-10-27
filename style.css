@@ -5975,7 +5975,9 @@ Additional Styles
  * Global
  *******************************/
 
-
+* {
+	word-break: break-word;
+}
 
 h3, .h3 {
 	font-size: 16px;
@@ -6218,22 +6220,24 @@ a:focus {
 /* Small screens */
 @media screen and (max-width: 767px) {
 
-	.navbar {
-		background-color: rgba(196,198,199,0.3);
-	}
-
 	#masthead .navbar {
+		background-color: rgba(196,198,199,0.3);
 		margin-bottom: 0;
 	}
 	
-	#masthead .navbar-form {
+	.navbar-nav {
 		margin: 0;
-	}	
+	}
 	
 	.navbar-nav li:last-child {
 		margin-bottom: 0;
 	}
 	
+
+	#masthead .navbar-form {
+		margin: 0;
+	}	
+
 	.navbar-form .search-field.form-control {
 		box-shadow: none;
 	}
@@ -6294,6 +6298,7 @@ a:focus {
 
 #content {
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .type-post,
@@ -6326,18 +6331,19 @@ a:focus {
 
 .entry-header {
 	margin-bottom: 1em;
-	word-break: break-word;
 }
 
 h1.entry-title {
 	line-height: 1.1;
 	margin: 0;
+	min-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
 	
 	#content {
 		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
 	.entry-header {
@@ -6398,6 +6404,18 @@ footer.entry-meta {
 	color: #ddd;
 }
 
+/* Post Format */
+
+.format-aside .entry-content,
+.format-status .entry-content {
+	font-size: 1.3em;
+}
+
+.format-status .entry-content p:first-child {
+	background-color: rgba(196,198,199,0.3);
+	padding: 20px;
+}
+
 /********************************
  * Comments
  *******************************/
@@ -6413,13 +6431,11 @@ footer.entry-meta {
 }
 
 .pingback {
-	font-size: 1.2em;
 	margin-left: -90px;
-	margin-bottom: 0 !important;
+	margin-bottom: 10px;
 }
 
-.comment-body,
-.bypostauthor ul article.comment {
+.comment .comment-body {
 	background-color: rgba(196,198,199,0.3);
 	display: block;
 	margin-bottom: 15px;
@@ -6427,8 +6443,7 @@ footer.entry-meta {
 	position: relative;
 }
 
-.comment-body:before,
-.bypostauthor ul article.comment:before {
+.comment .comment-body:before {
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid rgba(196,198,199,0.3);
 	top: 20px;
@@ -6437,13 +6452,13 @@ footer.entry-meta {
 	left: -21px;
 }
 
-.bypostauthor article.comment{
+.bypostauthor .comment-body {
 	background-color: rgba(196,198,199,0.6);
 }
 
-.bypostauthor article.comment-body:before {
-	border-left: 12px solid transparent;
-	border-bottom: 12px solid rgba(196,198,199,0.6);
+.bypostauthor .comment-body:before {
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid rgba(196,198,199,0.6);
 }
 
 .comment-author img {
@@ -6475,7 +6490,7 @@ footer.entry-meta {
 }
 
 #comments .reply {
-	margin: 0 10px 10px 0;
+	margin: 0 10px 5px 0;
 }
 
 /********************************
@@ -6533,7 +6548,7 @@ footer.entry-meta {
 
 .site-footer {
 	background-color: #e3272d;
-	margin-top: 20px;
+	padding-top: 25px;
 }
 
 #colophon a {
