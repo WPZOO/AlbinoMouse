@@ -6151,7 +6151,6 @@ a:focus {
 .site-title {
 	display: inline-block;
 	margin: 0;
-	vertical-align: bottom;
 }
 
 .site-description {
@@ -6163,7 +6162,7 @@ a:focus {
 	margin: 0 0 40px 10px;
 	padding: 15px;
 	position: relative;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 .site-description:after {
@@ -6303,7 +6302,7 @@ a:focus {
 
 .type-post,
 .search-results .type-page {
-	margin-bottom: 3em;
+	margin-bottom: 4em;
 }
 
 .page-header,
@@ -6416,6 +6415,30 @@ footer.entry-meta {
 	padding: 20px;
 }
 
+.format-aside .entry-header h1,
+.format-status .entry-header h1,
+.format-quote .entry-header h1,
+.format-link .entry-header h1 {
+	font-size: 18px;
+}
+
+.format-aside .entry-header h1 .glyphicon,
+.format-status .entry-header h1 .glyphicon,
+.format-quote .entry-header h1 .glyphicon,
+.format-link .entry-header h1 .glyphicon {
+	font-size: 36px;
+	padding-top: 0;
+}
+
+.format-link .entry-content p:first-child {
+	border-top: 1px solid #FF921E;
+	border-bottom: 1px solid #FF921E;
+	display: block;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
 /********************************
  * Comments
  *******************************/
@@ -6505,6 +6528,10 @@ footer.entry-meta {
 	margin-top: 0;
 }
 
+.widget-title label {
+	font-weight: normal;
+}
+
 .widget-area ul {
 	list-style-type: none;
 	margin: 0;
@@ -6568,6 +6595,10 @@ footer.entry-meta {
 	border-bottom: 1px solid white;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
+}
+
+.list-unstyled li {
+	margin-bottom: 10px;
 }
 
 .site-info {
