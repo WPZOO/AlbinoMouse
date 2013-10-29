@@ -6142,6 +6142,7 @@ a:focus {
 .site-branding {
 	padding: 15px;
 	position: relative;
+	vertical-align: bottom;
 }
 
 .site-branding.centred {
@@ -6431,8 +6432,8 @@ footer.entry-meta {
 }
 
 .format-link .entry-content p:first-child {
-	border-top: 1px solid #FF921E;
-	border-bottom: 1px solid #FF921E;
+	border-top: 1px solid #e3272d;
+	border-bottom: 1px solid #e3272d;
 	display: block;
 	padding: 20px 0;
 	margin-bottom: 20px;
@@ -6455,7 +6456,7 @@ footer.entry-meta {
 
 .pingback {
 	margin-left: -90px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .comment .comment-body {
