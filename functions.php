@@ -261,7 +261,8 @@ function albinomouse_add_custom_styles() {
 	.navbar-default .navbar-toggle,
 	a.thumbnail:hover,
 	a.thumbnail:focus,
-	.panel-primary {
+	.panel-primary,
+	.format-link .entry-content p:first-child {
 		border-color: <?php echo $link_color ?>;
 	}
 
