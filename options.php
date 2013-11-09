@@ -216,7 +216,7 @@ function albinomouseoptions_options() {
 		
 	$options[] = array(
 		'name' => __('Recommended Plugin: Bootstrap Shortcodes', 'albinomouse'),
-		'desc' => __('Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin <a href="http://wordpress.org/plugins/bootstrap-shortcodes/">Bootstrap Shortcodes</a> you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js file (AlbinoMouse has already included).', 'albinomouse'),
+		'desc' => __('Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin <a href="http://wordpress.org/plugins/bootstrap-shortcodes/">Bootstrap Shortcodes</a> you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included).', 'albinomouse'),
 		'type' => 'info');
 
 	/*-----------------------------------------------*/	
