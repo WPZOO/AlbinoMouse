@@ -1,0 +1,710 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: AlbinoMouse\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: comments.php:36
+#: comments.php:56
+msgid "Comment navigation"
+msgstr "Nawigacja komentarzy"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Komentarze wyłączone."
+
+#: content-page.php:17
+#: content-single.php:46
+#: content.php:64
+#: image.php:55
+msgid "Pages:"
+msgstr "Strony:"
+
+#: content.php:95
+#: content.php:102
+msgid "Leave a comment"
+msgstr "Pozostaw komentarz"
+
+#: content.php:95
+#: content.php:102
+msgid "1 Comment"
+msgstr "1 Komentarz"
+
+#: content.php:95
+#: content.php:102
+msgid "% Comments"
+msgstr "% Komentarze"
+
+#: content.php:45
+#: content.php:58
+msgid "Permalink to %s"
+msgstr "Adres %s"
+
+#: footer.php:83
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Semantyczna Platforma Publikacji Prywatnej"
+
+#: footer.php:83
+msgid "Proudly powered by %s"
+msgstr "Dumnie wspierana przez %s"
+
+#: footer.php:85
+msgid "Theme: %1$s by %2$s."
+msgstr "Temat: %1$s od %2$s."
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr "Główne menu"
+
+#: inc/extras.php:66
+msgid "Page %s"
+msgstr "Strona %s"
+
+#: content-page.php:22
+#: content-single.php:88
+#: content.php:106
+#: image.php:59
+#: inc/template-tags.php:72
+#: inc/template-tags.php:91
+msgid "Edit"
+msgstr "Edytuj"
+
+#: inc/template-tags.php:33
+msgid "Post navigation"
+msgstr "Navigacja Wpisu"
+
+#: inc/template-tags.php:72
+msgid "Pingback:"
+msgstr "Pingbacki:"
+
+#: inc/template-tags.php:82
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">napisał(a):</span>"
+
+#: inc/template-tags.php:95
+msgid "Your comment is awaiting moderation."
+msgstr "Twój Komentarz czeka na moderację."
+
+#: options.php:47
+msgid "Link and Footer Color"
+msgstr "Kolor linków i stopki"
+
+#: inc/options/options-framework.php:141
+#: inc/options/options-framework.php:361
+msgid "Theme Options"
+msgstr "Opcje Tematu"
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gotow(y/a) by opublikować swój pierwszy wpis? <a href=\"%1$s\">Zaczynajmy</a>."
+
+#: no-results.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Niczego nie znaleziono pod tym hasłem. Spróbuj ponownie wyszukać pod innym."
+
+#: no-results.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Wygląda na to, że nie można znaleźć tego, czego szukasz. Mosze Wyszukiwanie pomoże."
+
+#: search.php:28
+msgid "Search Results for: %s"
+msgstr "Rezultaty wyszukiwania dla: %s"
+
+#: functions.php:81
+msgid "Footer 1"
+msgstr "Stopka 1"
+
+#: functions.php:91
+msgid "Footer 2"
+msgstr "Stopka 2"
+
+#: functions.php:101
+msgid "Footer 3"
+msgstr "Stopka 3"
+
+#: functions.php:111
+msgid "Footer 4"
+msgstr "Stopka 4"
+
+#: inc/options/options-framework.php:222
+msgid "Save Options"
+msgstr "Zapisz opcje"
+
+#: inc/options/options-framework.php:223
+msgid "Restore Defaults"
+msgstr "Przywróć domyślne"
+
+#: inc/options/options-framework.php:223
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Kliknij OK aby zresetować. Wszystkie ustawienia tematu będą stracone!"
+
+#: inc/options/options-framework.php:255
+msgid "Default options restored."
+msgstr "Odzyskano opcje domyślne."
+
+#: inc/options/options-framework.php:310
+msgid "Options saved."
+msgstr "Opcje zapisane."
+
+#: inc/options/options-medialibrary-uploader.php:26
+msgid "Theme Options Media"
+msgstr "Opcje Tematu - Media"
+
+#: inc/options/options-medialibrary-uploader.php:126
+msgid "Upload"
+msgstr "Dodaj plik"
+
+#: inc/options/options-medialibrary-uploader.php:149
+msgid "View File"
+msgstr "Pokaż plik"
+
+#: inc/options/options-medialibrary-uploader.php:282
+msgid "Gallery"
+msgstr "Galeria"
+
+#: inc/options/options-medialibrary-uploader.php:282
+msgid "Previously Uploaded"
+msgstr "Wcześniej dodane"
+
+#: inc/options/options-sanitize.php:232
+msgid "No Repeat"
+msgstr "Bez powtórzeń"
+
+#: inc/options/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr "Powtórz Horyzontalnie"
+
+#: inc/options/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr "Powtórz Wertykalnie"
+
+#: inc/options/options-sanitize.php:235
+msgid "Repeat All"
+msgstr "Powtórz we wszystkich kierunkach"
+
+#: inc/options/options-sanitize.php:248
+msgid "Top Left"
+msgstr "Górny lewy"
+
+#: inc/options/options-sanitize.php:249
+msgid "Top Center"
+msgstr "Górny centralny"
+
+#: inc/options/options-sanitize.php:250
+msgid "Top Right"
+msgstr "Górny prawy"
+
+#: inc/options/options-sanitize.php:251
+msgid "Middle Left"
+msgstr "Środkowy lewy"
+
+#: inc/options/options-sanitize.php:252
+msgid "Middle Center"
+msgstr "Środkowy centralny"
+
+#: inc/options/options-sanitize.php:253
+msgid "Middle Right"
+msgstr "Środkowy prawy"
+
+#: inc/options/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr "Dolny lewy"
+
+#: inc/options/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr "Dolny centralny"
+
+#: inc/options/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr "Dolny prawy"
+
+#: inc/options/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr "Przewiń normalnie"
+
+#: inc/options/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr "Ustalone w miejscu"
+
+#: inc/options/options-sanitize.php:344
+msgid "Normal"
+msgstr "Normalny"
+
+#: inc/options/options-sanitize.php:345
+msgid "Italic"
+msgstr "Pochylony"
+
+#: inc/options/options-sanitize.php:346
+msgid "Bold"
+msgstr "Pogrubiony"
+
+#: inc/options/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr "Pogrubiont pochylony"
+
+#: options.php:23
+msgid "One"
+msgstr "Jeden"
+
+#: options.php:24
+msgid "Two"
+msgstr "Dwa"
+
+#: options.php:25
+msgid "Three"
+msgstr "Trzy"
+
+#: options.php:26
+msgid "Four"
+msgstr "Cztery"
+
+#: options.php:48
+msgid "Choose your own link and footer color."
+msgstr "Wybierz swój kolor Linków i Stopki."
+
+#: options.php:131
+msgid "Display the description (Tagline) on your site."
+msgstr "Wyświetla opis (slogan) Twojej strony."
+
+#: options.php:54
+msgid "General Background"
+msgstr "Tło"
+
+#: options.php:55
+msgid "Change the background of your site."
+msgstr "Zmień tło swojej strony."
+
+#: options.php:68
+msgid "Title Font"
+msgstr "Czcionka Tytułu"
+
+#: options.php:69
+#: options.php:85
+msgid "Choose your favorite google web font."
+msgstr "Wybierz swój ulubiony krój (Google Web Fonts)."
+
+#: options.php:84
+msgid "General Font"
+msgstr "Czcionka główna"
+
+#: options.php:61
+msgid "Favicon"
+msgstr "Ikona strony"
+
+#: options.php:62
+msgid "Customize your website with your own Favicon."
+msgstr "Twoja własna ikona strony."
+
+#: options.php:191
+msgid "Custom Copyright Text"
+msgstr "Własny tekst o prawach autorskich"
+
+#: options.php:192
+msgid "Change the default copyright text."
+msgstr "Zmień domyślny tekst o prawach autorskich."
+
+#: options.php:130
+msgid "Description of your Site"
+msgstr "Opis twojej strony"
+
+#: inc/options/options-framework.php:175
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: inc/options/options-framework.php:176
+msgid "Default"
+msgstr "Domyślne"
+
+#: inc/options/options-framework.php:177
+msgid "Select Color"
+msgstr "Wybierz kolor"
+
+#: options.php:114
+msgid "Upload your logo via the familiar media upload window. Press &#171;Use This Image&#187; to close the window. The Logo will now appear instead of the title of your website."
+msgstr "Dodaj swoje logo. Kliknij &#171;Użyj tego obrazu&#187; aby zamknąć okno. Twoje logo będzie w miejscu tytułu strony."
+
+#: archive.php:56
+#: sidebar.php:24
+msgid "Archives"
+msgstr "Archiwa"
+
+#: sidebar.php:31
+msgid "Meta"
+msgstr "Meta"
+
+#: options.php:103
+msgid "Header Background"
+msgstr "Tło nagłówka"
+
+#: options.php:160
+msgid "Sidebar Layout"
+msgstr "Układ kolumn"
+
+#: options.php:179
+msgid "Footer Layout"
+msgstr "Układ Stopki"
+
+#: options.php:180
+msgid "How many widgets do you have to load into the footer?"
+msgstr "Ile kolumn widgetów chcesz umieścić w stopce?"
+
+#: options.php:137
+msgid "Header Search Box"
+msgstr "Szukanie w nagłówku"
+
+#: options.php:138
+msgid "Display the search box in the header of your site."
+msgstr "Wyświetlaj wyszukiwanie w nagłówku strony."
+
+#: options.php:198
+msgid "Show some Love!"
+msgstr "Okaż trochę miłości!"
+
+#: options.php:199
+msgid "Display a link to WordPress and the theme author."
+msgstr "Wyświetl Link do WordPressa i do Autora Tematu w stopce strony."
+
+#: options.php:43
+msgid "Global"
+msgstr "Globalne"
+
+#: options.php:99
+msgid "Header"
+msgstr "Nagłówek"
+
+#: options.php:150
+msgid "Post Thumbnails"
+msgstr "Miniatury wpisów"
+
+#: options.php:151
+msgid "Choose the size of your post thumbnails."
+msgstr "Wybierz rozmiar miniatur wpisów."
+
+#: options.php:175
+msgid "Footer"
+msgstr "Stopka"
+
+#: options.php:146
+msgid "Content"
+msgstr "Treść"
+
+#. albinomouse
+#: inc/options/options-interface.php:426
+msgid "AlbinoMouse Informations"
+msgstr "Informacje o temacie AlbinoMouse"
+
+#. albinomouse
+#: inc/options/options-interface.php:437
+msgid "Bugs"
+msgstr "Błędy"
+
+#. albinomouse
+#: inc/options/options-interface.php:446
+msgid "Review"
+msgstr "Poprawki"
+
+#. albinomouse
+#: inc/options/options-interface.php:453
+msgid "Love it?"
+msgstr "Podoba ci się?"
+
+#. albinomouse
+#: inc/template-tags.php:246
+msgid "Home"
+msgstr "Strona domowa"
+
+#. albinomouse
+#: inc/options/options-interface.php:448
+msgid "Please rate AlbinoMouse on wordpress.org."
+msgstr "Proszę oceń AlbinoMouse na wordpress.org."
+
+#. albinomouse
+#: 404.php:25
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Nic nie znaleziono pod tym adresem. Może spróbuj poszukać?"
+
+#. albinomouse
+#: archive.php:39
+msgid "Posts written by %s"
+msgstr "Wpisy napisane przez %s"
+
+#. albinomouse
+#: archive.php:47
+msgid "Posts published on %s"
+msgstr "Wpisy opublikowane w %s"
+
+#. albinomouse
+#: archive.php:50
+#: archive.php:53
+msgid "Posts published in %s"
+msgstr "Wpisy opublikowane w %s"
+
+#. albinomouse
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Jedna myśl w &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s myśli w &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s myśli o &ldquo;%2$s&rdquo;"
+
+#. albinomouse
+#: comments.php:37
+#: comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze komentarze"
+
+#. albinomouse
+#: comments.php:38
+#: comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Nowsze komentarze &rarr;"
+
+#. albinomouse
+#: content.php:62
+#: functions.php:444
+#: image.php:53
+msgid "Continue reading"
+msgstr "Czytaj dalej"
+
+#. albinomouse
+#: inc/options/options-interface.php:456
+msgid "Meet me on Google+"
+msgstr "Spotkajmy się w Google+"
+
+#. albinomouse
+#: inc/options/options-interface.php:457
+msgid "You could buy me a beer :)"
+msgstr "Możesz postawić mi piwo :)"
+
+#. albinomouse
+#: inc/template-tags.php:88
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s o %2$s"
+
+#. albinomouse
+#: options.php:104
+msgid "Set the header background."
+msgstr "Ustaw tło nagłówka"
+
+#. albinomouse
+#: options.php:109
+msgid "Transparent"
+msgstr "Przezroczysty"
+
+#. albinomouse
+#: options.php:110
+msgid "Gray semi-transparent"
+msgstr "Szary półprzezroczysty"
+
+#. albinomouse
+#: options.php:113
+msgid "Replace the title with your logo"
+msgstr "Zamień tytuł na logo"
+
+#. albinomouse
+#: options.php:120
+msgid "Title and description alignment"
+msgstr "Pozycja tytułu i opisu"
+
+#. albinomouse
+#: options.php:121
+msgid "Set the alignment of the title/logo and your site description."
+msgstr "Ustaw pozycję tytułu/loga i opisu strony"
+
+#. albinomouse
+#: options.php:126
+msgid "Left"
+msgstr "Lewo"
+
+#. albinomouse
+#: options.php:127
+msgid "Center"
+msgstr "Środek"
+
+#. albinomouse
+#: options.php:156
+msgid "Content thumbnail (floated). See general settings."
+msgstr "Miniatura w treści (opływana). Zobacz ogólne ustawienia."
+
+#. albinomouse
+#: options.php:157
+msgid "Header banner (750 x 250 pixel). Already existing images need to be regenerated."
+msgstr "Baner nagłówka (750 x 250 pikseli). Istniejące obrazki muszą być wygenerowane ponownie."
+
+#. albinomouse
+#: options.php:161
+msgid "Choose one of the possible layout options."
+msgstr "Wybierz jedną z opcji wyglądu."
+
+#. albinomouse
+#: options.php:207
+msgid "Extend"
+msgstr "Poszerz"
+
+#. albinomouse
+#: options.php:211
+msgid "Redesign Jetpacks social buttons (Flat Design)"
+msgstr "Nowy wzór Jetpacks przycisków społeczności (płaski)"
+
+#. albinomouse
+#: options.php:218
+msgid "Recommended Plugin: Bootstrap Shortcodes"
+msgstr "Rekomendowana wtyczka: Bootstrap Shortcodes"
+
+#. albinomouse
+#: options.php:219
+msgid "Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin <a href=\"http://wordpress.org/plugins/bootstrap-shortcodes/\">Bootstrap Shortcodes</a> you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js file (AlbinoMouse has already included)."
+msgstr "Użyj możliwości Bootstrap 3.0 zaimplementowanego w AlbinoMouse 2.0. Z wtyczką <a href=\"http://wordpress.org/plugins/bootstrap-shortcodes/\">Bootstrap Shortcodes</a> będziesz mógł użyć <strong>podziałki, przycisków, powiadomień, zwijania i symboli</strong> całkiem łatwo.<br/>Po zainstalowaniu wtyczki, wejdź w ustawienia i wyłącz ładowanie css i js (AlbinoMouse już je zawiera)."
+
+#. albinomouse
+#: searchform-header.php:13
+#: searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr "Szukaj:"
+
+#. albinomouse
+#: searchform-header.php:14
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Szukaj &hellip;"
+
+#. albinomouse
+#: functions.php:72
+msgid "Sidebar"
+msgstr "Pasek boczny"
+
+#. default
+#: functions.php:456
+msgid "Please check your posts for shortcodes which were available in older versions of the theme AlbinoMouse. The theme guidelines do not allow shortcodes in themes anymore. <a href=\"%1$s\">Hide Notice</a>"
+msgstr "Proszę sprawdź swoje wpisy czy zawierają kody które były dostępne w poprzednich wersjach AlbinoMouse. Wytyczne tematów nie pozwalają na kody. <a href=\"%1$s\">Schowaj tę wiadomość</a>"
+
+#. albinomouse
+#: inc/options/options-interface.php:429
+msgid "Documentation"
+msgstr "Dokumantacja"
+
+#. albinomouse
+#: inc/options/options-interface.php:439
+msgid "Report a bug on <a href=\"https://github.com/pixelstrolch/AlbinoMouse/issues\">github</a>"
+msgstr "Wyślij raport błędu na <a href=\"https://github.com/pixelstrolch/AlbinoMouse/issues\">github</a>"
+
+#. albinomouse
+#: inc/options/options-interface.php:455
+msgid "AlbinoMouse on Github"
+msgstr "AlbinoMouse na Github"
+
+#. albinomouse
+#: 404.php:20
+msgid "That page cannot be found."
+msgstr "Strona nie została znaleziona."
+
+#. albinomouse
+#: archive.php:29
+msgctxt "category"
+msgid "Posts in category %s"
+msgstr "Wpisy w kategorii %s"
+
+#. albinomouse
+#: archive.php:32
+msgctxt "tag"
+msgid "Posts tagged with %s"
+msgstr "Wpisy otagowane jako %s"
+
+#. translators: used between list items, there is a space after the comma
+#. albinomouse
+#: content.php:78
+msgctxt "category list"
+msgid "Posted in %1$s"
+msgstr "Opublikowane w %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#. albinomouse
+#: content.php:89
+msgctxt "tag list"
+msgid "Tagged %1$s"
+msgstr "Otagowane %1$s"
+
+#. albinomouse
+#: image.php:34
+msgid "Previous"
+msgstr "Poprzedni"
+
+#. albinomouse
+#: image.php:35
+msgid "Next"
+msgstr "Następny"
+
+#. albinomouse
+#: inc/template-tags.php:44
+msgid "Older posts"
+msgstr "Starsze wpisy"
+
+#. albinomouse
+#: inc/template-tags.php:48
+msgid "Newer posts"
+msgstr "Nowsze wpisy"
+
+#. albinomouse
+#: inc/template-tags.php:191
+msgctxt "1: date, 2: time"
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Opublikowane w %1$s</span><span class=\"byline\"> przez %2$s</span>"
+
+#. albinomouse
+#: 404.php:19
+msgid "Oops, error 404!"
+msgstr "Ups, błąd 404!"
+
+#. albinomouse
+#: options.php:212
+msgid "Replace the styles of Jetpacks social sharing buttons. <strong>Obviously the plugin Jetpack must be installed as well as the module Sharing must be activated.</strong> This option will automatically deregister the original stylesheet."
+msgstr "Zastąp style przycisków Jetpacks social sharing. <strong>Oczywiście wtyczka Jetpack musi byc zainstalowana, a moduł Sharing musi być aktywowany.</strong> Ta opcja automatycznie zastąpi domyslne formatowanie."
+
+#. translators: used between list items, there is a space after the comma
+#. albinomouse
+#: content-single.php:64
+msgctxt "2: tag list, 3: permalink"
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Ten wpis otagowano %2$s. Zapisz w zakładkach <a href=\"%3$s\" rel=\"bookmark\">link</a>."
+
+#. albinomouse
+#: content-single.php:66
+msgctxt "3: permalink"
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Zapisz w zakładkach <a href=\"%3$s\" rel=\"bookmark\">link</a>."
+
+#. albinomouse
+#: content-single.php:72
+msgctxt "1: category list, 2: tag list, 3: permalink"
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Ten wpis opublikowano w %1$s i otagowano jako %2$s. Zapisz w zakładkach <a href=\"%3$s\" rel=\"bookmark\">link</a>."
+
+#. albinomouse
+#: content-single.php:74
+msgctxt "1: category list, 3: permalink"
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Ten wpis opublikowano w %1$s. Zapisz w zakładkach <a href=\"%3$s\" rel=\"bookmark\">link</a>."
+
+#. albinomouse
+#: inc/options/options-interface.php:440
+msgid "Report a bug on <a href=\"http://wordpress.org/support/theme/albinomouse/\">the forum</a>"
+msgstr "Zgłoś błąd na <a href=\"http://wordpress.org/support/theme/albinomouse/\">forum</a>"
+
+#. albinomouse
+#: image.php:20
+msgctxt "1: date attribute, 2: date, 3: parent post link, 4: parent post title, 5: image link, 6: image width, 7: image height"
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> in <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Full size: <a href=\"%5$s\">%6$s pixels &times; %7$s pixels</a>"
+msgstr "Opublikowane o <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> w <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Pełny rozmiar: <a href=\"%5$s\">%6$s pikseli &times; %7$s pikseli</a>"
+
