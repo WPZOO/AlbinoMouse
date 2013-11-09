@@ -31,13 +31,10 @@ AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMous
 * Some icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome/) by Dave Gandy (SIL OFL 1.1)
 
 ####These guys make AlbinoMouse international:####
-* Danish translation by Eva Fog
 * French translation by [Alexis Jurdant](http://effingo.be/)
 * German translation by myself, [Stefan Brechbühl](http://www.pixelstrol.ch/)
 * Polish translation by [Michał Hunger](http://blog.13mhz.kapa.pl/)
-* Romanian translation by Van Testing
-* Spanish translation by Pablo Laguna
-* Swedish translation by David Sørensen (needs update)
+* Spanish translation by [Pablo Laguna](http://pablolaguna.es/)
 
 Your language is not listed above and you wanna make AlbinoMouse even more international?<br/>
 [You might collaborate on POEditor.com](https://poeditor.com/join/project?hash=a014ba485142acb471bb0b5394ee345a)
