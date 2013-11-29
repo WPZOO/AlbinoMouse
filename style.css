@@ -6063,7 +6063,7 @@ img {
 	margin-bottom: 10px;
 }
 
-.gallery-caption {
+.wp-caption-text.gallery-caption {
 	font-size: 80%;
 	margin: 5px 0;
 }
