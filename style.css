@@ -6107,6 +6107,10 @@ object {
 	max-width: 100%;
 }
 
+.children>.children>.children>.children>.children {
+	margin-left: 0;
+}
+
 /********************************
  * Links
  *******************************/
@@ -6152,6 +6156,7 @@ a:focus {
 .site-title {
 	display: inline-block;
 	margin: 0;
+	vertical-align: bottom;
 }
 
 .site-description {
@@ -6297,13 +6302,15 @@ a:focus {
  *******************************/
 
 #content {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
-.type-post,
-.search-results .type-page {
-	margin-bottom: 5em;
+.blog .post,
+.search-results .post,
+.search-results .page,
+.archive .post {
+	margin-bottom: 2.5em;
 }
 
 .page-header,
@@ -6342,10 +6349,17 @@ h1.entry-title {
 @media screen and (min-width: 768px) {
 	
 	#content {
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
-
+	
+	.blog .post,
+	.search-results .post,
+	.search-results .page,
+	.archive .post {
+		margin-bottom: 5em;
+	}
+	
 	.entry-header {
 		min-height: 50px;
 	}
@@ -6449,9 +6463,10 @@ footer.entry-meta {
 	margin-left: 90px;
 	padding-left: 0;
 }
-#comments ul.children {
+
+.children {
 	list-style: none;
-	margin-left: 45px;
+	margin-left: 20px;
 }
 
 .pingback {
@@ -6618,19 +6633,6 @@ input[type="submit"] {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	width: auto;
-}
-
-button:hover,
-html input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	background-color: #f5f5f5;
-}
-
-.form-control:focus {
-	border-color: #4c4b4a;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 100, 100, 0.6);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 100, 100, 0.6);
 }
 
 /* Searchform */
