@@ -248,13 +248,10 @@ function albinomouseoptions_options() {
 	$options[] = array(
 		'name' =>	'These guys make AlbinoMouse international:',
 		'desc' =>	'<ul>
-						<li>Danish translation by Eva Fog</li>
 						<li>French translation by <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
 						<li>German translation by <a href="http://pixelstrol.ch/">myself, Stefan Brechbühl</a></li>
 						<li>Polish translation by <a href="http://blog.13mhz.kapa.pl/">Michał Hunger</a></li>
-						<li>Romanian translation by Van Testing</li>
-						<li>Spanish translation by Pablo Laguna</li>
-						<li>Swedish translation by David Sørensen</li>
+						<li>Spanish translation by <a href="http://pablolaguna.es/">Pablo Laguna</a></li>
 					</ul>',
 		'type' =>	'info');
 	
