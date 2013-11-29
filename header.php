@@ -50,7 +50,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					
-					<a class="navbar-brand visible-xs" href="<?php bloginfo('url'); ?>">
+					<a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
 						<?php bloginfo('name'); ?>
 					</a>
 				</div>
