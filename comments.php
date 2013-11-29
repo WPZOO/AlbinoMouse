@@ -34,8 +34,10 @@ if ( post_password_required() )
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
 			<h1 class="sr-only"><?php _e( 'Comment navigation', 'albinomouse' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'albinomouse' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'albinomouse' ) ); ?></div>
+			<ul class="pager">
+				<li class="previous-post"><?php previous_comments_link( __( '&larr; Older Comments', 'albinomouse' ) ); ?></li>
+				<li class="next-post"><?php next_comments_link( __( 'Newer Comments &rarr;', 'albinomouse' ) ); ?></li>
+			</ul>
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // check for comment navigation ?>
 
@@ -54,8 +56,10 @@ if ( post_password_required() )
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
 			<h1 class="sr-only"><?php _e( 'Comment navigation', 'albinomouse' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'albinomouse' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'albinomouse' ) ); ?></div>
+			<ul class="pager">
+				<li class="previous-post"><?php previous_comments_link( __( '&larr; Older Comments', 'albinomouse' ) ); ?></li>
+				<li class="next-post"><?php next_comments_link( __( 'Newer Comments &rarr;', 'albinomouse' ) ); ?></li>
+			</ul>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
