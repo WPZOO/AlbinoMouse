@@ -6063,7 +6063,7 @@ img {
 	margin-bottom: 10px;
 }
 
-.wp-caption-text {
+.gallery-caption {
 	font-size: 80%;
 	margin: 5px 0;
 }
@@ -6419,6 +6419,9 @@ footer.entry-meta {
 }
 
 /* Post Format */
+
+.sticky {
+}
 
 .format-aside .entry-content,
 .format-status .entry-content {
