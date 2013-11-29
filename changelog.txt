@@ -17,7 +17,7 @@ C H A N G E L O G
 	More sidebar layout options
 	Two different post thumbnail layouts
 	Flat design for Jetpacks social buttons
-	
++ Embed videos from YouTube, Vimeo,... are now really responsive with FitVids
 
 1.4
 + Added Polish translation made by Michał
