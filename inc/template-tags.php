@@ -35,17 +35,17 @@ function albinomouse_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<li class="previous-post">%link</li>', '<span class="glyphicon glyphicon-arrow-left">' . _x( '', 'Previous post link', 'albinomouse' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<li class="next-post">%link</li>', '%title <span class="glyphicon glyphicon-arrow-right">' . _x( '', 'Next post link', 'albinomouse' ) . '</span>' ); ?>
+		<?php previous_post_link( '<li class="previous-post">%link</li>', '&larr;' . _x( '', 'Previous post link', 'albinomouse' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<li class="next-post">%link</li>', '%title &rarr;' . _x( '', 'Next post link', 'albinomouse' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<li class="older-posts"><?php next_posts_link( '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp;' . __( 'Older posts', 'albinomouse' )); ?></li>
+		<li class="older-posts"><?php next_posts_link( '&larr;&nbsp;' . __( 'Older posts', 'albinomouse' )); ?></li>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<li class="newer-posts"><?php previous_posts_link( __( 'Newer posts', 'albinomouse') . '&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>' ); ?></li>
+		<li class="newer-posts"><?php previous_posts_link( __( 'Newer posts', 'albinomouse') . '&nbsp;&rarr;</span>' ); ?></li>
 		<?php endif; ?>
 
 	<?php endif; ?>
