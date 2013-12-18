@@ -1,7 +1,6 @@
 AlbinoMouse
 ===========
 
-**This is version 2.0 beta and has not been uploaded to the theme directory on wordpress.org!**  
 AlbinoMouse is a responsive WordPress theme with a clean and flat design.
 * It is based on the awesome <a href="https://github.com/twbs/bootstrap">framework Bootstrap 3</a>.
 * It is perfect for blogging, but can be used for other purposes as well.
