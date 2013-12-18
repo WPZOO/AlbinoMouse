@@ -240,7 +240,7 @@ function albinomouseoptions_options() {
 						<li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> by @tittem (GPL v2)</li>
 						<li>phpColors by Arlo Carreon (MIT)</li>
 						<li><a href="https://github.com/davatron5000/FitVids.js">FitVids]</a> by Chris Coyier and Paravel (WTFPL)</li>
-						<li>Glyphicons Halflings by Jan Kovařík comes with Bootstrap 3 (same license)</li>
+						<li>Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 (same license)</li>
 						<li>Some icons from Socialicous by Shali Nguyen (MIT)</li>
 						<li>Some icons from Font Awesome by Dave Gandy (SIL OFL 1.1)</li>
 					</ul>',
@@ -251,7 +251,7 @@ function albinomouseoptions_options() {
 		'desc' =>	'<ul>
 						<li>French translation by <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
 						<li>German translation by <a href="http://pixelstrol.ch/">myself, Stefan Brechbühl</a></li>
-						<li>Polish translation by <a href="http://blog.13mhz.kapa.pl/">Michał Hunger</a></li>
+						<li>Polish translation by <a href="http://blog.13mhz.kapa.pl/">Micha&#322; Hunger</a></li>
 						<li>Spanish translation by <a href="http://pablolaguna.es/">Pablo Laguna</a></li>
 					</ul>',
 		'type' =>	'info');

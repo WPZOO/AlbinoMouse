@@ -3,6 +3,11 @@
  * AlbinoMouse functions and definitions
  * @package AlbinoMouse
  */
+ 
+/**
+ * Load theme options.
+ */
+$options = get_option( 'albinomouse' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -11,6 +16,7 @@ if ( ! isset( $content_width ) )
 	$content_width = 750; /* pixels */
 
 if ( ! function_exists( 'albinomouse_setup' ) ) :
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -67,7 +73,7 @@ add_action( 'after_setup_theme', 'albinomouse_setup' );
  * Register widgetized area and update sidebar with default widgets
  */
 function albinomouse_widgets_init() {
-	$options = get_option( 'albinomouse' );
+	global $options;
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'albinomouse' ),
 		'id'            => 'sidebar-1',
@@ -137,8 +143,6 @@ add_action( 'wp_enqueue_scripts', 'albinomouse_scripts' );
 /**
  * Overwrite Jetpacks social sharing buttons
  */
-
-$options = get_option( 'albinomouse' );
 if(!isset($options['flat-social-btn']) or $options['flat-social-btn'] == '1') {
 	function overwrite_jetpack_social_buttons(){ 
 			wp_deregister_style('sharedaddy');
@@ -168,7 +172,7 @@ require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
  * This function is attached to the wp_head action hook.
  */
 function albinomouse_google_web_fonts() {
-	$options = get_option( 'albinomouse' );
+global $options;
 
 	if ($options['title_font'] == 'Anton') {
 		wp_enqueue_style( 'Anton', 'http://fonts.googleapis.com/css?family=Anton' );
@@ -203,15 +207,62 @@ add_action( 'wp_enqueue_scripts', 'albinomouse_google_web_fonts' );
  * This function is attached to the wp_head action hook.
  */
  
-include("inc/color.php"); // Include phpColors by Primoz MIT-License
-use phpColors\Color;
+$originalColor = $options['link_footer_color'];  
+$d5 = -5; 
+$d8 = -8; 
+$d10 = -10; 
+$d12 = -12;
+$d15 = -15;
+$l40 = 40;
+
+function colorCreator($color, $per) {  
+
+    $color = substr( $color, 1 ); // Removes first character of hex string (#) 
+    $rgb = ''; // Empty variable 
+    $per = $per/100*255; // Creates a percentage to work with. Change the middle figure to control color temperature
+     
+    if  ($per < 0 ) // Check to see if the percentage is a negative number 
+    { 
+        // DARKER 
+        $per =  abs($per); // Turns Neg Number to Pos Number 
+        for ($x=0;$x<3;$x++) 
+        { 
+            $c = hexdec(substr($color,(2*$x),2)) - $per; 
+            $c = ($c < 0) ? 0 : dechex($c); 
+            $rgb .= (strlen($c) < 2) ? '0'.$c : $c; 
+        }   
+    }  
+    else 
+    { 
+        // LIGHTER         
+        for ($x=0;$x<3;$x++) 
+        {             
+            $c = hexdec(substr($color,(2*$x),2)) + $per; 
+            $c = ($c > 255) ? 'ff' : dechex($c); 
+            $rgb .= (strlen($c) < 2) ? '0'.$c : $c; 
+        }    
+    } 
+    return '#'.$rgb; 
+}
+
+$color_b40 = colorCreator($originalColor, $l40);
+$color_d5 = colorCreator($originalColor, $d5);
+$color_d8 = colorCreator($originalColor, $d8);
+$color_d10 = colorCreator($originalColor, $d10);
+$color_d12 = colorCreator($originalColor, $d12);
+$color_d15 = colorCreator($originalColor, $d15);
 
 function albinomouse_add_custom_styles() {
-	$options = get_option( 'albinomouse' );
-	$link_color = $options['link_footer_color'];
+	global $options;
+	global $originalColor;  
+	global $color_b40;
+	global $color_d5;
+	global $color_d8;
+	global $color_d10;
+	global $color_d12;
+	global $color_d15;
 	$header_bg = $options['header-background'];
-	$footer_cols = $options['footer-layout'];
-	$primary = new Color($link_color); ?>
+	$footer_cols = $options['footer-layout']; ?>
 	
 	<style type="text/css">
 
@@ -234,15 +285,15 @@ function albinomouse_add_custom_styles() {
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 	.label-primary,
 	.progress-bar {
-		background-color: <?php echo $link_color ?>;
+		background-color: <?php echo $originalColor ?>;
 	}
 		
 	.list-group-item.active,
 	.list-group-item.active:hover,
 	.list-group-item.active:focus,
 	.panel-primary > .panel-heading {
-		background-color: <?php echo $link_color ?>;
-		border-color: <?php echo $link_color ?>;		
+		background-color: <?php echo $originalColor ?>;
+		border-color: <?php echo $originalColor ?>;		
 	}
 		
 	.pagination > .active > a,
@@ -251,8 +302,8 @@ function albinomouse_add_custom_styles() {
 	.pagination > .active > span:hover,
 	.pagination > .active > a:focus,
 	.pagination > .active > span:focus {
-		background-color: <?php echo $link_color ?>;
-		color: <?php echo $link_color ?>;
+		background-color: <?php echo $originalColor ?>;
+		color: <?php echo $originalColor ?>;
 	}
 
 	.nav .open > a,
@@ -263,20 +314,20 @@ function albinomouse_add_custom_styles() {
 	a.thumbnail:focus,
 	.panel-primary,
 	.format-link .entry-content p:first-child {
-		border-color: <?php echo $link_color ?>;
+		border-color: <?php echo $originalColor ?>;
 	}
 
 	.panel-primary > .panel-heading + .panel-collapse .panel-body {
-		border-top-color: <?php echo $link_color ?>;
+		border-top-color: <?php echo $originalColor ?>;
 	}
 	
 	.panel-primary > .panel-footer + .panel-collapse .panel-body {
-		border-bottom-color: <?php echo $link_color ?>;
+		border-bottom-color: <?php echo $originalColor ?>;
 	}
 	
 	.nav .caret {
-		border-top-color: <?php echo $link_color ?>;
-		border-bottom-color: <?php echo $link_color ?>;
+		border-top-color: <?php echo $originalColor ?>;
+		border-bottom-color: <?php echo $originalColor ?>;
 	}
 			
 	a,
@@ -285,7 +336,7 @@ function albinomouse_add_custom_styles() {
 	.navbar-default .navbar-brand,
 	a.list-group-item.active > .badge,
 	.nav-pills > .active > a > .badge {
-		color: <?php echo $link_color ?>;
+		color: <?php echo $originalColor ?>;
 	}	
 	
 	.btn-primary,
@@ -304,8 +355,8 @@ function albinomouse_add_custom_styles() {
 	.btn-primary.disabled.active,
 	.btn-primary[disabled].active,
 	fieldset[disabled] .btn-primary.active {
-		background-color: <?php echo $link_color ?>;
-		border-color: #<?php echo $primary->darken(5)?>;
+		background-color: <?php echo $originalColor ?>;
+		border-color: <?php echo $color_d5 ?>;
 	}
 			
 	a:hover,
@@ -315,18 +366,18 @@ function albinomouse_add_custom_styles() {
 	.nav .open > a .caret,
 	.nav .open > a:hover .caret,
 	.nav .open > a:focus .caret {
-		color: #<?php echo $primary->darken(15)?>;
+		color: <?php echo $color_d15 ?>;
 	}
 	
 	.text-primary:hover,
 	.navbar-default .navbar-brand:hover,
 	.navbar-default .navbar-brand:focus {
-		color: #<?php echo $primary->darken(10)?>;
+		color: <?php echo $color_d10 ?>;
 	}
 	
 	.label-primary[href]:hover,
 	.label-primary[href]:focus {
-		background-color: #<?php echo $primary->darken(10)?>;
+		background-color: <?php echo $color_d10?> ;
 	}
 	
 	.btn-primary:hover,
@@ -334,14 +385,14 @@ function albinomouse_add_custom_styles() {
 	.btn-primary:active,
 	.btn-primary.active,
 	.open .dropdown-toggle.btn-primary {
-		background-color: #<?php echo $primary->darken(8)?>;
-		border-color: #<?php echo $primary->darken(12)?>;
+		background-color: <?php echo $color_d8 ?>;
+		border-color: <?php echo $color_d12 ?>;
 	}
 		
 	.list-group-item.active .list-group-item-text,
 	.list-group-item.active:hover .list-group-item-text,
 	.list-group-item.active:focus .list-group-item-text {
-		color: #<?php echo $primary->lighten(40)?>;
+		color: <?php echo $color_b40 ?>;
 	}
 	
 	/*--- General Background ---*/
@@ -412,7 +463,7 @@ add_action( 'wp_head', 'albinomouse_add_custom_styles' );
  */
 
 function albinomouse_body_class_footer( $existing_classes ) {
-	$options = get_option( 'albinomouse' );
+	global $options;
 	$footer = $options['footer-layout'];
 	
 	if ($footer == '1col') { 
@@ -455,7 +506,7 @@ function albinomouse_200_admin_notice() {
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'albinomouse_200_ignore_notice') ) {
         echo '<div class="updated"><p>';
-        printf(__('Please check your posts for shortcodes which were available in older versions of the theme AlbinoMouse. The theme guidelines do not allow shortcodes in themes anymore. <a href="%1$s">Hide Notice</a>'), '?albinomouse_200_nag_ignore=0');
+        printf(__('Please check your posts for shortcodes which were available in older versions of the theme AlbinoMouse. The theme guidelines do not allow shortcodes in themes anymore. <a href="%1$s">Hide Notice</a>', 'albinomouse'), '?albinomouse_200_nag_ignore=0');
         echo "</p></div>";
 	}
 }

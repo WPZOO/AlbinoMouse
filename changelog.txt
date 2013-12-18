@@ -3,6 +3,12 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.0.1
++ Added Romanian translation made by Van Testing
+* New thumbnail size
+- Deleted phpColors because it’s incompatible with older php versions.
++ Added new theme tags
+
 2.0 (Major Release)
 + AlbinoMouse now built on framework Bootstrap
 + Theme redesign
