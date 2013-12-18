@@ -25,7 +25,6 @@ AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMous
 
 ####There is even more great stuff included:####
 * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) by @tittem (GPL v2)
-* [phpColors](https://github.com/mexitek/phpColors) by Arlo Carreon (MIT)
 * [FitVids](https://github.com/davatron5000/FitVids.js) by Chris Coyier and Paravel (WTFPL)
 * [Glyphicons Halflings](http://glyphicons.com) by Jan Kovařík comes with Bootstrap 3 (same license)
 * Some icons from [Socialicous](https://github.com/shalinguyen/socialicious) by Shali Nguyen (MIT)
@@ -34,8 +33,9 @@ AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMous
 ####These guys make AlbinoMouse international:####
 * French translation by [Alexis Jurdant](http://effingo.be/)
 * German translation by myself, [Stefan Brechbühl](http://www.pixelstrol.ch/)
+* Roumain translation by Van Testing
 * Polish translation by [Michał Hunger](http://blog.13mhz.kapa.pl/)
-* Spanish translation by Pablo Laguna
+* Spanish translation by [Pablo Laguna](http://pablolaguna.es)
 
 Your language is not listed above and you wanna make AlbinoMouse even more international?<br/>
 [You might collaborate on POEditor.com](https://poeditor.com/join/project?hash=a014ba485142acb471bb0b5394ee345a)
