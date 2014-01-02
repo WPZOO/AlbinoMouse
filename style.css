@@ -332,6 +332,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
+  border-top: 1px solid #eceded;
   border-top: 1px solid rgba(196, 198, 199, 0.3);
 }
 .sr-only {
@@ -489,6 +490,7 @@ h6,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
+  border-bottom: 1px solid #eceded;
   border-bottom: 1px solid rgba(196, 198, 199, 0.3);
 }
 ul,
@@ -578,6 +580,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
+  border-left: 5px solid #eceded;
   border-left: 5px solid rgba(196, 198, 199, 0.3);
 }
 blockquote p {
@@ -599,6 +602,7 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
+  border-right: 5px solid #eceded;
   border-right: 5px solid rgba(196, 198, 199, 0.3);
   border-left: 0;
 }
@@ -631,6 +635,7 @@ code {
   padding: 2px 4px;
   font-size: 90%;
   color: inherit;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
   white-space: nowrap;
   border-radius: 0px;
@@ -644,6 +649,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   color: #414141;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
   border: 1px solid #414141;
   border-radius: 0px;
@@ -1362,10 +1368,12 @@ th {
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 table col[class*="col-"] {
@@ -1389,6 +1397,7 @@ table th[class*="col-"] {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .table > thead > tr > td.success,
@@ -1609,6 +1618,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 textarea.form-control {
@@ -3245,6 +3255,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #414141;
   text-align: center;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
   border: 1px solid #cccccc;
   border-radius: 0px;
@@ -3346,6 +3357,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .nav > li.disabled > a {
@@ -3361,6 +3373,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
   border-color: #e3272d;
 }
@@ -4147,6 +4160,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .pagination > .active > a,
@@ -4246,6 +4260,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .pager .next > a,
@@ -4369,6 +4384,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
 }
 .jumbotron h1 {
@@ -4929,7 +4945,9 @@ a.list-group-item:focus {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
+  background-color: #eceded;
   background-color: rgba(196, 198, 199, 0.3);
+  border: 1px solid #eceded;
   border: 1px solid rgba(178, 180, 182, 0.3);
   border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5975,8 +5993,9 @@ Additional Styles
  * Global
  *******************************/
 
-* {
-	word-break: break-word;
+body {
+	-ms-word-break: break-all;
+	word-break: break-all;
 }
 
 h3, .h3 {
@@ -6132,6 +6151,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
 	.header-gray {
+		background-color: #eceded;
 		background-color: rgba(196,198,199,0.3);
 		border-bottom: 1px solid #ddd;
 	}
@@ -6193,6 +6213,7 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a {
+	background-color: #dfe0e0;
 	background-color: rgba(196,198,199,0.3);
 	margin-bottom: 1px;
 }
@@ -6315,6 +6336,7 @@ a:focus {
 
 .page-header,
 #breadcrumbs {
+	border-bottom: 1px solid #eceded;
 	border-bottom: 1px solid rgba(196,198,199,0.3);
 	color: #999;
 	font-size: .8em;
@@ -6429,6 +6451,7 @@ footer.entry-meta {
 }
 
 .format-status .entry-content p:first-child {
+	background-color: #eceded;
 	background-color: rgba(196,198,199,0.3);
 	padding: 20px;
 }
@@ -6478,6 +6501,7 @@ footer.entry-meta {
 }
 
 .comment .comment-body {
+	background-color: #eceded;
 	background-color: rgba(196,198,199,0.3);
 	display: block;
 	margin-bottom: 15px;
@@ -6487,6 +6511,7 @@ footer.entry-meta {
 
 .comment .comment-body:before {
 	border-left: 20px solid transparent;
+	border-bottom: 20px solid #eceded;
 	border-bottom: 20px solid rgba(196,198,199,0.3);
 	top: 20px;
 	content: '';
@@ -6495,11 +6520,13 @@ footer.entry-meta {
 }
 
 .bypostauthor .comment-body {
+	background-color: #dadcdc;
 	background-color: rgba(196,198,199,0.6);
 }
 
 .bypostauthor .comment-body:before {
 	border-left: 20px solid transparent;
+	border-bottom: 20px solid #dadcdc;
 	border-bottom: 20px solid rgba(196,198,199,0.6);
 }
 
@@ -6640,6 +6667,7 @@ input[type="submit"] {
 
 /* Searchform */
 .search-field.form-control {
+	background-color: #dfe0e0;
 	background-color: rgba(196,198,199,0.3);
 	background-image: url('search-icon.png');
    	background-position: 13px center;

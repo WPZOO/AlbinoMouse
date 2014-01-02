@@ -3,6 +3,12 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.0.2
+- Removed the menu key from wp_nav_menu array
+* Changed the copyright info
++ Added HTML5 Shiv and Respond.js to support older versions of IE
++ Added fallback color to style.css and flat-social-buttons.css
+
 2.0.1
 + Added Romanian translation made by Van Testing
 * New thumbnail size

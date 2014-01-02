@@ -56,7 +56,8 @@
 .sd-button,
 .sd-button:link,
 .sd-button:visited {
-	background: rgba(196,198,199,0.3);
+	background-color: #eceded;
+	background-color: rgba(196,198,199,0.3);
 	color: #888;
 	display: block;
 	padding: 7px;

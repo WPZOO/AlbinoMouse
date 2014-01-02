@@ -132,7 +132,7 @@ function albinomouse_scripts() {
 	
 	wp_enqueue_style( 'albinomouse-style', get_stylesheet_uri() );
 	
-	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/scripts.js', array('jquery'), '', true );
+	wp_enqueue_script( 'albinomouse-scripts', get_template_directory_uri() . '/scripts.js', array('jquery'), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -260,9 +260,7 @@ function albinomouse_add_custom_styles() {
 	global $color_d8;
 	global $color_d10;
 	global $color_d12;
-	global $color_d15;
-	$header_bg = $options['header-background'];
-	$footer_cols = $options['footer-layout']; ?>
+	global $color_d15; ?>
 	
 	<style type="text/css">
 

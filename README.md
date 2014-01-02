@@ -25,6 +25,8 @@ AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMous
 ####There is even more great stuff included:####
 * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) by @tittem (GPL v2)
 * [FitVids](https://github.com/davatron5000/FitVids.js) by Chris Coyier and Paravel (WTFPL)
+* [HTML5 Shiv](https://github.com/aFarkas/html5shiv) by Alexander Farkas, Jonathan Neal and Paul Irish (MIT/GPL v2)
+* [Respond.js](https://github.com/scottjehl/Respond) by Scott Jehl (MIT)
 * [Glyphicons Halflings](http://glyphicons.com) by Jan Kovařík comes with Bootstrap 3 (same license)
 * Some icons from [Socialicous](https://github.com/shalinguyen/socialicious) by Shali Nguyen (MIT)
 * Some icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome/) by Dave Gandy (SIL OFL 1.1)

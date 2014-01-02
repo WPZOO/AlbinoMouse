@@ -20,6 +20,9 @@
 <?php endif ?>
 
 <?php wp_head(); ?>
+<!--[if lt IE 9]>
+    <script src="<?php echo esc_url( home_url( '/' ) );?>wp-content/themes/albinomouse/scripts-ie.js"></script>
+<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,7 +62,6 @@
 				<div class="collapse navbar-collapse navbar-ex1-collapse">			
 					
 				<?php wp_nav_menu( array(
-					'menu'				=> 'primary',
 					'theme_location'	=> 'primary',
 					'depth'				=> 2,
 					'container'			=> '',

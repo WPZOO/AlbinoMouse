@@ -239,6 +239,8 @@ function albinomouseoptions_options() {
 		'desc' =>	'<ul>
 						<li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> by @tittem (GPL v2)</li>
 						<li><a href="https://github.com/davatron5000/FitVids.js">FitVids]</a> by Chris Coyier and Paravel (WTFPL)</li>
+						<li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a> by Alexander Farkas, Jonathan Neal and Paul Irish (MIT/GPL v2)</li>
+						<li><a href="https://github.com/scottjehl/Respond">Respond.js</a> by Scott Jehl (MIT)
 						<li>Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 (same license)</li>
 						<li>Some icons from Socialicous by Shali Nguyen (MIT)</li>
 						<li>Some icons from Font Awesome by Dave Gandy (SIL OFL 1.1)</li>
