@@ -70,17 +70,17 @@
 			<div class="site-info">
 				<?php do_action( 'albinomouse_credits' ); ?>
 				
+				<?php if(!isset($options['show-love']) or $options['show-love'] == '1' ) : ?>
+
+					<a href="http://wordpress.org/themes/albinomouse">AlbinoMouse WordPress Theme</a>, 
+
+				<?php endif ?>	
+
 				<?php if(!isset($options['copyright-text']) or $options['copyright-text'] == '' ) { ?>
-						&#169; Copyright <?php echo date("Y"); ?> <?php echo(bloginfo( 'name' ));?>, <?php _e('responsible for the content of this website', 'albinomouse');
+						&#169; Copyright <?php echo date("Y"); ?> <?php echo(bloginfo( 'name' ));
 					} else {
 						echo $options['copyright-text']; 
 					} ?>
-					
-				<?php if(!isset($options['show-love']) or $options['show-love'] == '1' ) : ?>
-
-					<p>AlbinoMouse WordPress Theme, &#169; Copyright <?php echo date("Y"); ?> <a href="http://www.pixelstrol.ch/wp-themes/albinomouse" rel="designer">pixelstrol.ch</a> and distributed under the terms of the GNU GPL</p>
-
-				<?php endif ?>				
 
 			</div><!-- .site-info -->
 			
