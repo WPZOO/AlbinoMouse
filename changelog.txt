@@ -3,6 +3,9 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.0.4
+* Changed global word-break to word-wrap
+
 2.0.3
 * Changed the copyright info (theme guidelines)
 
