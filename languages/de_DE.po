@@ -8,55 +8,36 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: comments.php:36
-#: comments.php:56
+#: comments.php:36 comments.php:58
 msgid "Comment navigation"
 msgstr "Kommentar Navigation"
 
-#: comments.php:68
+#: comments.php:72
 msgid "Comments are closed."
 msgstr "Kommentare geschlossen."
 
-#: content-page.php:17
-#: content-single.php:46
-#: content.php:64
-#: image.php:55
+#: content-page.php:34 content-single.php:63 content.php:83 image.php:55
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: content.php:95
-#: content.php:102
+#: content.php:115 content.php:122
 msgid "Leave a comment"
 msgstr "Hinterlasse ein Kommentar"
 
-#: content.php:95
-#: content.php:102
+#: content.php:115 content.php:122
 msgid "1 Comment"
 msgstr "1 Kommentar"
 
-#: content.php:95
-#: content.php:102
+#: content.php:115 content.php:122
 msgid "% Comments"
 msgstr "% Kommentare"
 
-#: content.php:45
-#: content.php:58
+#: content-page.php:16 content-page.php:26 content-single.php:44
+#: content-single.php:55 content.php:46 content.php:59 content.php:75
 msgid "Permalink to %s"
 msgstr "Permalink zu %s"
 
-#: footer.php:83
-msgid "A Semantic Personal Publishing Platform"
-msgstr "A Semantic Personal Publishing Platform"
-
-#: footer.php:83
-msgid "Proudly powered by %s"
-msgstr "Proudly powered by %s"
-
-#: footer.php:85
-msgid "Theme: %1$s by %2$s."
-msgstr "Theme: %1$s von %2$s."
-
-#: functions.php:54
+#: functions.php:60
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
@@ -64,12 +45,8 @@ msgstr "Hauptmenü"
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: content-page.php:22
-#: content-single.php:88
-#: content.php:106
-#: image.php:59
-#: inc/template-tags.php:72
-#: inc/template-tags.php:91
+#: content-page.php:38 content-single.php:104 content.php:126 image.php:59
+#: inc/template-tags.php:72 inc/template-tags.php:91
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -93,8 +70,7 @@ msgstr "Dein Kommentar wird noch überprüft."
 msgid "Link and Footer Color"
 msgstr "Farbe für die Links und den Footer"
 
-#: inc/options/options-framework.php:141
-#: inc/options/options-framework.php:361
+#: inc/options/options-framework.php:141 inc/options/options-framework.php:361
 msgid "Theme Options"
 msgstr "Theme Optionen"
 
@@ -118,19 +94,19 @@ msgstr "Was du suchst kann leider nicht gefunden werden. Vielleicht kann dir das
 msgid "Search Results for: %s"
 msgstr "Suchresultat für: %s"
 
-#: functions.php:81
+#: functions.php:88
 msgid "Footer 1"
 msgstr "Footer 1"
 
-#: functions.php:91
+#: functions.php:98
 msgid "Footer 2"
 msgstr "Footer 2"
 
-#: functions.php:101
+#: functions.php:108
 msgid "Footer 3"
 msgstr "Footer 3"
 
-#: functions.php:111
+#: functions.php:118
 msgid "Footer 4"
 msgstr "Footer 4"
 
@@ -286,8 +262,7 @@ msgstr "Ändere den Hintergrund deiner Site."
 msgid "Title Font"
 msgstr "Titel Schriftart"
 
-#: options.php:69
-#: options.php:85
+#: options.php:69 options.php:85
 msgid "Choose your favorite google web font."
 msgstr "Wähle die passende Schrift (Google Web Fonts)."
 
@@ -303,11 +278,11 @@ msgstr "Favicon"
 msgid "Customize your website with your own Favicon."
 msgstr "Füge deiner Website ein Favicon hinzu."
 
-#: options.php:191
+#: options.php:211
 msgid "Custom Copyright Text"
 msgstr "Eigener Copyright Text"
 
-#: options.php:192
+#: options.php:212
 msgid "Change the default copyright text."
 msgstr "Ändere den Standard Copyright Text."
 
@@ -331,8 +306,7 @@ msgstr "Farbe auswählen"
 msgid "Upload your logo via the familiar media upload window. Press &#171;Use This Image&#187; to close the window. The Logo will now appear instead of the title of your website."
 msgstr "Lade dein Logo mithilfe dem bekanntem Datei-Uploader hoch. Drücke &#171;Use This Image&#187; um das Fenster wieder zu schliessen. Das Logo erscheint nun anstelle des Titels der Website."
 
-#: archive.php:56
-#: sidebar.php:24
+#: archive.php:56 sidebar.php:24
 msgid "Archives"
 msgstr "Archive"
 
@@ -348,11 +322,11 @@ msgstr "Header Hintergrund"
 msgid "Sidebar Layout"
 msgstr "Sidebar Layout"
 
-#: options.php:179
+#: options.php:199
 msgid "Footer Layout"
 msgstr "Footer Layout"
 
-#: options.php:180
+#: options.php:200
 msgid "How many widgets do you have to load into the footer?"
 msgstr "Wie viele Widgets nebeneinander möchtest du im Footer platzieren?"
 
@@ -364,11 +338,11 @@ msgstr "Suchfeld im Header"
 msgid "Display the search box in the header of your site."
 msgstr "Zeige das Suchformular im Header deiner Seite an."
 
-#: options.php:198
+#: options.php:218
 msgid "Show some Love!"
 msgstr "Show some Love!"
 
-#: options.php:199
+#: options.php:219
 msgid "Display a link to WordPress and the theme author."
 msgstr "Zeige ein Link zu WordPress und dem Theme Autor am Ende der Seite."
 
@@ -388,7 +362,7 @@ msgstr "Beitragsbilder"
 msgid "Choose the size of your post thumbnails."
 msgstr "Wähle die Grösse der Beitragsbilder"
 
-#: options.php:175
+#: options.php:195
 msgid "Footer"
 msgstr "Footer"
 
@@ -442,8 +416,7 @@ msgid "Posts published on %s"
 msgstr "Beiträge veröffentlicht am %s"
 
 #. albinomouse
-#: archive.php:50
-#: archive.php:53
+#: archive.php:50 archive.php:53
 msgid "Posts published in %s"
 msgstr "Beiträge veröffentlicht "
 
@@ -456,21 +429,17 @@ msgstr[0] "Eine Reaktion zu &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Reaktionen zu &ldquo;%2$s&rdquo;"
 
 #. albinomouse
-#: comments.php:37
-#: comments.php:57
+#: comments.php:38 comments.php:60
 msgid "&larr; Older Comments"
 msgstr "&larr; Ältere Kommentare"
 
 #. albinomouse
-#: comments.php:38
-#: comments.php:58
+#: comments.php:39 comments.php:61
 msgid "Newer Comments &rarr;"
 msgstr "Neuere Kommentare &rarr;"
 
 #. albinomouse
-#: content.php:62
-#: functions.php:444
-#: image.php:53
+#: content.php:81 functions.php:502 image.php:53
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
@@ -546,46 +515,39 @@ msgid "Choose one of the possible layout options."
 msgstr "Wähle aus einem der möglichen Layout Optionen."
 
 #. albinomouse
-#: options.php:207
+#: options.php:227
 msgid "Extend"
 msgstr "Erweitern"
 
 #. albinomouse
-#: options.php:211
+#: options.php:231
 msgid "Redesign Jetpacks social buttons (Flat Design)"
 msgstr "Redesign für Social Buttons der Jetpack Erweiterung (Flat Design)"
 
 #. albinomouse
-#: options.php:218
+#: options.php:239
 msgid "Recommended Plugin: Bootstrap Shortcodes"
 msgstr "Empfohlenes Plugin: Bootstrap Shortcodes"
 
 #. albinomouse
-#: options.php:219
-msgid "Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin <a href=\"http://wordpress.org/plugins/bootstrap-shortcodes/\">Bootstrap Shortcodes</a> you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js file (AlbinoMouse has already included)."
-msgstr "Nutze die Power von Bootstrap 3.0 welche in AlbinoMouse 2.0 integriert wurde. Mit dem Plugin <a href=\"http://wordpress.org/plugins/bootstrap-shortcodes/\">Bootstrap Shortcodes</a> kannst du ganz einfach <strong>das Grid System, Buttons, Notifications, Collapse und die Glyphicons</strong> nutzen.<br/>Nachdem du das Plugin installiert hast, gehe zu den Plugin Einstellungen und deaktiviere das Laden der Styles und Scripts (AlbinoMouse hat diese bereits integriert)."
-
-#. albinomouse
-#: searchform-header.php:13
-#: searchform.php:9
+#: searchform-header.php:9 searchform.php:9
 msgctxt "label"
 msgid "Search for:"
 msgstr "Suche nach:"
 
 #. albinomouse
-#: searchform-header.php:14
-#: searchform.php:10
+#: searchform-header.php:10 searchform.php:10
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Suchen &hellip;"
 
 #. albinomouse
-#: functions.php:72
+#: functions.php:79
 msgid "Sidebar"
 msgstr "Sidebar"
 
 #. default
-#: functions.php:456
+#: functions.php:516
 msgid "Please check your posts for shortcodes which were available in older versions of the theme AlbinoMouse. The theme guidelines do not allow shortcodes in themes anymore. <a href=\"%1$s\">Hide Notice</a>"
 msgstr "Bitte überprüfe deine Beiträge nach Shortcodes, welche in älteren AlbinoMouse Versionen verfügbar waren. Die Theme Guidelines erlauben die Verwendung von Shortcodes in Themes nicht mehr. <a href=\"%1$s\">Diese Meldung deaktivieren</a>"
 
@@ -623,14 +585,14 @@ msgstr "Beiträge mit dem Schlagwort %s"
 
 #. translators: used between list items, there is a space after the comma
 #. albinomouse
-#: content.php:78
+#: content.php:98
 msgctxt "category list"
 msgid "Posted in %1$s"
 msgstr "Veröffentlicht unter %1$s"
 
 #. translators: used between list items, there is a space after the comma
 #. albinomouse
-#: content.php:89
+#: content.php:109
 msgctxt "tag list"
 msgid "Tagged %1$s"
 msgstr "Schlagworte %1$s"
@@ -656,42 +618,36 @@ msgid "Newer posts"
 msgstr "Neuere Beiträge"
 
 #. albinomouse
-#: inc/template-tags.php:191
-msgctxt "1: date, 2: time"
-msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
-msgstr "<span class=\"posted-on\">Erschienen am %1$s</span><span class=\"byline\"> um %2$s</span>"
-
-#. albinomouse
 #: 404.php:19
 msgid "Oops, error 404!"
 msgstr "Uups, Error 404!"
 
 #. albinomouse
-#: options.php:212
+#: options.php:232
 msgid "Replace the styles of Jetpacks social sharing buttons. <strong>Obviously the plugin Jetpack must be installed as well as the module Sharing must be activated.</strong> This option will automatically deregister the original stylesheet."
 msgstr "Ersetze die Styles der Social Buttons der Jetpack Erweiterung. <strong>Natürlich muss das Jetpack Plugin installiert sowie das Modul Sharing aktiviert sein.</strong> Diese Option wird das originale Stylesheet automatisch deaktivieren."
 
 #. translators: used between list items, there is a space after the comma
 #. albinomouse
-#: content-single.php:64
+#: content-single.php:80
 msgctxt "2: tag list, 3: permalink"
 msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Dieser Beitrag wurde mit den Schlagworten %2$s markiert. Speichere den <a href=\"%3$s\" rel=\"bookmark\">Link</a>."
 
 #. albinomouse
-#: content-single.php:66
+#: content-single.php:82
 msgctxt "3: permalink"
 msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Speichere den <a href=\"%3$s\" rel=\"bookmark\">Link</a>."
 
 #. albinomouse
-#: content-single.php:72
+#: content-single.php:88
 msgctxt "1: category list, 2: tag list, 3: permalink"
 msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Dieser Beitrag wurde unter %1$s gespeichert und mit den Schlagworten %2$s markiert. Speichere den <a href=\"%3$s\" rel=\"bookmark\">Link</a>."
 
 #. albinomouse
-#: content-single.php:74
+#: content-single.php:90
 msgctxt "1: category list, 3: permalink"
 msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Dieser Beitrag wurde unter %1$s gespeichert. Speichere den <a href=\"%3$s\" rel=\"bookmark\">Link</a>."
@@ -706,4 +662,138 @@ msgstr "Melde einen Bug <a href=\"http://wordpress.org/support/theme/albinomouse
 msgctxt "1: date attribute, 2: date, 3: parent post link, 4: parent post title, 5: image link, 6: image width, 7: image height"
 msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> in <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Full size: <a href=\"%5$s\">%6$s pixels &times; %7$s pixels</a>"
 msgstr "Veröffentlicht <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> in <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Originalgrösse: <a href=\"%5$s\">%6$s Pixel &times; %7$s Pixel</a>"
+
+#: options.php:248
+msgid "Credits"
+msgstr "Credits"
+
+#: options.php:252
+msgid "AlbinoMouse is built on the following frameworks:"
+msgstr "AlbinoMouse auf folgende Frameworks aufgebaut:"
+
+#: options.php:254
+msgid "by Mark Otto and Jacob Thornton – MIT License"
+msgstr "von Mark Otto und Jacob Thornton – MIT Lizenz"
+
+#: options.php:255
+msgid "by Automattic"
+msgstr "von Automattic"
+
+#: options.php:256
+msgid "by Devin Price – GPL v2"
+msgstr "von Devin Price – GPL v2"
+
+#: options.php:261
+msgid "There is even more great stuff included:"
+msgstr "Es sind noch mehr tolle Dinge integriert:"
+
+#: options.php:263
+msgid "by @tittem – GPL v2"
+msgstr "von @tittem – GPL v2"
+
+#: options.php:264
+msgid "by Chris Coyier and Paravel – WTFPL"
+msgstr "von Chris Codier und Paravel – WTFPL"
+
+#: options.php:265
+msgid "by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2"
+msgstr "von Alexander Farkas, Jonathan Neal und Paul Irish – MIT/GPL v2"
+
+#: options.php:266
+msgid "by Scott Jehl – MIT"
+msgstr "von Scott Jehl – MIT"
+
+#: options.php:267
+msgid "Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license"
+msgstr "Glyphicons Halflings von Jan Kova&#345;ík kommt mit Bootstrap 3 – gleiche Lizenz"
+
+#: options.php:268
+msgid "Some icons from Socialicous by Shali Nguyen – MIT"
+msgstr "Einige Icons von Socialicous von Shali Nguyen – MIT"
+
+#: options.php:269
+msgid "Some icons from Font Awesome by Dave Gandy – SIL OFL 1.1"
+msgstr "Einige Icons von Font Awesome von Dave Handy – SIL OFL 1.1"
+
+#: options.php:274
+msgid "These guys make AlbinoMouse international:"
+msgstr "Diese Leute machen AlbinoMouse international:"
+
+#: options.php:276
+msgid "French translation by"
+msgstr "Französische Übersetzung von"
+
+#: options.php:277
+msgid "German translation by"
+msgstr "Deutsche Übersetzung von"
+
+#: options.php:278
+msgid "Polish translation by"
+msgstr "Polnische Übersetzung von"
+
+#: options.php:279
+msgid "Roumain translation by"
+msgstr "Rumänische Übersetzung von"
+
+#: options.php:280
+msgid "Spanish translation by"
+msgstr "Spanische Übersetzung von"
+
+#: options.php:242
+msgid "you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included)."
+msgstr "kannst du ganz einfach <strong>das Grid System, Buttons, Notifications, Collapse und die Glyphicons</strong> nutzen.<br/>Nachdem du das Plugin installiert hast, gehe zu den Plugin Einstellungen und deaktiviere das Laden der Styles und Scripts (AlbinoMouse hat diese bereits integriert)."
+
+#: options.php:240
+msgid "Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin"
+msgstr "Nutze die Power von Bootstrap 3.0 welche in AlbinoMouse 2.0 integriert wurde. Mit dem Plugin"
+
+#: functions.php:61
+msgid "Secondary Menu"
+msgstr "Zweite Menünavigation"
+
+#: options.php:173
+msgid "All content or excerpt on blog homepage and archives"
+msgstr "Ganzer Inhalt oder Auszug (Excerpt) auf Blog-Startseite und Archivseiten"
+
+#: options.php:174
+msgid "You might want the excerpt on blog homepage and the archive pages. With the first option you still can use the read more link."
+msgstr "Vielleicht möchtest du den Auszug auf der Blog-Startseite und den Archivseiten anzeigen. Mit der ersten Option kannst du den Beitrag mit dem Weiterlesen-Link immer noch kürzen."
+
+#: options.php:179
+msgid "Show all content on blog homepage and archive pages."
+msgstr "Zeige den ganzen Beitragsinhalt auf der Blog-Startseite und den Archivseiten."
+
+#: options.php:180
+msgid "Show post excerpt on blog homepage and archive pages."
+msgstr "Den Auszug (Excerpt) auf der Blog-Startseite und den Archivseiten verwenden."
+
+#: inc/wp_bootstrap_navwalker.php:197
+msgid "Add a menu"
+msgstr "Ein Menü hinzufügen"
+
+#: inc/template-tags.php:191
+msgctxt "publication date"
+msgid "Posted on"
+msgstr "Veröffentlicht am"
+
+#: inc/template-tags.php:191
+msgctxt "author"
+msgid "by"
+msgstr "von"
+
+#: options.php:183
+msgid "Breadcrumbs on default page template"
+msgstr "Breadcrumbs (Brotkrümmel) Navigation im Standard-Seitentemplate"
+
+#: options.php:184
+msgid "The default page template you probably use the most. Do you want a breadcrumbs navigation on this pages?"
+msgstr "Das Standard-Seitentemplate benutzt du wahrscheinlich am meisten. Möchtest du die Breadcrumbs (Brotkrümmel) Navigation auf diesen Seiten?"
+
+#: options.php:189
+msgid "Yes"
+msgstr "Ja"
+
+#: options.php:190
+msgid "No"
+msgstr "Nein"
 

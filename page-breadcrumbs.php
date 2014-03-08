@@ -1,12 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
+ * Template Name: Breadcrumbs
  * @package AlbinoMouse
  */
 
@@ -27,12 +21,10 @@ get_header(); ?>
 <?php endif; ?>
 
 		<main id="main" class="site-main" role="main">
-
-			<?php if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : ?>		
-				<div id="breadcrumbs">
-					<?php echo albinomouse_breadcrumb(); ?>
-				</div>
-			<?php endif; ?>
+		
+			<div id="breadcrumbs">
+				<?php echo albinomouse_breadcrumb(); ?>
+			</div>
 			
 			<?php while ( have_posts() ) : the_post(); ?>
 

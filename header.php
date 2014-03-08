@@ -38,8 +38,16 @@
 				<?php endif; ?>
 			</a></h1>
 			<?php if(!isset($options['site-description']) or $options['site-description'] == true ) : ?>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<?php endif; ?>
+			<nav class="secondary-menu hidden-sm hidden-xs pull-right">
+				<?php wp_nav_menu( array(
+					'theme_location'	=> 'secondary',
+					'depth'				=> 1,
+					'container'			=> '',
+					'fallback_cb'		=> false ));
+				?>
+			</nav>
 		</div>
 
 		<nav class="navbar navbar-default" role="navigation">
@@ -76,11 +84,17 @@
 					endif; 
 				?>
 							   
-				</div><!-- .navbar-collapse -->
-								
+				</div><!-- .navbar-collapse -->				
 			</div><!-- .container -->
-		</nav> 
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
+	<nav class="secondary-menu visible-sm visible-xs">
+	<?php wp_nav_menu( array(
+		'theme_location'	=> 'secondary',
+		'depth'				=> 1,
+		'container'			=> ''));
+	?>
+	</nav>
 	<div class="row">

@@ -58,6 +58,7 @@ function albinomouse_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'albinomouse' ),
+		'secondary' => __( 'Secondary Menu', 'albinomouse' )
 	) );
 
 	/**
@@ -77,7 +78,7 @@ function albinomouse_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'albinomouse' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="sidebar-widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
@@ -86,7 +87,7 @@ function albinomouse_widgets_init() {
 		register_sidebar( array(
 			'name' => __( 'Footer 1', 'albinomouse' ),
 			'id' => 'footer-1',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
@@ -96,7 +97,7 @@ function albinomouse_widgets_init() {
 		register_sidebar( array(
 			'name' => __( 'Footer 2', 'albinomouse' ),
 			'id' => 'footer-2',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
@@ -106,7 +107,7 @@ function albinomouse_widgets_init() {
 		register_sidebar( array(
 			'name' => __( 'Footer 3', 'albinomouse' ),
 			'id' => 'footer-3',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
@@ -116,7 +117,7 @@ function albinomouse_widgets_init() {
 		register_sidebar( array(
 			'name' => __( 'Footer 4', 'albinomouse' ),
 			'id' => 'footer-4',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
@@ -187,13 +188,13 @@ global $options;
 		wp_enqueue_style( 'DroidSerif', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
 	}
 	if ($options['title_font'] == 'Open Sans' || $options['general_font'] == 'Open Sans') {
-		wp_enqueue_style( 'OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );
+		wp_enqueue_style( 'OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' );
 	}
 	if ($options['title_font'] == 'Source Sans Pro' || $options['general_font'] == 'Source Sans Pro') {
-		wp_enqueue_style( 'SourceSansPro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' );
+		wp_enqueue_style( 'SourceSansPro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic' );
 	}	
 	if ($options['title_font'] == 'Ubuntu' || $options['general_font'] == 'Ubuntu') {
-		wp_enqueue_style( 'Ubuntu', 'http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' );
+		wp_enqueue_style( 'Ubuntu', 'http://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic' );
 	}
 	if ($options['title_font'] == 'Yanone Kaffeesatz') {
 		wp_enqueue_style( 'YanoneKaffeesatz', 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' );
@@ -322,11 +323,6 @@ function albinomouse_add_custom_styles() {
 	.panel-primary > .panel-footer + .panel-collapse .panel-body {
 		border-bottom-color: <?php echo $originalColor ?>;
 	}
-	
-	.nav .caret {
-		border-top-color: <?php echo $originalColor ?>;
-		border-bottom-color: <?php echo $originalColor ?>;
-	}
 			
 	a,
 	.text-primary,
@@ -410,43 +406,51 @@ function albinomouse_add_custom_styles() {
 		
 	/*--- Typography ---*/
 	<?php if ($options['title_font'] == 'Anton') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Anton', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Anton', sans-serif; } <?php
 	}
 	if ($options['title_font'] == 'Bitter') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Bitter', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Bitter', sans-serif; } <?php
 	}
 	if ($options['title_font'] == 'Droid Sans') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Droid Sans', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Droid Sans', sans-serif; }
+	h1, h2, h4, h6 { font-weight: 700; }
+	h3, h5 { font-weight: 300; } <?php
 	}
 	if ($options['general_font'] == 'Droid Sans') { ?>
-	body, button, input, select, textarea {	font-family: 'Droid Sans', sans-serif; } <?php
+	body, button, input, select, textarea {	font-family: 'Droid Sans', sans-serif; font-weight: 400;} <?php
 	}
 	if ($options['title_font'] == 'Droid Serif') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Droid Serif', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Droid Serif', sans-serif; font-weight: 400; } <?php
 	}
 	if ($options['general_font'] == 'Droid Serif') { ?>
-	body, button, input, select, textarea {	font-family: 'Droid Serif', sans-serif; } <?php
+	body, button, input, select, textarea {	font-family: 'Droid Serif', sans-serif; font-weight: 400; } <?php
 	}
 	if ($options['title_font'] == 'Open Sans') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Open Sans', sans-serif; }
+	h1, h2, h4, h6 { font-weight: 700; }
+	h3, h5 { font-weight: 300; } <?php
 	}
 	if ($options['general_font'] == 'Open Sans') { ?>
-	body, button, input, select, textarea {	font-family: 'Open Sans', sans-serif; } <?php
+	body, button, input, select, textarea {	font-family: 'Open Sans', sans-serif; font-weight: 300;} <?php
 	}
 	if ($options['title_font'] == 'Source Sans Pro') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Source Sans Pro', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Source Sans Pro', sans-serif; }
+	h1, h2, h4, h6 { font-weight: 700; }
+	h3, h5 { font-weight: 300; } <?php
 	}
 	if ($options['general_font'] == 'Source Sans Pro') { ?>
-	body, button, input, select, textarea {	font-family: 'Source Sans Pro', sans-serif; } <?php
+	body, button, input, select, textarea {	font-family: 'Source Sans Pro', sans-serif; font-weight: 300;} <?php
 	}
 	if ($options['title_font'] == 'Ubuntu') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu', sans-serif; <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Ubuntu', sans-serif; font-weight: 700; }
+	h1, h2, h4, h6 { font-weight: 700; }
+	h3, h5 { font-weight: 300; } <?php
 	}
 	if ($options['general_font'] == 'Ubuntu') { ?>
-	body, button, input, select, textarea {	font-family: 'Ubuntu', sans-serif; } <?php
+	body, button, input, select, textarea {	font-family: 'Ubuntu', sans-serif; font-weight: 300; } <?php
 	}
 	if ($options['title_font'] == 'Yanone Kaffeesatz') { ?>
-	h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; } <?php
+	h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Yanone Kaffeesatz', sans-serif; } <?php
 	} ?>
 	
 	</style>
@@ -484,15 +488,20 @@ function albinomouse_body_class_footer( $existing_classes ) {
 add_filter( 'body_class', 'albinomouse_body_class_footer' );
 
 
-/** 
- * Customize read more link
- */
-function excerpt_readmore($more) {
-	global $post;
-        return '... <p><a class="more-link" href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
+function new_excerpt_more( $more ) {
+	return '...';
 }
-add_filter('excerpt_more', 'excerpt_readmore');
+add_filter('excerpt_more', 'new_excerpt_more');
 
+/** 
+ * Read more link on all excerpts
+ */
+
+function excerpt_read_more_link($output) {
+ global $post;
+ return $output . '<p><a href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
+}
+add_filter('the_excerpt', 'excerpt_read_more_link');
 
 /**
  * Display a notice that can be dismissed 

@@ -3,6 +3,18 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.1.
++ Bootstrap 3.1 update and minified styles
++ New secondary menu navigation
++ New option to choose between the_content and the_excerpt for homepage and archives
++ New option breadcrumbs on default page template
+* Translated credits page
+* Adjust title font-size and margin
+* Changed widget title to h3 in sidebar.php
+* Same font-family like headings for .navbar-brand
+* Header search form doesn't cause line break on focus
+* More space on the right of glyphicon
+
 2.0.4
 * Changed global word-break to word-wrap
 

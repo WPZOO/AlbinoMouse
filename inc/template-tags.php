@@ -188,7 +188,7 @@ function albinomouse_posted_on() {
 	$archive_month = get_the_time('m'); 
 	$archive_day   = get_the_time('d');
 	
-	printf( _x( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', '1: date, 2: time', 'albinomouse' ),
+	printf( '<span class="posted-on">' . _x('Posted on', 'publication date', 'albinomouse') . ' %1$s </span><span class="byline">' . _x('by', 'author', 'albinomouse') . ' %2$s</span>', 
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
  			esc_url( get_day_link( $archive_year, $archive_month, $archive_day ) ),
 			$time_string

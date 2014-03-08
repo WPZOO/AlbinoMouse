@@ -42,29 +42,49 @@ $options = get_option( 'albinomouse' );
 		<?php endif; ?>
 		
 		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
-			<div class="post-thumbnail-banner"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+			<div class="post-thumbnail-banner">
+				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
-			</a></div>
+				</a>
+			</div><!-- .post-thumbnail-banner -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+
+	<?php if ( is_search() or $options['content-excerpt'] == 'excerpt') : // Only display Excerpts for Search ?>
 	<div class="entry-summary clearfix">
+
+		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'thumbnail' ) : ?>
+			<p class="post-thumbnail-thumbnail">
+				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+			<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
+				</a>
+			</p><!-- .post-thumbnail-thumbnail -->
+		<?php endif; ?>
+
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
-	<?php else : ?>
+	<?php endif; ?>
+	
+	
+	<?php if (!isset($options['content-excerpt']) or $options['content-excerpt'] == 'content') : ?>
 	<div class="entry-content clearfix">
+
 		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'thumbnail' ) : ?>
-			<p class="post-thumbnail-thumbnail"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+			<p class="post-thumbnail-thumbnail">
+				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
-			</a></p>
+				</a>
+			</p><!-- .post-thumbnail-thumbnail -->
 		<?php endif; ?>
+
 		<?php the_content( '<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( 'Continue reading', 'albinomouse' ) ); ?>
 		<?php wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'albinomouse' ),
 				'after'  => '</div>')); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
+		
 
 	<footer class="entry-meta">
 		<small>

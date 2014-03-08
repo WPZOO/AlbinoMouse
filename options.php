@@ -169,6 +169,26 @@ function albinomouseoptions_options() {
 			'2c-ls' => $imagepath . 'sidebar-left-small.png',
 			'1col' => $imagepath . 'no-sidebar.png'));
 
+	$options[] = array(
+		'name' => __('All content or excerpt on blog homepage and archives', 'albinomouse'),
+		'desc' => __('You might want the excerpt on blog homepage and the archive pages. With the first option you still can use the read more link.', 'albinomouse'),
+		'id' => 'content-excerpt',
+		'std' => 'content',
+		'type' => 'radio',
+		'options' => array(
+			'content' => __('Show all content on blog homepage and archive pages.', 'albinomouse'),
+			'excerpt' => __('Show post excerpt on blog homepage and archive pages.', 'albinomouse')));
+
+	$options[] = array(
+		'name' => __('Breadcrumbs on default page template', 'albinomouse'),
+		'desc' => __('The default page template you probably use the most. Do you want a breadcrumbs navigation on this pages?', 'albinomouse'),
+		'id' => 'page-breadcrumbs',
+		'std' => 'yes',
+		'type' => 'radio',
+		'options' => array(
+			'yes' => __('Yes', 'albinomouse'),
+			'no' => __('No', 'albinomouse')));
+
 	/*-----------------------------------------------*/	
 
 	$options[] = array(
@@ -213,48 +233,51 @@ function albinomouseoptions_options() {
 		'id' => 'flat-social-btn',
 		'std' => '0',
 		'type' => 'checkbox');
-		
+	
+	$siteurl = get_site_url();	
 	$options[] = array(
 		'name' => __('Recommended Plugin: Bootstrap Shortcodes', 'albinomouse'),
-		'desc' => __('Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin <a href="http://wordpress.org/plugins/bootstrap-shortcodes/">Bootstrap Shortcodes</a> you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included).', 'albinomouse'),
+		'desc' => __('Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin', 'albinomouse') . 
+		' <a href="' . get_site_url() . '/wp-admin/plugin-install.php?tab=search&s=Bootstrap+Shortcodes">Bootstrap Shortcodes</a> ' .
+		__('you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included).', 'albinomouse'),
 		'type' => 'info');
 
 	/*-----------------------------------------------*/	
 
 	$options[] = array(
-		'name' => 'Credits',
+		'name' => __('Credits', 'albinomouse'),
 		'type' => 'heading');
 		
 	$options[] = array(
-		'name' =>	'AlbinoMouse is built on the following frameworks:',
+		'name' =>	__('AlbinoMouse is built on the following frameworks:', 'albinomouse'),
 		'desc' =>	'<ul>
-						<li><a href="https://github.com/twbs/bootstrap">Bootstrap 3</a> by Mark Otto and Jacob Thornton (Apache License)</li>
-						<li>The starter theme <a href="https://github.com/Automattic/_s/">underscores</a> by Automattic</li>
-						<li><a href="http://wptheming.com/options-framework-theme/">Options Framework Theme</a> by Devin Price (GPL v2)</li>
+						<li><a href="https://github.com/twbs/bootstrap">Bootstrap 3</a> ' . __('by Mark Otto and Jacob Thornton – MIT License', 'albinomouse') . '</li>
+						<li>The starter theme <a href="https://github.com/Automattic/_s/">underscores</a> ' . __('by Automattic', 'albinomouse') . ' </li>
+						<li><a href="http://wptheming.com/options-framework-theme/">Options Framework Theme</a> ' . __('by Devin Price – GPL v2', 'albinomouse') . '</li>
 					</ul>',
 		'type' =>	'info');
 
 	$options[] = array(
-		'name' =>	'There is even more great stuff included:',
+		'name' =>	__('There is even more great stuff included:', 'albinomouse'),
 		'desc' =>	'<ul>
-						<li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> by @tittem (GPL v2)</li>
-						<li><a href="https://github.com/davatron5000/FitVids.js">FitVids]</a> by Chris Coyier and Paravel (WTFPL)</li>
-						<li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a> by Alexander Farkas, Jonathan Neal and Paul Irish (MIT/GPL v2)</li>
-						<li><a href="https://github.com/scottjehl/Respond">Respond.js</a> by Scott Jehl (MIT)
-						<li>Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 (same license)</li>
-						<li>Some icons from Socialicous by Shali Nguyen (MIT)</li>
-						<li>Some icons from Font Awesome by Dave Gandy (SIL OFL 1.1)</li>
+						<li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> ' . __('by @tittem – GPL v2', 'albinomouse') . '</li>
+						<li><a href="https://github.com/davatron5000/FitVids.js">FitVids]</a> ' . __('by Chris Coyier and Paravel – WTFPL', 'albinomouse') . '</li>
+						<li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a> ' . __('by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2', 'albinomouse') . '</li>
+						<li><a href="https://github.com/scottjehl/Respond">Respond.js</a> ' . __('by Scott Jehl – MIT', 'albinomouse') . '</li>
+						<li>' . __('Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license', 'albinomouse') . '</li>
+						<li>' . __('Some icons from Socialicous by Shali Nguyen – MIT', 'albinomouse') . '</li>
+						<li>' . __('Some icons from Font Awesome by Dave Gandy – SIL OFL 1.1', 'albinomouse') . '</li>
 					</ul>',
 		'type' =>	'info');
 
 	$options[] = array(
-		'name' =>	'These guys make AlbinoMouse international:',
+		'name' =>	__('These guys make AlbinoMouse international:', 'albinomouse'),
 		'desc' =>	'<ul>
-						<li>French translation by <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
-						<li>German translation by <a href="http://pixelstrol.ch/">myself, Stefan Brechbühl</a></li>
-						<li>Polish translation by <a href="http://blog.13mhz.kapa.pl/">Micha&#322; Hunger</a></li>
-						<li>Roumain translation by Van Testing</li>
-						<li>Spanish translation by <a href="http://pablolaguna.es/">Pablo Laguna</a></li>
+						<li>' . __('French translation by', 'albinomouse') . ' <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
+						<li>' . __('German translation by', 'albinomouse') . ' <a href="http://pixelstrol.ch/">myself, Stefan Brechbühl</a></li>
+						<li>' . __('Polish translation by', 'albinomouse') . ' <a href="http://blog.13mhz.kapa.pl/">Micha&#322; Hunger</a></li>
+						<li>' . __('Roumain translation by', 'albinomouse') . ' Van Testing</li>
+						<li>' . __('Spanish translation by', 'albinomouse') . ' <a href="http://pablolaguna.es/">Pablo Laguna</a></li>
 					</ul>',
 		'type' =>	'info');
 	
