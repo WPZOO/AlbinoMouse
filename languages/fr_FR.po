@@ -278,11 +278,11 @@ msgstr "Favicon"
 msgid "Customize your website with your own Favicon."
 msgstr "Personnalisez votre site avec votre propre favicon"
 
-#: options.php:201
+#: options.php:211
 msgid "Custom Copyright Text"
 msgstr "Texte de copyright/copyleft personnalisé"
 
-#: options.php:202
+#: options.php:212
 msgid "Change the default copyright text."
 msgstr "Changer les textes du copyright/copyleft par défaut."
 
@@ -322,11 +322,11 @@ msgstr "Fond de l'en-tête"
 msgid "Sidebar Layout"
 msgstr "Disposition de la barre latérale"
 
-#: options.php:189
+#: options.php:199
 msgid "Footer Layout"
 msgstr "Disposition du pied de page."
 
-#: options.php:190
+#: options.php:200
 msgid "How many widgets do you have to load into the footer?"
 msgstr "Combien de widgets souhaitez-vous utiliser dans le pied de page?"
 
@@ -338,11 +338,11 @@ msgstr "Champ de recherche dans l'en-tête"
 msgid "Display the search box in the header of your site."
 msgstr "Afficher le champ de recherche dans l'en-tête de votre site."
 
-#: options.php:208
+#: options.php:218
 msgid "Show some Love!"
 msgstr "Afficher votre soutien!"
 
-#: options.php:209
+#: options.php:219
 msgid "Display a link to WordPress and the theme author."
 msgstr "Montrer les liens vers WordPress et l'auteur du thème."
 
@@ -362,7 +362,7 @@ msgstr "Vignettes de l'article"
 msgid "Choose the size of your post thumbnails."
 msgstr "Choisir la taille des vignettes de votre article."
 
-#: options.php:185
+#: options.php:195
 msgid "Footer"
 msgstr "Pied de page"
 
@@ -515,17 +515,17 @@ msgid "Choose one of the possible layout options."
 msgstr "Choisir une des options d'agencement."
 
 #. albinomouse
-#: options.php:217
+#: options.php:227
 msgid "Extend"
 msgstr "Extensions"
 
 #. albinomouse
-#: options.php:221
+#: options.php:231
 msgid "Redesign Jetpacks social buttons (Flat Design)"
 msgstr "Changer les styles des boutons de partage social du Jetpack (Flat Design)"
 
 #. albinomouse
-#: options.php:229
+#: options.php:239
 msgid "Recommended Plugin: Bootstrap Shortcodes"
 msgstr "Plugin recommandé: Bootstrap Shortcodes"
 
@@ -623,7 +623,7 @@ msgid "Oops, error 404!"
 msgstr "Oups, erreur 404!"
 
 #. albinomouse
-#: options.php:222
+#: options.php:232
 msgid "Replace the styles of Jetpacks social sharing buttons. <strong>Obviously the plugin Jetpack must be installed as well as the module Sharing must be activated.</strong> This option will automatically deregister the original stylesheet."
 msgstr "Appliquer le style des boutons de partage social du Jetpack. <strong>Le plugin Jetpack doit être installé et le module de partage social activé.</ strong> Cette option permet d'adapter automatiquement la feuille de style d'origine."
 
@@ -663,121 +663,137 @@ msgctxt "1: date attribute, 2: date, 3: parent post link, 4: parent post title, 
 msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> in <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Full size: <a href=\"%5$s\">%6$s pixels &times; %7$s pixels</a>"
 msgstr "Publié le <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> dans <a href=\"%3$s\" rel=\"gallery\">%4$s</a> | Taille réelle: <a href=\"%5$s\">%6$s pixels &times; %7$s pixels</a>"
 
-#: options.php:238
+#: options.php:248
 msgid "Credits"
 msgstr "Remerciements"
 
-#: options.php:242
+#: options.php:252
 msgid "AlbinoMouse is built on the following frameworks:"
 msgstr "AlbinoMouse repose sur les frameworks suivants:"
 
-#: options.php:244
+#: options.php:254
 msgid "by Mark Otto and Jacob Thornton – MIT License"
 msgstr "par Mark Otto and Jacob Thornton – Licence MIT"
 
-#: options.php:245
+#: options.php:255
 msgid "by Automattic"
 msgstr "par Automatic"
 
-#: options.php:246
+#: options.php:256
 msgid "by Devin Price – GPL v2"
 msgstr "par Devin Price – GPL v2"
 
-#: options.php:251
+#: options.php:261
 msgid "There is even more great stuff included:"
-msgstr "Autres chouettes fonctionnalités inclues:"
+msgstr "Autres chouettes fonctionnalités incluses:"
 
-#: options.php:253
+#: options.php:263
 msgid "by @tittem – GPL v2"
 msgstr "par @tittem – GPL v2"
 
-#: options.php:254
+#: options.php:264
 msgid "by Chris Coyier and Paravel – WTFPL"
 msgstr "par Chris Coyier and Paravel – WTFPL"
 
-#: options.php:255
+#: options.php:265
 msgid "by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2"
 msgstr "par Alexander Farkas, Jonathan Neal et Paul Irish – MIT/GPL v2"
 
-#: options.php:256
+#: options.php:266
 msgid "by Scott Jehl – MIT"
 msgstr "par Scott Jehl – MIT"
 
-#: options.php:257
+#: options.php:267
 msgid "Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license"
 msgstr "Glyphicons Halflings de Jan Kova&#345;ík est inclus dans Bootstrap 3 – licence identique"
 
-#: options.php:258
+#: options.php:268
 msgid "Some icons from Socialicous by Shali Nguyen – MIT"
 msgstr "Quelques icônes de Socialicous de Shali Nguyen – MIT"
 
-#: options.php:259
+#: options.php:269
 msgid "Some icons from Font Awesome by Dave Gandy – SIL OFL 1.1"
 msgstr "Quelques icônes de Font Awesome de Dave Gandy – SIL OFL 1.1"
 
-#: options.php:264
+#: options.php:274
 msgid "These guys make AlbinoMouse international:"
 msgstr "Ces personnes ont rendu AlbinoMouse international:"
 
-#: options.php:266
+#: options.php:276
 msgid "French translation by"
 msgstr "Traduction en français par"
 
-#: options.php:267
+#: options.php:277
 msgid "German translation by"
 msgstr "Traduction en allemand par"
 
-#: options.php:268
+#: options.php:278
 msgid "Polish translation by"
 msgstr "Traduction en polonais par"
 
-#: options.php:269
+#: options.php:279
 msgid "Roumain translation by"
 msgstr "Traduction en roumain par"
 
-#: options.php:270
+#: options.php:280
 msgid "Spanish translation by"
 msgstr "Traduction en espagnol par"
 
-#: options.php:232
+#: options.php:242
 msgid "you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included)."
 msgstr "vous allez pouvoir insérer dans vos pages et articles <strong>des grilles, les bulles de notifications, les boîtes glissantes et les glyphicons</strong> très facilement.<br/> Une fois que vous avez installé ce plugin, allez dans les paramètres et désactivez le chargement des CSS et fichiers JS (AlbinoMouse les inclus déjà par défaut)."
 
-#: options.php:230
+#: options.php:240
 msgid "Use the power of Bootstrap 3.0 which is implemented in AlbinoMouse 2.0. With the plugin"
 msgstr "Exploitez les fonctionnalités de Bootstrap 3.0 implémentées dans AlbinoMouse 2.0. Avec le plugin"
 
 #: functions.php:61
 msgid "Secondary Menu"
-msgstr ""
+msgstr "Menu secondaire"
 
 #: options.php:173
 msgid "All content or excerpt on blog homepage and archives"
-msgstr ""
+msgstr "Afficher le contenu intégralement ou seulement les résumés sur ​​la page d'accueil et les pages d'archives"
 
 #: options.php:174
 msgid "You might want the excerpt on blog homepage and the archive pages. With the first option you still can use the read more link."
-msgstr ""
+msgstr "Vous pourriez souhaiter que seuls les résumés apparaissent sur la page d'accueil et les pages d'archives.Avec la première option vous pourrez toujours utiliser les liens \"lire la suite\"."
 
 #: options.php:179
 msgid "Show all content on blog homepage and archive pages."
-msgstr ""
+msgstr "Afficher le contenu intégralement sur la page d'accueil du blog et les pages d'archives."
 
 #: options.php:180
 msgid "Show post excerpt on blog homepage and archive pages."
-msgstr ""
+msgstr "Afficher uniquement les résumés sur la page d'accueil du blog et les pages d'archives."
 
 #: inc/wp_bootstrap_navwalker.php:197
 msgid "Add a menu"
-msgstr ""
+msgstr "Ajouter un menu"
 
 #: inc/template-tags.php:191
 msgctxt "publication date"
 msgid "Posted on"
-msgstr ""
+msgstr "Publié le"
 
 #: inc/template-tags.php:191
 msgctxt "author"
 msgid "by"
-msgstr ""
+msgstr "par"
+
+#: options.php:183
+msgid "Breadcrumbs on default page template"
+msgstr "Intégrer le fil d'Ariane par défaut dans le template des pages"
+
+#: options.php:184
+msgid "The default page template you probably use the most. Do you want a breadcrumbs navigation on this pages?"
+msgstr "Le template par défaut des pages est probablement celui que vous utilisez le plus. Souhaitez-vous que le fil d'Ariane apparaissent sur ces pages?"
+
+#: options.php:189
+msgid "Yes"
+msgstr "Oui"
+
+#: options.php:190
+msgid "No"
+msgstr "Non"
 
