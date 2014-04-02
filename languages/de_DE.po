@@ -495,11 +495,6 @@ msgid "Left"
 msgstr "Links"
 
 #. albinomouse
-#: options.php:127
-msgid "Center"
-msgstr "Zentriert"
-
-#. albinomouse
 #: options.php:156
 msgid "Content thumbnail (floated). See general settings."
 msgstr "Inhalt-Artikelbild (Text wird umflossen). Mehr dazu in den Standardeinstellungen."
@@ -796,4 +791,8 @@ msgstr "Ja"
 #: options.php:190
 msgid "No"
 msgstr "Nein"
+
+#: options.php:127
+msgid "Center (not recommend if you use the secondary menu)"
+msgstr "Zentriert (nicht empfohlen wenn die zweite Menünavigation benötigt wird)"
 
