@@ -252,6 +252,10 @@ a:focus {
 	border-top-color: #414141;
 	border-bottom-color: #414141;
 }
+.nav .open .caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
 
 @media screen and (max-width: 767px) {
 	#masthead .navbar {
@@ -403,6 +407,11 @@ h1.entry-title {
 		left: -50px;
 		padding-top: 10px;
 		text-align: left;
+	}
+}
+@media screen and (min-width: 1250px) {	
+	.post .entry-header {
+		left: -50px;		
 	}
 }
 .post-thumbnail-banner {

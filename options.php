@@ -124,7 +124,7 @@ function albinomouseoptions_options() {
 		'type' => 'radio',
 		'options' => array(
 			'left' => __('Left', 'albinomouse'),
-			'center' => __('Center', 'albinomouse')));
+			'center' => __('Center (not recommend if you use the secondary menu)', 'albinomouse')));
 
 	$options[] = array(
 		'name' => __('Description of your Site', 'albinomouse'),
@@ -274,7 +274,7 @@ function albinomouseoptions_options() {
 		'name' =>	__('These guys make AlbinoMouse international:', 'albinomouse'),
 		'desc' =>	'<ul>
 						<li>' . __('French translation by', 'albinomouse') . ' <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
-						<li>' . __('German translation by', 'albinomouse') . ' <a href="http://pixelstrol.ch/">myself, Stefan Brechbühl</a></li>
+						<li>' . __('German translation by', 'albinomouse') . ' <a href="http://pixelstrol.ch/">Stefan Brechbühl</a></li>
 						<li>' . __('Polish translation by', 'albinomouse') . ' <a href="http://blog.13mhz.kapa.pl/">Micha&#322; Hunger</a></li>
 						<li>' . __('Roumain translation by', 'albinomouse') . ' Van Testing</li>
 						<li>' . __('Spanish translation by', 'albinomouse') . ' <a href="http://pablolaguna.es/">Pablo Laguna</a></li>

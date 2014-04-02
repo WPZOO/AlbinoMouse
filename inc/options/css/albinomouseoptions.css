@@ -341,6 +341,12 @@ h4.options-sidebar {
 	float:left;
 	cursor:pointer;
 }
+#albinomouseoptions input[type=radio],
+#albinomouseoptions input[type=checkbox] {
+	margin-right: 8px;
+	margin-top: 1px;
+}
+
 
 /* Bottom Section */
 
