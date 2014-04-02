@@ -344,7 +344,7 @@ msgstr "Afficher votre soutien!"
 
 #: options.php:219
 msgid "Display a link to WordPress and the theme author."
-msgstr "Montrer les liens vers WordPress et l'auteur du thème."
+msgstr "Afficher un lien vers WordPress et l'auteur du thème."
 
 #: options.php:43
 msgid "Global"
@@ -495,11 +495,6 @@ msgid "Left"
 msgstr "Gauche"
 
 #. albinomouse
-#: options.php:127
-msgid "Center"
-msgstr "Centre"
-
-#. albinomouse
 #: options.php:156
 msgid "Content thumbnail (floated). See general settings."
 msgstr "Vignettes de contenu (flottant). Voir les paramètres généraux."
@@ -632,25 +627,25 @@ msgstr "Appliquer le style des boutons de partage social du Jetpack. <strong>Le 
 #: content-single.php:80
 msgctxt "2: tag list, 3: permalink"
 msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Mot(s)-clé(s): %2$s. Sauvegarder le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
+msgstr "Mot(s)-clé(s): %2$s. Enregistrer le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
 
 #. albinomouse
 #: content-single.php:82
 msgctxt "3: permalink"
 msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Sauvegarder le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
+msgstr "Enregistrer le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
 
 #. albinomouse
 #: content-single.php:88
 msgctxt "1: category list, 2: tag list, 3: permalink"
 msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Cet article a été publié dans %1$s avec le(s) mot(s)-clé(s) %2$s. Sauvegarder le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
+msgstr "Cet article a été publié dans %1$s avec le(s) mot(s)-clé(s) %2$s. Enregistrer le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
 
 #. albinomouse
 #: content-single.php:90
 msgctxt "1: category list, 3: permalink"
 msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Cet article a été publié dans %1$s. Sauvegarder le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
+msgstr "Cet article a été publié dans %1$s. Enregistrer le <a href=\"%3$s\" rel=\"bookmark\">lien permanent</a>."
 
 #. albinomouse
 #: inc/options/options-interface.php:440
@@ -757,7 +752,7 @@ msgstr "Afficher le contenu intégralement ou seulement les résumés sur ​​
 
 #: options.php:174
 msgid "You might want the excerpt on blog homepage and the archive pages. With the first option you still can use the read more link."
-msgstr "Vous pourriez souhaiter que seuls les résumés apparaissent sur la page d'accueil et les pages d'archives.Avec la première option vous pourrez toujours utiliser les liens \"lire la suite\"."
+msgstr "Vous pourriez souhaiter que seuls les résumés apparaissent sur la page d'accueil et les pages d'archives. Avec la première option activée vous pourrez toujours utiliser le lien \"lire la suite\"."
 
 #: options.php:179
 msgid "Show all content on blog homepage and archive pages."
@@ -796,4 +791,8 @@ msgstr "Oui"
 #: options.php:190
 msgid "No"
 msgstr "Non"
+
+#: options.php:127
+msgid "Center (not recommend if you use the secondary menu)"
+msgstr ""
 
