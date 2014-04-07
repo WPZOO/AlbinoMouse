@@ -176,28 +176,28 @@ function albinomouse_google_web_fonts() {
 global $options;
 
 	if ($options['title_font'] == 'Anton') {
-		wp_enqueue_style( 'Anton', 'http://fonts.googleapis.com/css?family=Anton' );
+		wp_enqueue_style( 'Anton', '//fonts.googleapis.com/css?family=Anton' );
 	}
 	if ($options['title_font'] == 'Bitter') {
-		wp_enqueue_style( 'Bitter', 'http://fonts.googleapis.com/css?family=Bitter' );
+		wp_enqueue_style( 'Bitter', '//fonts.googleapis.com/css?family=Bitter' );
 	}
 	if ($options['title_font'] == 'Droid Sans' || $options['general_font'] == 'Droid Sans') {
-		wp_enqueue_style( 'DroidSans', 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700' );
+		wp_enqueue_style( 'DroidSans', '//fonts.googleapis.com/css?family=Droid+Sans:400,700' );
 	}
 	if ($options['title_font'] == 'Droid Serif' || $options['general_font'] == 'Droid Serif') {
-		wp_enqueue_style( 'DroidSerif', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
+		wp_enqueue_style( 'DroidSerif', '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
 	}
 	if ($options['title_font'] == 'Open Sans' || $options['general_font'] == 'Open Sans') {
-		wp_enqueue_style( 'OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' );
+		wp_enqueue_style( 'OpenSans', '//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' );
 	}
 	if ($options['title_font'] == 'Source Sans Pro' || $options['general_font'] == 'Source Sans Pro') {
-		wp_enqueue_style( 'SourceSansPro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic' );
+		wp_enqueue_style( 'SourceSansPro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic' );
 	}	
 	if ($options['title_font'] == 'Ubuntu' || $options['general_font'] == 'Ubuntu') {
-		wp_enqueue_style( 'Ubuntu', 'http://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic' );
+		wp_enqueue_style( 'Ubuntu', '//fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic' );
 	}
 	if ($options['title_font'] == 'Yanone Kaffeesatz') {
-		wp_enqueue_style( 'YanoneKaffeesatz', 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' );
+		wp_enqueue_style( 'YanoneKaffeesatz', '//fonts.googleapis.com/css?family=Yanone+Kaffeesatz' );
 	}			
 }
 add_action( 'wp_enqueue_scripts', 'albinomouse_google_web_fonts' );

@@ -3,6 +3,10 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.1.1
+* SSL friendly load of Google fonts
+* Fixed position of banner thumbnail
+
 2.1.
 + Bootstrap 3.1 update and minified styles
 + New secondary menu navigation
