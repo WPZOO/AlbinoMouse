@@ -40,14 +40,15 @@
 			<?php if(!isset($options['site-description']) or $options['site-description'] == true ) : ?>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<?php endif; ?>
-			<nav class="secondary-menu hidden-sm hidden-xs pull-right">
-				<?php wp_nav_menu( array(
-					'theme_location'	=> 'secondary',
-					'depth'				=> 1,
-					'container'			=> '',
-					'fallback_cb'		=> false ));
-				?>
-			</nav>
+			<?php if ( has_nav_menu( 'secondary' ) ) { ?>
+				<nav class="secondary-menu hidden-sm hidden-xs pull-right">
+					<?php wp_nav_menu( array(
+						'theme_location'	=> 'secondary',
+						'depth'				=> 1,
+						'container'			=> '',
+						'fallback_cb'		=> false ));?>
+				</nav>
+			<? } ?>
 		</div>
 
 		<nav class="navbar navbar-default" role="navigation">
@@ -90,11 +91,14 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
-	<nav class="secondary-menu visible-sm visible-xs">
-	<?php wp_nav_menu( array(
-		'theme_location'	=> 'secondary',
-		'depth'				=> 1,
-		'container'			=> ''));
-	?>
-	</nav>
+	<?php if ( has_nav_menu( 'secondary' ) ) { ?>
+		<nav class="secondary-menu visible-sm visible-xs">
+		<?php wp_nav_menu( array(
+			'theme_location'	=> 'secondary',
+			'depth'				=> 1,
+			'container'			=> '',
+			'fallback_cb'		=> false ));
+		?>
+		</nav>
+	<? } ?>	
 	<div class="row">

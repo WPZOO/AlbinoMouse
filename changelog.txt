@@ -3,6 +3,9 @@ C H A N G E L O G
 + added   -removed    *fixed
 ----------------------------------------------
 
+2.1.2
+* Load secondary nav only if needed
+
 2.1.1
 * SSL friendly load of Google fonts
 * Fixed position of banner thumbnail
