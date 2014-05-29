@@ -49,7 +49,7 @@ function albinomouse_content_nav( $nav_id ) {
 		<?php endif; ?>
 
 	<?php endif; ?>
-	
+
 		</ul>
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
@@ -184,11 +184,11 @@ function albinomouse_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	$archive_year  = get_the_time('Y'); 
-	$archive_month = get_the_time('m'); 
+	$archive_year  = get_the_time('Y');
+	$archive_month = get_the_time('m');
 	$archive_day   = get_the_time('d');
-	
-	printf( '<span class="posted-on">' . _x('Posted on', 'publication date', 'albinomouse') . ' %1$s </span><span class="byline">' . _x('by', 'author', 'albinomouse') . ' %2$s</span>', 
+
+	printf( '<span class="posted-on">' . _x('Posted on', 'publication date', 'albinomouse') . ' %1$s </span><span class="byline">' . _x('by', 'author', 'albinomouse') . ' %2$s</span>',
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
  			esc_url( get_day_link( $archive_year, $archive_month, $archive_day ) ),
 			$time_string
@@ -244,7 +244,7 @@ function albinomouse_breadcrumb() {
 	global $post;
 	$pid = $post->ID;
 	$trail = '<a href="'.home_url().'">'. __('Home', 'albinomouse') .'</a>';
- 
+
 	if (is_page()) {
 		$bcarray = array();
 		$pdata = get_post($pid);
