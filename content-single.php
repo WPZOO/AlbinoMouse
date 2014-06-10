@@ -29,7 +29,7 @@
 		<?php elseif ( has_post_format('audio')) : ?>
 			<span class="glyphicon glyphicon-music hidden-xs"></span>
 		<?php elseif ( 'post' == get_post_type() ) : ?>
-			<span class="glyphicon glyphicon-file hidden-xs"></span>								
+			<span class="glyphicon glyphicon-file hidden-xs"></span>
 		<?php endif; ?>
 		<?php the_title(); ?></h1>
 
@@ -38,7 +38,7 @@
 				<?php albinomouse_posted_on(); ?>
 			</small>
 		</div><!-- .entry-meta -->
-		
+
 		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
@@ -46,7 +46,7 @@
 				</a>
 			</div><!-- .post-thumbnail-banner -->
 		<?php endif; ?>
-		
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content clearfix">
@@ -57,7 +57,7 @@
 				</a>
 			</p><!-- .post-thumbnail-thumbnail -->
 		<?php endif; ?>
-		
+
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'albinomouse' ),
@@ -70,10 +70,10 @@
 			<?php
 				/* translators: used between list items, there is a space after the comma */
 				$category_list = get_the_category_list( ', ' );
-	
+
 				/* translators: used between list items, there is a space after the comma */
 				$tag_list = get_the_tag_list( '',', ' );
-	
+
 				if ( ! albinomouse_categorized_blog() ) {
 					// This blog only has 1 category so we just need to worry about tags in the meta text
 					if ( '' != $tag_list ) {
@@ -81,7 +81,7 @@
 					} else {
 						$meta_text = _x( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', '3: permalink', 'albinomouse' );
 					}
-	
+
 				} else {
 					// But this blog has loads of categories so we should probably display them here
 					if ( '' != $tag_list ) {
@@ -89,9 +89,9 @@
 					} else {
 						$meta_text = _x( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', '1: category list, 3: permalink', 'albinomouse' );
 					}
-	
+
 				} // end check for categories on this blog
-	
+
 				printf(
 					$meta_text,
 					$category_list,
@@ -100,7 +100,7 @@
 					the_title_attribute( 'echo=0' )
 				);
 			?>
-	
+
 			<?php edit_post_link( __( 'Edit', 'albinomouse' ), '<span class="edit-link">', '</span>' ); ?>
 		</small>
 	</footer><!-- .entry-meta -->

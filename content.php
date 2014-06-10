@@ -29,7 +29,7 @@ $options = get_option( 'albinomouse' );
 		<?php elseif ( has_post_format('audio')) : ?>
 			<span class="glyphicon glyphicon-music hidden-xs"></span>
 		<?php elseif ( 'post' == get_post_type() ) : ?>
-			<span class="glyphicon glyphicon-file hidden-xs"></span>								
+			<span class="glyphicon glyphicon-file hidden-xs"></span>
 		<?php endif; ?>
 		<?php the_title(); ?></a></h1>
 
@@ -40,7 +40,7 @@ $options = get_option( 'albinomouse' );
 			</small>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-		
+
 		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
@@ -65,8 +65,8 @@ $options = get_option( 'albinomouse' );
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php endif; ?>
-	
-	
+
+
 	<?php if ( !isset($options['content-excerpt'] ) || $options['content-excerpt'] == 'content') : ?>
 	<div class="entry-content clearfix">
 
@@ -84,7 +84,7 @@ $options = get_option( 'albinomouse' );
 				'after'  => '</div>')); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-		
+
 
 	<footer class="entry-meta">
 		<small>
@@ -98,7 +98,7 @@ $options = get_option( 'albinomouse' );
 					<?php printf( _x( 'Posted in %1$s', 'category list', 'albinomouse' ), $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
-	
+
 				<?php
 					/* translators: used between list items, there is a space after the comma */
 					$tags_list = get_the_tag_list( '', ', ' );
@@ -111,12 +111,12 @@ $options = get_option( 'albinomouse' );
 				<?php endif; // End if $tags_list ?>
 
 				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="sep"> | </span>	
+				<span class="sep"> | </span>
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'albinomouse' ), __( '1 Comment', 'albinomouse' ), __( '% Comments', 'albinomouse' ) ); ?></span>
 				<?php endif; // End if ! post_password_required ... ?>
 
 			<?php endif; // End if 'post' == get_post_type() ?>
-			
+
 			<?php if ( 'page' == get_post_type() ) : // Only for pages ?>
 				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'albinomouse' ), __( '1 Comment', 'albinomouse' ), __( '% Comments', 'albinomouse' ) ); ?></span>
