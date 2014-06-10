@@ -160,6 +160,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Custom functions for the layout
+ */
+require get_template_directory() . '/inc/layout.php';
+
+/**
  * Register Custom Navigation Walker
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';

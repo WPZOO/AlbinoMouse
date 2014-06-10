@@ -11,29 +11,17 @@
  * @package AlbinoMouse
  */
 
-$options = get_option( 'albinomouse' );
-
 get_header(); ?>
 
-<?php if(!isset($options['sidebar-layout']) or $options['sidebar-layout'] == '2c-r') : ?>
-	<div id="primary" class="content-area col-md-7">
-<?php elseif($options['sidebar-layout'] == '2c-rs') : ?>
-	<div id="primary" class="content-area col-md-8">
-<?php elseif($options['sidebar-layout'] == '2c-l') : ?>
-	<div id="primary" class="content-area col-md-7 col-md-offset-1 pull-right">
-<?php elseif($options['sidebar-layout'] == '2c-ls') : ?>
-	<div id="primary" class="content-area col-md-8 col-md-offset-1 pull-right">
-<?php else : ?>
-	<div id="primary" class="content-area col-md-12">
-<?php endif; ?>
+	<div id="primary" class="content-area <?php echo albinomouse_get_content_class(); ?>">
 
 		<main id="main" class="site-main" role="main">
-		
+
 			<?php if ( have_posts() ) : ?>
-	
+
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-	
+
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
@@ -41,22 +29,22 @@ get_header(); ?>
 						 */
 						get_template_part( 'content', get_post_format() );
 					?>
-	
+
 				<?php endwhile; ?>
-	
+
 				<?php albinomouse_content_nav( 'nav-below' ); ?>
-	
+
 			<?php else : ?>
-	
+
 				<?php get_template_part( 'no-results', 'index' ); ?>
-	
+
 			<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php if($options['sidebar-layout'] != '1col') :
-	get_sidebar(); 
+	get_sidebar();
 endif; ?>
 
 <?php get_footer(); ?>
