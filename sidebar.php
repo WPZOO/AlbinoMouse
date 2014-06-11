@@ -5,17 +5,8 @@
  * @package AlbinoMouse
  */
 ?>
-<?php $options = get_option( 'albinomouse' ); ?>
 
-<?php if(!isset($options['sidebar-layout']) or $options['sidebar-layout'] == '2c-r') : ?>
-	<div id="secondary" class="widget-area hidden-print col-md-4 col-md-offset-1" role="complementary">
-<?php elseif($options['sidebar-layout'] == '2c-rs') : ?>
-	<div id="secondary" class="widget-area hidden-print col-md-3 col-md-offset-1" role="complementary">
-<?php elseif($options['sidebar-layout'] == '2c-l') : ?>
-	<div id="secondary" class="widget-area hidden-print col-md-4 pull-left" role="complementary">
-<?php elseif($options['sidebar-layout'] == '2c-ls') : ?>
-	<div id="secondary" class="widget-area hidden-print col-md-3 pull-left" role="complementary">
-<?php endif; ?>
+	<div id="secondary" class="widget-area hidden-print <?php echo albinomouse_get_sidebar_class(); ?>" role="complementary">
 
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>

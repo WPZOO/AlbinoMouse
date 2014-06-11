@@ -4,8 +4,6 @@
  * @package AlbinoMouse
  */
 
-$options = get_option( 'albinomouse' );
-
 get_header(); ?>
 
 	<div id="primary" class="content-area col-md-12">
