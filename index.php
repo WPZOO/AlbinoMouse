@@ -43,7 +43,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if($options['sidebar-layout'] != '1col') :
+<?php
+$options = get_option( 'albinomouse' );
+if($options['sidebar-layout'] != '1col') :
 	get_sidebar();
 endif; ?>
 

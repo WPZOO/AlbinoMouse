@@ -453,7 +453,6 @@ function optionscheck_display_sidebar() { ?>
 							<h4 class="options-sidebar"><?php _e('Love it?','albinomouse') ?></h4>		
 							<ul class="icons-ul">
 								<li class="github"><a href="#"><span class="icon-github"></span> <?php _e('AlbinoMouse on Github', 'albinomouse') ?></a></li>
-								<li class="googleplus"><a href="https://plus.google.com/u/0/107233849042519398733/posts"><span class="icon-googleplus"></span> <?php _e('Meet me on Google+', 'albinomouse') ?></a></li>
 								<li class="donate"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=4W6R3PU7WB2A2&lc=CH&item_name=pixelstrol%2ech&item_number=AlbinoMouse&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"><span class="icon-beer"></span> <?php _e('You could buy me a beer :)', 'albinomouse') ?></a></li>
 							</ul>
 						</div>

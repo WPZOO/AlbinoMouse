@@ -6,12 +6,12 @@
 /* Icons by Font Awesome */
 
 @font-face {
-  font-family: "am-options-icon-font";
-  src:url("../fonts/am-options-icon-font.eot");
-  src:url("../fonts/am-options-icon-font.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/am-options-icon-font.ttf") format("truetype"),
-    url("../fonts/am-options-icon-font.svg#am-options-icon-font") format("svg"),
-    url("../fonts/am-options-icon-font.woff") format("woff");
+  font-family: "albinomouse-icon-font";
+  src:url("../../../icon-fonts/albinomouse-icon-font.eot");
+  src:url("../../../icon-fonts/albinomouse-icon-font.eot?#iefix") format("embedded-opentype"),
+    url("../../../icon-fonts/albinomouse-icon-font.ttf") format("truetype"),
+    url("../../../icon-fonts/albinomouse-icon-font.svg#am-options-icon-font") format("svg"),
+    url("../../../icon-fonts/albinomouse-icon-font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 
@@ -19,7 +19,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "am-options-icon-font" !important;
+  font-family: "albinomouse-icon-font" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -33,39 +33,35 @@
 }
 
 .icon-heart:before {
-  content: "a";
+  content: "\e012";
 }
 
 .icon-info:before {
-  content: "d";
+  content: "\e010";
 }
 
 .icon-beer:before {
-  content: "c";
+  content: "\e014";
 }
 
 .icon-github:before {
-  content: "b";
+  content: "\e00e";
 }
 
 .icon-bug:before {
-  content: "e";
-}
-
-.icon-googleplus:before {
-  content: "g";
+  content: "\e00c";
 }
 
 .icon-support:before {
-  content: "f";
+  content: "\e010";
 }
 
 .icon-changelog:before {
-  content: "h";
+  content: "\e00f";
 }
 
 .icon-star:before {
-  content: "i";
+  content: "\e013";
 }
 
 /* Sidebar */

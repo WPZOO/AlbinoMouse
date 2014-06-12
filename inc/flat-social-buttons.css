@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "social-media-icons";
-  src:url("fonts/social-media-icons.eot");
-  src:url("fonts/social-media-icons.eot?#iefix") format("embedded-opentype"),
-    url("fonts/social-media-icons.ttf") format("truetype"),
-    url("fonts/social-media-icons.svg#social-media-icons") format("svg"),
-    url("fonts/social-media-icons.woff") format("woff");
+  font-family: "albinomouse-icon-font";
+  src:url("../icon-fonts/albinomouse-icon-font.eot");
+  src:url("../icon-fonts/albinomouse-icon-font.eot?#iefix") format("embedded-opentype"),
+    url("../icon-fonts/albinomouse-icon-font.woff") format("woff"),
+    url("../icon-fonts/albinomouse-icon-font.ttf") format("truetype"),
+    url("../icon-fonts/albinomouse-icon-font.svg#albinomouse-icon-font") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 .sharedaddy {
@@ -30,7 +29,7 @@
 }
 
 .sd-button.share-icon:before {
-	font-family: "social-media-icons";
+	font-family: "albinomouse-icon-font";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -40,6 +39,7 @@
 
 .sd-button.share-icon:before {
 	padding-right: 5px;
+	vertical-align: middle;
 }
 
 .sd-button.no-text:before {
@@ -89,7 +89,7 @@
 }
 
 .share-digg .share-icon:before {
-	content: "j";
+	content: "\e009";
 }
 
 /* Email */
@@ -98,7 +98,7 @@
 }
 
 .share-email .share-icon:before {
-	content: "b";
+	content: "\e000";
 }
 
 /* Facebook */
@@ -107,7 +107,7 @@
 }
 
 .share-facebook .share-icon:before {
-	content: "c";
+	content: "\e001";
 }
 
 /* Google+ */
@@ -116,7 +116,7 @@
 }
 
 .share-google-plus-1 .share-icon:before {
-	content: "d";
+	content: "\e00d";
 }
 
 /* LinkedIn */
@@ -125,7 +125,7 @@
 }
 
 .share-linkedin .share-icon:before {
-	content: "e";
+	content: "\e003";
 }
 
 /* More */
@@ -139,7 +139,7 @@
 }
 
 .share-pinterest .share-icon:before {
-	content: "f";
+	content: "\e004";
 }
 
 /* Pocket */
@@ -148,7 +148,7 @@
 }
 
 .share-pocket .share-icon:before {
-	content: "l";
+	content: "\e00b";
 }
 
 /* Print */
@@ -157,7 +157,7 @@
 }
 
 .share-print .share-icon:before {
-	content: "a";
+	content: "\e008";
 }
 
 /* Reddit */
@@ -167,7 +167,7 @@
 }
 
 .share-reddit .share-icon:before {
-	content: "g";
+	content: "\e005";
 }
 
 /* Tumblr */
@@ -176,7 +176,7 @@
 }
 
 .share-tumblr .share-icon:before {
-	content: "h";
+	content: "\e006";
 }
 
 /* Twitter */
@@ -185,7 +185,7 @@
 }
 
 .share-twitter .share-icon:before {
-	content: "i";
+	content: "\e007";
 }
 
 /* StumbleUpon */
@@ -194,7 +194,7 @@
 }
 
 .share-stumbleupon .share-icon:before {
-	content: "k";
+	content: "\e00a";
 }
 
 .share-count {

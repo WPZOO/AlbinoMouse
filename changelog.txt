@@ -4,7 +4,10 @@ C H A N G E L O G
 ----------------------------------------------
 
 2.1.2
-* Load secondary nav only if needed
+* Loading secondary nav only if needed
+* Clean up code and improve readability
+* Create content and sidebar class functions
+* Merged two small icon fonts
 
 2.1.1
 * SSL friendly load of Google fonts

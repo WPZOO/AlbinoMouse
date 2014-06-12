@@ -71,7 +71,11 @@ add_action( 'after_setup_theme', 'albinomouse_setup' );
  * Register widgetized area and update sidebar with default widgets
  */
 function albinomouse_widgets_init() {
-	global $options;
+	/**
+	 * Load theme options.
+	 */
+	$options = get_option( 'albinomouse' );
+	
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'albinomouse' ),
 		'id'            => 'sidebar-1',
@@ -144,7 +148,7 @@ add_action( 'wp_enqueue_scripts', 'albinomouse_scripts' );
 if( ! isset( $options['flat-social-btn'] ) || '1' == $options['flat-social-btn'] ) {
 	function overwrite_jetpack_social_buttons(){
 			wp_deregister_style('sharedaddy');
-			wp_enqueue_style( 'flat-social-buttons', get_template_directory_uri() . '/inc/flat-social-buttons/flat-social-buttons.css' );
+			wp_enqueue_style( 'flat-social-buttons', get_template_directory_uri() . '/inc/flat-social-buttons.css' );
 	}
 	add_action('wp_print_styles', 'overwrite_jetpack_social_buttons');
 }
@@ -258,14 +262,7 @@ function albinomouse_add_custom_styles() {
 	$color_d10 = albinomouse_color_creator( $originalColor, $d10 );
 	$color_d12 = albinomouse_color_creator( $originalColor, $d12 );
 	$color_d15 = albinomouse_color_creator( $originalColor, $d15 );
-
-	global $originalColor;
-	global $color_b40;
-	global $color_d5;
-	global $color_d8;
-	global $color_d10;
-	global $color_d12;
-	global $color_d15; ?>
+	?>
 
 	<style type="text/css">
 

@@ -16,7 +16,10 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-			<?php if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : ?>
+			<?php
+			$options = get_option( 'albinomouse' );
+			if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : 
+			?>
 				<div id="breadcrumbs">
 					<?php echo albinomouse_breadcrumb(); ?>
 				</div>
@@ -37,7 +40,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if($options['sidebar-layout'] != '1col') :
+<?php
+$options = get_option( 'albinomouse' );
+if($options['sidebar-layout'] != '1col') :
 	get_sidebar();
 endif; ?>
 
