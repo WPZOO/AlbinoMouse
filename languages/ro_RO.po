@@ -668,75 +668,75 @@ msgstr ""
 
 #: options.php:252
 msgid "AlbinoMouse is built on the following frameworks:"
-msgstr ""
+msgstr "AlbinoMouse este construit folosind urmatoarele frameworkuri:"
 
 #: options.php:254
 msgid "by Mark Otto and Jacob Thornton – MIT License"
-msgstr ""
+msgstr "de Mark Otto si Jacob Thornton – MIT License"
 
 #: options.php:255
 msgid "by Automattic"
-msgstr ""
+msgstr "de Automattic"
 
 #: options.php:256
 msgid "by Devin Price – GPL v2"
-msgstr ""
+msgstr "de Devin Price - GPL v2"
 
 #: options.php:261
 msgid "There is even more great stuff included:"
-msgstr ""
+msgstr "Sunt si mai multe lucruri incluse:"
 
 #: options.php:263
 msgid "by @tittem – GPL v2"
-msgstr ""
+msgstr "de @tittem – GPL v2"
 
 #: options.php:264
 msgid "by Chris Coyier and Paravel – WTFPL"
-msgstr ""
+msgstr "de Chris Coyier si Paravel – WTFPL"
 
 #: options.php:265
 msgid "by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2"
-msgstr ""
+msgstr "de Alexander Farkas, Jonathan Neal si Paul Irish – MIT/GPL v2"
 
 #: options.php:266
 msgid "by Scott Jehl – MIT"
-msgstr ""
+msgstr "de Scott Jehl – MIT"
 
 #: options.php:267
 msgid "Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license"
-msgstr ""
+msgstr "Glyphicons Halflings de Jan Kova&#345;ík, vin impreuna cu Bootstrap 3 – aceeasi licenta"
 
 #: options.php:268
 msgid "Some icons from Socialicous by Shali Nguyen – MIT"
-msgstr ""
+msgstr "Cateva iconite de la Socialicous de Shali Nguyen – MIT"
 
 #: options.php:269
 msgid "Some icons from Font Awesome by Dave Gandy – SIL OFL 1.1"
-msgstr ""
+msgstr "Cateva iconite de la Font Awesome de Dave Gandy – SIL OFL 1.1"
 
 #: options.php:274
 msgid "These guys make AlbinoMouse international:"
-msgstr ""
+msgstr "Ei au facut AlbinoMouse international:"
 
 #: options.php:276
 msgid "French translation by"
-msgstr ""
+msgstr "Traducerea in franceza realizata de"
 
 #: options.php:277
 msgid "German translation by"
-msgstr ""
+msgstr "Traducerea in germana realizata de"
 
 #: options.php:278
 msgid "Polish translation by"
-msgstr ""
+msgstr "Traducerea in poloneza realizata de"
 
 #: options.php:279
 msgid "Roumain translation by"
-msgstr ""
+msgstr "Traducerea in romana realizata de"
 
 #: options.php:280
 msgid "Spanish translation by"
-msgstr ""
+msgstr "Traducerea in spaniola realizata de"
 
 #: options.php:242
 msgid "you will be able to use the <strong>grid system, buttons, notifications, collapse and glyphicons</strong> quite easily.<br/>When you installed that plugin, go to the settings and deactivate the loading of css and js files (AlbinoMouse has already included)."
@@ -748,7 +748,7 @@ msgstr ""
 
 #: functions.php:61
 msgid "Secondary Menu"
-msgstr ""
+msgstr "Meniu Secundar"
 
 #: options.php:173
 msgid "All content or excerpt on blog homepage and archives"
@@ -768,7 +768,7 @@ msgstr ""
 
 #: inc/wp_bootstrap_navwalker.php:197
 msgid "Add a menu"
-msgstr ""
+msgstr "Adauga meniu"
 
 #: inc/template-tags.php:191
 msgctxt "publication date"
@@ -778,7 +778,7 @@ msgstr ""
 #: inc/template-tags.php:191
 msgctxt "author"
 msgid "by"
-msgstr ""
+msgstr "de"
 
 #: options.php:183
 msgid "Breadcrumbs on default page template"
@@ -790,13 +790,13 @@ msgstr ""
 
 #: options.php:189
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #: options.php:190
 msgid "No"
-msgstr ""
+msgstr "Nu"
 
 #: options.php:127
 msgid "Center (not recommend if you use the secondary menu)"
-msgstr ""
+msgstr "Centrat (nerecomandat daca folosesti meniul secundar)"
 
