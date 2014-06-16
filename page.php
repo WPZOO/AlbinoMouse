@@ -9,6 +9,7 @@
  *
  * @package AlbinoMouse
  */
+$options = get_option( 'albinomouse' );
 
 get_header(); ?>
 
@@ -16,10 +17,7 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			$options = get_option( 'albinomouse' );
-			if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : 
-			?>
+			<?php if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : ?>
 				<div id="breadcrumbs">
 					<?php echo albinomouse_breadcrumb(); ?>
 				</div>
@@ -40,9 +38,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-$options = get_option( 'albinomouse' );
-if($options['sidebar-layout'] != '1col') :
+<?php if($options['sidebar-layout'] != '1col') :
 	get_sidebar();
 endif; ?>
 
