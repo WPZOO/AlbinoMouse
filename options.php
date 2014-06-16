@@ -231,7 +231,7 @@ function albinomouseoptions_options() {
 		'name' => __('Redesign Jetpacks social buttons (Flat Design)', 'albinomouse'),
 		'desc' => __("Replace the styles of Jetpacks social sharing buttons. <strong>Obviously the plugin Jetpack must be installed as well as the module Sharing must be activated.</strong> This option will automatically deregister the original stylesheet.", "albinomouse"),
 		'id' => 'flat-social-btn',
-		'std' => '0',
+		'std' => '',
 		'type' => 'checkbox');
 	
 	$siteurl = get_site_url();	

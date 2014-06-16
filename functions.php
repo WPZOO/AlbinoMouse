@@ -145,7 +145,8 @@ add_action( 'wp_enqueue_scripts', 'albinomouse_scripts' );
 /**
  * Overwrite Jetpacks social sharing buttons
  */
-if( ! isset( $options['flat-social-btn'] ) || '1' == $options['flat-social-btn'] ) {
+$options = get_option( 'albinomouse' );
+if( $options['flat-social-btn'] == '1' ) {
 	function overwrite_jetpack_social_buttons(){
 			wp_deregister_style('sharedaddy');
 			wp_enqueue_style( 'flat-social-buttons', get_template_directory_uri() . '/inc/flat-social-buttons.css' );
