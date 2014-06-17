@@ -48,7 +48,7 @@
 						'container'			=> '',
 						'fallback_cb'		=> false ));?>
 				</nav>
-			<? } ?>
+			<?php } ?>
 		</div>
 
 		<nav class="navbar navbar-default" role="navigation">
@@ -100,5 +100,5 @@
 			'fallback_cb'		=> false ));
 		?>
 		</nav>
-	<? } ?>	
+	<?php } ?>	
 	<div class="row">
