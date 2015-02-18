@@ -71,11 +71,8 @@ add_action( 'after_setup_theme', 'albinomouse_setup' );
  * Register widgetized area and update sidebar with default widgets
  */
 function albinomouse_widgets_init() {
-	/**
-	 * Load theme options.
-	 */
-	$options = get_option( 'albinomouse' );
-	
+	$options = get_option( 'albinomouse' ); // Load theme options
+
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'albinomouse' ),
 		'id'            => 'sidebar-1',
@@ -86,42 +83,42 @@ function albinomouse_widgets_init() {
 	) );
 	if ($options['footer-layout']) {
 		register_sidebar( array(
-			'name'          => __( 'Footer 1', 'albinomouse' ),
-			'id'            => 'footer-1',
-			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+		'name'          => __( 'Footer 1', 'albinomouse' ),
+		'id'            => 'footer-1',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 		) );
 	}
 	if ( $options['footer-layout'] == '2col' || $options['footer-layout'] == '3col' || $options['footer-layout'] == '4col' ) {
 		register_sidebar( array(
-			'name' => __( 'Footer 2', 'albinomouse' ),
-			'id' => 'footer-2',
-			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+		'name'          => __( 'Footer 2', 'albinomouse' ),
+		'id'            => 'footer-2',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 		) );
 	}
 	if ( $options['footer-layout'] == '3col' || $options['footer-layout'] == '4col' ) {
 		register_sidebar( array(
-			'name'          => __( 'Footer 3', 'albinomouse' ),
-			'id'            => 'footer-3',
-			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+		'name'          => __( 'Footer 3', 'albinomouse' ),
+		'id'            => 'footer-3',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 		) );
 	}
 	if ( $options['footer-layout'] == '4col' ) {
 		register_sidebar( array(
-			'name'          => __( 'Footer 4', 'albinomouse' ),
-			'id'            => 'footer-4',
-			'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+		'name'          => __( 'Footer 4', 'albinomouse' ),
+		'id'            => 'footer-4',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 		) );
 	}
 }
@@ -139,20 +136,9 @@ function albinomouse_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
 }
 add_action( 'wp_enqueue_scripts', 'albinomouse_scripts' );
-
-/**
- * Overwrite Jetpacks social sharing buttons
- */
-$options = get_option( 'albinomouse' );
-if( $options['flat-social-btn'] == '1' ) {
-	function overwrite_jetpack_social_buttons(){
-			wp_deregister_style('sharedaddy');
-			wp_enqueue_style( 'flat-social-buttons', get_template_directory_uri() . '/inc/flat-social-buttons.css' );
-	}
-	add_action('wp_print_styles', 'overwrite_jetpack_social_buttons');
-}
 
 /**
  * Custom template tags for this theme.
@@ -174,16 +160,12 @@ require get_template_directory() . '/inc/layout.php';
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
-
 /**
  * Enqueue stylesheet for Google web fonts
  * This function is attached to the wp_head action hook.
  */
 function albinomouse_google_web_fonts() {
-	/**
-	 * Load theme options.
-	 */
-	$options = get_option( 'albinomouse' );
+	$options = get_option( 'albinomouse' ); // Load theme options
 
 	if ($options['title_font'] == 'Anton') {
 		wp_enqueue_style( 'Anton', '//fonts.googleapis.com/css?family=Anton' );
@@ -212,6 +194,9 @@ function albinomouse_google_web_fonts() {
 }
 add_action( 'wp_enqueue_scripts', 'albinomouse_google_web_fonts' );
 
+/**
+ * Define colors dynamically 
+ */
 function albinomouse_color_creator( $color, $per ) {
 
 	$color = substr( $color, 1 ); // Removes first character of hex string (#)
@@ -240,10 +225,7 @@ function albinomouse_color_creator( $color, $per ) {
 
 function albinomouse_add_custom_styles() {
 
-	/**
-	 * Load theme options.
-	 */
-	$options = get_option( 'albinomouse' );
+	$options = get_option( 'albinomouse' ); // Load theme options
 
 	/**
 	 * Add a style block with some configurations of the theme options.
@@ -397,6 +379,7 @@ function albinomouse_add_custom_styles() {
 		background-color: <?php echo $options['general-background']['color'] ?>;
 	}
 	<?php endif;
+
 	if ($options['general-background']['image'] != '') : ?>
 	body {
 		background-attachment: <?php echo $options['general-background']['attachment'] ?>;
@@ -454,23 +437,17 @@ function albinomouse_add_custom_styles() {
 	if ($options['title_font'] == 'Yanone Kaffeesatz') { ?>
 		h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Yanone Kaffeesatz', sans-serif; } <?php
 	} ?>
-
 	</style>
 <?php
 }
 add_action( 'wp_head', 'albinomouse_add_custom_styles' );
-
 
 /**
  * Add a layout class to the array of body classes.
  * This function is attached to the wp_head filter hook.
  */
 function albinomouse_body_class_footer( $existing_classes ) {
-	/**
-	 * Load theme options.
-	 */
-	$options = get_option( 'albinomouse' );
-
+	$options = get_option( 'albinomouse' ); // Load theme options
 	$footer = $options['footer-layout'];
 
 	if ($footer == '1col') {
@@ -492,7 +469,9 @@ function albinomouse_body_class_footer( $existing_classes ) {
 }
 add_filter( 'body_class', 'albinomouse_body_class_footer' );
 
-
+/**
+ * Changing the [...] string in the excerpt
+ */
 function new_excerpt_more( $more ) {
 	return '...';
 }
@@ -501,38 +480,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 /**
  * Read more link on all excerpts
  */
-
 function excerpt_read_more_link($output) {
 	global $post;
 	return $output . '<p><a href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
-
-/**
- * Display a notice that can be dismissed
- */
-add_action('admin_notices', 'albinomouse_200_admin_notice');
-function albinomouse_200_admin_notice() {
-	global $current_user ;
-		$user_id = $current_user->ID;
-		/* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'albinomouse_200_ignore_notice') ) {
-		echo '<div class="updated"><p>';
-		printf(__('Please check your posts for shortcodes which were available in older versions of the theme AlbinoMouse. The theme guidelines do not allow shortcodes in themes anymore. <a href="%1$s">Hide Notice</a>', 'albinomouse'), '?albinomouse_200_nag_ignore=0');
-		echo "</p></div>";
-	}
-}
-
-/**
- * Ignore admin notice
- */
-add_action('admin_init', 'albinomouse_200_nag_ignore');
-function albinomouse_200_nag_ignore() {
-	global $current_user;
-		$user_id = $current_user->ID;
-		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset($_GET['albinomouse_200_nag_ignore']) && '0' == $_GET['albinomouse_200_nag_ignore'] ) {
-			 add_user_meta($user_id, 'albinomouse_200_ignore_notice', 'true', true);
-	}
-}
-

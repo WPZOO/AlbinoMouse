@@ -13,60 +13,87 @@
 
 	<footer id="colophon" class="site-footer hidden-print" role="contentinfo">
 		<div class="container">
-		
-			<div id="footer-widgets" class="row">
-			<?php $options = get_option( 'albinomouse' ); ?>
 
-			<?php if($options['footer-layout'] == '1col') : ?>
-				<div id="footer1" class="col-md-12">
-			<?php elseif($options['footer-layout'] == '2col') : ?>
-				<div id="footer1" class="col-md-6">
-			<?php elseif($options['footer-layout'] == '3col') : ?>
-				<div id="footer1" class="col-md-4">
-			<?php else : ?>
-				<div id="footer1" class="col-md-3">
-			<?php endif; ?>
-					<?php dynamic_sidebar( 'footer-1' ); ?>
-				</div>
-				
-			<?php if($options['footer-layout'] == '1col') : ?>
-				<div id="footer2" class="col-md-12">
-			<?php elseif($options['footer-layout'] == '2col') : ?>
-				<div id="footer2" class="col-md-6">
-			<?php elseif($options['footer-layout'] == '3col') : ?>
-				<div id="footer2" class="col-md-4">
-			<?php else : ?>
-				<div id="footer2" class="col-md-3">
-			<?php endif; ?>
-					<?php dynamic_sidebar( 'footer-2' ); ?>
-				</div>
-				
-			<?php if($options['footer-layout'] == '1col') : ?>
-				<div id="footer3" class="col-md-12">
-			<?php elseif($options['footer-layout'] == '2col') : ?>
-				<div id="footer3" class="col-md-6">
-			<?php elseif($options['footer-layout'] == '3col') : ?>
-				<div id="footer3" class="col-md-4">
-			<?php else : ?>
-				<div id="footer3" class="col-md-3">
-			<?php endif; ?>
-					<?php dynamic_sidebar( 'footer-3' ); ?>
-				</div>
-				
-			<?php if($options['footer-layout'] == '1col') : ?>
-				<div id="footer4" class="col-md-12">
-			<?php elseif($options['footer-layout'] == '2col') : ?>
-				<div id="footer4" class="col-md-6">
-			<?php elseif($options['footer-layout'] == '3col') : ?>
-				<div id="footer4" class="col-md-4">
-			<?php else : ?>
-				<div id="footer4" class="col-md-3">
-			<?php endif; ?>
-					<?php dynamic_sidebar( 'footer-4' ); ?>
-				</div>
-				
+			<?php 
+				$options = get_option( 'albinomouse' ); // Load theme options
+				$layout  = $options['footer-layout']
+			?>
+			<div id="footer-widgets" class="row">
+
+				<?php if (is_active_sidebar( 'footer-1' )     && $layout == '1col') : ?>
+					<div id="footer1" class="col-md-12">
+						<?php dynamic_sidebar( 'footer-1' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '2col') : ?>
+					<div id="footer1" class="col-md-6">
+						<?php dynamic_sidebar( 'footer-1' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '3col') : ?>
+					<div id="footer1" class="col-md-4">
+						<?php dynamic_sidebar( 'footer-1' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '4col') : ?>
+					<div id="footer1" class="col-md-3">
+						<?php dynamic_sidebar( 'footer-1' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if (is_active_sidebar( 'footer-2' )     && $layout == '1col') : ?>
+					<div id="footer2" class="col-md-12">
+						<?php dynamic_sidebar( 'footer-2' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-2' ) && $layout == '2col') : ?>
+					<div id="footer2" class="col-md-6">
+						<?php dynamic_sidebar( 'footer-2' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-2' ) && $layout == '3col') : ?>
+					<div id="footer2" class="col-md-4">
+						<?php dynamic_sidebar( 'footer-2' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-2' ) && $layout == '4col') : ?>
+					<div id="footer2" class="col-md-3">
+						<?php dynamic_sidebar( 'footer-2' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if (is_active_sidebar( 'footer-3' )     && $layout == '1col') : ?>
+					<div id="footer3" class="col-md-12">
+						<?php dynamic_sidebar( 'footer-3' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-3' ) && $layout == '2col') : ?>
+					<div id="footer3" class="col-md-6">
+						<?php dynamic_sidebar( 'footer-3' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-3' ) && $layout == '3col') : ?>
+					<div id="footer3" class="col-md-4">
+						<?php dynamic_sidebar( 'footer-3' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-3' ) && $layout == '4col') : ?>
+					<div id="footer3" class="col-md-3">
+						<?php dynamic_sidebar( 'footer-3' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if (is_active_sidebar( 'footer-4' )     && $layout == '1col') : ?>
+					<div id="footer4" class="col-md-12">
+						<?php dynamic_sidebar( 'footer-4' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-4' ) && $layout == '2col') : ?>
+					<div id="footer4" class="col-md-6">
+						<?php dynamic_sidebar( 'footer-4' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-4' ) && $layout == '3col') : ?>
+					<div id="footer4" class="col-md-4">
+						<?php dynamic_sidebar( 'footer-4' ); ?>
+					</div>
+				<?php elseif (is_active_sidebar( 'footer-4' ) && $layout == '4col') : ?>
+					<div id="footer4" class="col-md-3">
+						<?php dynamic_sidebar( 'footer-4' ); ?>
+					</div>
+				<?php endif; ?>
+
 			</div><!-- #footer-widgets -->
-		
+
 			<div class="site-info">
 				<?php do_action( 'albinomouse_credits' ); ?>
 				
