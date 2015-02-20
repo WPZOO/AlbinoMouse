@@ -220,9 +220,9 @@ function optionsframework_options() {
 		'type'              => 'heading');
 
 	$options[] = array(
-		'name'              => __('Redesign Jetpacks social buttons (Flat Design)', 'albinomouse'),
-		'desc'              => __("Replace the styles of Jetpacks social sharing buttons. <strong>Obviously the plugin Jetpack must be installed as well as the module Sharing must be activated.</strong> This option will automatically deregister the original stylesheet.", "albinomouse"),
-		'id'                => 'flat-social-btn',
+		'name'              => __('Reduced selection of Bootstrap components', 'albinomouse'),
+		'desc'              => __('Load only a selection of Bootstrap components [All common CSS], [Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], [Responsive Embed], [Dropdown jQuery Plugin]', 'albinomouse'),
+		'id'                => 'reduced-bootstrap',
 		'std'               => '',
 		'type'              => 'checkbox');
 
