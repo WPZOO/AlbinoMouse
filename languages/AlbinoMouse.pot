@@ -1,0 +1,759 @@
+# Copyright (C) 2015 WPZOO
+# This file is distributed under the GPL v3.
+msgid ""
+msgstr ""
+"Project-Id-Version: AlbinoMouse\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-02-21 20:06:08+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.0\n"
+
+#: 404.php:19
+msgid "Oops, error 404!"
+msgstr ""
+
+#: 404.php:20
+msgid "That page cannot be found."
+msgstr ""
+
+#: 404.php:25
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:29
+msgid "Posts written by %s"
+msgstr ""
+
+#: archive.php:37
+msgid "Posts published on %s"
+msgstr ""
+
+#: archive.php:40 archive.php:43
+msgid "Posts published in %s"
+msgstr ""
+
+#: archive.php:46 sidebar.php:15
+msgid "Archives"
+msgstr ""
+
+#: comments.php:36 comments.php:58
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:38 comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:39 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:30 content-single.php:59 content.php:83 image.php:55
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:34 content-search.php:103 content-single.php:100
+#: content.php:126 image.php:59 inc/template-tags.php:72
+#: inc/template-tags.php:91
+msgid "Edit"
+msgstr ""
+
+#: content-search.php:46 content-search.php:57 content.php:46 content.php:59
+#: content.php:75
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-search.php:92 content-search.php:99 content.php:115 content.php:122
+msgid "Leave a comment"
+msgstr ""
+
+#: content-search.php:92 content-search.php:99 content.php:115 content.php:122
+msgid "1 Comment"
+msgstr ""
+
+#: content-search.php:92 content-search.php:99 content.php:115 content.php:122
+msgid "% Comments"
+msgstr ""
+
+#: content.php:81 functions.php:492 image.php:53
+msgid "Continue reading"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:56
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:77
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:86
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:96
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:106
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:116
+msgid "Footer 4"
+msgstr ""
+
+#: image.php:34
+msgid "Previous"
+msgstr ""
+
+#: image.php:35
+msgid "Next"
+msgstr ""
+
+#: inc/extras.php:66
+msgid "Page %s"
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:91
+#: inc/options/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:203
+msgid "Save Options"
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:204
+msgid "Restore Defaults"
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr ""
+
+#: inc/options/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:65
+#: inc/options/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:67
+#: inc/options/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr ""
+
+#: inc/options/options-sidebar.php:16
+msgid "Documentation"
+msgstr ""
+
+#: inc/options/options-sidebar.php:17
+msgid "Forum on wordpress.org"
+msgstr ""
+
+#: inc/options/options-sidebar.php:18
+msgid "Report a bug on Github"
+msgstr ""
+
+#: inc/options/options-sidebar.php:21
+msgid "Please rate AlbinoMouse on wordpress.org."
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:48
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:72
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:82
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:95
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:246
+msgid "Home"
+msgstr ""
+
+#: inc/wp_bootstrap_navwalker.php:197
+msgid "Add a menu"
+msgstr ""
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: options.php:15
+msgid "One"
+msgstr ""
+
+#: options.php:16
+msgid "Two"
+msgstr ""
+
+#: options.php:17
+msgid "Three"
+msgstr ""
+
+#: options.php:18
+msgid "Four"
+msgstr ""
+
+#: options.php:35
+msgid "Global"
+msgstr ""
+
+#: options.php:39
+msgid "Link and Footer Color"
+msgstr ""
+
+#: options.php:40
+msgid "Choose your own link and footer color."
+msgstr ""
+
+#: options.php:46
+msgid "General Background"
+msgstr ""
+
+#: options.php:47
+msgid "Change the background of your site."
+msgstr ""
+
+#: options.php:53
+msgid "Favicon"
+msgstr ""
+
+#: options.php:54
+msgid "Customize your website with your own Favicon."
+msgstr ""
+
+#: options.php:60
+msgid "Title Font"
+msgstr ""
+
+#: options.php:61 options.php:77
+msgid "Choose your favorite google web font."
+msgstr ""
+
+#: options.php:76
+msgid "General Font"
+msgstr ""
+
+#: options.php:91
+msgid "Header"
+msgstr ""
+
+#: options.php:95
+msgid "Header Background"
+msgstr ""
+
+#: options.php:96
+msgid "Set the header background."
+msgstr ""
+
+#: options.php:101
+msgid "Transparent"
+msgstr ""
+
+#: options.php:102
+msgid "Gray semi-transparent"
+msgstr ""
+
+#: options.php:105
+msgid "Replace the title with your logo"
+msgstr ""
+
+#: options.php:106
+msgid ""
+"Upload your logo via the familiar media upload window. Press &#171;Use This "
+"Image&#187; to close the window. The Logo will now appear instead of the "
+"title of your website."
+msgstr ""
+
+#: options.php:112
+msgid "Title and description alignment"
+msgstr ""
+
+#: options.php:113
+msgid "Set the alignment of the title/logo and your site description."
+msgstr ""
+
+#: options.php:118
+msgid "Left"
+msgstr ""
+
+#: options.php:119
+msgid "Center (not recommend if you use the secondary menu)"
+msgstr ""
+
+#: options.php:122
+msgid "Description of your Site"
+msgstr ""
+
+#: options.php:123
+msgid "Display the description (Tagline) on your site."
+msgstr ""
+
+#: options.php:129
+msgid "Header Search Box"
+msgstr ""
+
+#: options.php:130
+msgid "Display the search box in the header of your site."
+msgstr ""
+
+#: options.php:138
+msgid "Content"
+msgstr ""
+
+#: options.php:142
+msgid "Post Thumbnails"
+msgstr ""
+
+#: options.php:143
+msgid "Choose the size of your post thumbnails."
+msgstr ""
+
+#: options.php:148
+msgid "Content thumbnail (floated). See general settings."
+msgstr ""
+
+#: options.php:149
+msgid ""
+"Header banner (750 x 250 pixel). Already existing images need to be "
+"regenerated."
+msgstr ""
+
+#: options.php:152
+msgid "Sidebar Layout"
+msgstr ""
+
+#: options.php:153
+msgid "Choose one of the possible layout options."
+msgstr ""
+
+#: options.php:165
+msgid "All content or excerpt on blog homepage and archives"
+msgstr ""
+
+#: options.php:166
+msgid ""
+"You might want the excerpt on blog homepage and the archive pages. With the "
+"first option you still can use the read more link."
+msgstr ""
+
+#: options.php:171
+msgid "Show all content on blog homepage and archive pages."
+msgstr ""
+
+#: options.php:172
+msgid "Show post excerpt on blog homepage and archive pages."
+msgstr ""
+
+#: options.php:175
+msgid "Breadcrumbs on default page template"
+msgstr ""
+
+#: options.php:176
+msgid ""
+"The default page template you probably use the most. Do you want a "
+"breadcrumbs navigation on this pages?"
+msgstr ""
+
+#: options.php:181
+msgid "Yes"
+msgstr ""
+
+#: options.php:182
+msgid "No"
+msgstr ""
+
+#: options.php:187
+msgid "Footer"
+msgstr ""
+
+#: options.php:191
+msgid "Footer Layout"
+msgstr ""
+
+#: options.php:192
+msgid "How many widgets do you have to load into the footer?"
+msgstr ""
+
+#: options.php:203
+msgid "Custom Copyright Text"
+msgstr ""
+
+#: options.php:204
+msgid "Change the default copyright text."
+msgstr ""
+
+#: options.php:210
+msgid "Show some Love!"
+msgstr ""
+
+#: options.php:211
+msgid "Display a link to WordPress and the theme author."
+msgstr ""
+
+#: options.php:219
+msgid "Advanced"
+msgstr ""
+
+#: options.php:223
+msgid "Reduced selection of Bootstrap components"
+msgstr ""
+
+#: options.php:224
+msgid ""
+"Load only a selection of Bootstrap components [All common CSS], "
+"[Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], "
+"[Responsive Embed], [Colapse jQuery Plugin], [Dropdown jQuery Plugin]"
+msgstr ""
+
+#: options.php:232
+msgid "Credits"
+msgstr ""
+
+#: options.php:236
+msgid "AlbinoMouse is built on the following frameworks:"
+msgstr ""
+
+#: options.php:238
+msgid "by Mark Otto and Jacob Thornton – MIT License"
+msgstr ""
+
+#: options.php:239
+msgid "by Automattic"
+msgstr ""
+
+#: options.php:240
+msgid "by Devin Price – GPL v2"
+msgstr ""
+
+#: options.php:245
+msgid "There is even more great stuff included:"
+msgstr ""
+
+#: options.php:247
+msgid "by @tittem – GPL v2"
+msgstr ""
+
+#: options.php:248
+msgid "by Chris Coyier and Paravel – WTFPL"
+msgstr ""
+
+#: options.php:249
+msgid "by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2"
+msgstr ""
+
+#: options.php:250
+msgid "by Scott Jehl – MIT"
+msgstr ""
+
+#: options.php:251
+msgid ""
+"Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same "
+"license"
+msgstr ""
+
+#: options.php:256
+msgid "These guys make AlbinoMouse international:"
+msgstr ""
+
+#: options.php:258
+msgid "French translation by"
+msgstr ""
+
+#: options.php:259
+msgid "German translation by"
+msgstr ""
+
+#: options.php:260
+msgid "Polish translation by"
+msgstr ""
+
+#: options.php:261
+msgid "Roumain translation by"
+msgstr ""
+
+#: options.php:262
+msgid "Spanish translation by"
+msgstr ""
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar.php:22
+msgid "Meta"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "AlbinoMouse"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wpzoo.ch/en/themes/albinomouse/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"AlbinoMouse is a responsive WordPress theme with a clean and flat design. "
+"It's based on the awesome starter theme underscores and framework Bootstrap "
+"3. There are theme options available which allow you to customize the theme "
+"in your way. You may upload your own logo, change the link use different "
+"Google Fonts, choose from different sidebar layouts, ..."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WPZOO"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wpzoo.ch/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Breadcrumbs"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "No Breadcrumbs & Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "No Breadcrumbs"
+msgstr ""
+
+#: archive.php:19
+msgctxt "category"
+msgid "Posts in category %s"
+msgstr ""
+
+#: archive.php:22
+msgctxt "tag"
+msgid "Posts tagged with %s"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: content-search.php:75 content.php:98
+#. translators: used between list items, there is a space after the comma
+msgctxt "category list"
+msgid "Posted in %1$s"
+msgstr ""
+
+#: content-search.php:86 content.php:109
+#. translators: used between list items, there is a space after the comma
+msgctxt "tag list"
+msgid "Tagged %1$s"
+msgstr ""
+
+#: content-single.php:76
+#. translators: used between list items, there is a space after the comma
+msgctxt "2: tag list, 3: permalink"
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:78
+msgctxt "3: permalink"
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:84
+msgctxt "1: category list, 2: tag list, 3: permalink"
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:86
+msgctxt "1: category list, 3: permalink"
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: image.php:20
+msgctxt ""
+"1: date attribute, 2: date, 3: parent post link, 4: parent post title, 5: "
+"image link, 6: image width, 7: image height"
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> in <a href=\"%3$s\" "
+"rel=\"gallery\">%4$s</a> | Full size: <a href=\"%5$s\">%6$s pixels &times; "
+"%7$s pixels</a>"
+msgstr ""
+
+#: inc/template-tags.php:88
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:191
+msgctxt "publication date"
+msgid "Posted on"
+msgstr ""
+
+#: inc/template-tags.php:191
+msgctxt "author"
+msgid "by"
+msgstr ""
+
+#: searchform-header.php:9 searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform-header.php:10 searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""

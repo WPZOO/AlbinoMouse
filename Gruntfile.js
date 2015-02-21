@@ -48,7 +48,16 @@ module.exports = function(grunt) {
 					'scripts-reduced.min.js': ['scripts/bootstrap-reduced.js', 'scripts/bootstrap-classes.js', 'scripts/jquery.fitvids.js']
 				}
 			}
-		}
+		},
+
+		makepot: {
+			target: {
+				options: {
+					domainPath: 'languages',
+					type: 'wp-theme'
+				}
+			}
+		},
 
 	});
 
@@ -56,8 +65,10 @@ grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-fixindent');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-wp-i18n');
 
 grunt.registerTask('default', ['sass','fixindent','cssmin', 'uglify']);
 grunt.registerTask('css', ['sass','fixindent','cssmin']);
 grunt.registerTask('js', ['uglify']);
+grunt.registerTask('pot', ['makepot']);
 };
