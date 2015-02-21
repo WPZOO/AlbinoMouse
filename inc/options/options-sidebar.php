@@ -10,27 +10,17 @@ function optionscheck_display_sidebar() { ?>
 	<div id="optionsframework-sidebar">
 		<div class="metabox-holder">
 			<div class="postbox">
-				<h3><?php _e('AlbinoMouse Links', 'albinomouse') ?></h3>
-					<div class="inside">
-
-						<ul class="icons-ul">
-							<li>
-								<span class="icon-info"></span> 
-								<a href="http://www.pixelstrol.ch/en/wp-themes/albinomouse/albinomouse-documentation/"><?php _e( 'Documentation', 'albinomouse' ); ?></a>
-							</li>
-
-							<li>
-								<span class="icon-info"></span> 
-								<a href="https://wordpress.org/support/theme/albinomouse/"><?php _e( 'Forum on wordpress.org', 'albinomouse' ); ?></a>
-							</li>
-
-							<li>
-								<span class="icon-bug"></span> 
-								<a href="https://github.com/pixelstrolch/AlbinoMouse/issues"><?php _e( 'Report a bug on Github', 'albinomouse' ); ?></a>
-							</li>
-						</ul>
-
-					</div><!-- .inside -->
+				<div class="inside">
+					<a href="http://wpzoo.ch/en/"><?php echo '<img src="' . get_stylesheet_directory_uri() . '/inc/options/images/logo-wpzoo.jpg" width="150px">';?></a>
+					<ul class="icons-ul">
+						<li><a href="http://www.pixelstrol.ch/en/wp-themes/albinomouse/albinomouse-documentation/"><?php _e( 'Documentation', 'albinomouse' ); ?></a></li>
+						<li><a href="https://wordpress.org/support/theme/albinomouse/"><?php _e( 'Forum on wordpress.org', 'albinomouse' ); ?></a></li>
+						<li><a href="https://github.com/pixelstrolch/AlbinoMouse/issues"><?php _e( 'Report a bug on Github', 'albinomouse' ); ?></a></li>
+					</ul>
+					<ul class="icons-ul">
+						<li><a href="https://wordpress.org/support/view/theme-reviews/albinomouse"><?php _e( 'Please rate AlbinoMouse on wordpress.org.', 'albinomouse' ); ?></a></li>
+					</ul>
+				</div><!-- .inside -->
 			</div><!-- .postbox -->
 		</div><!-- .metabox-holder -->
 	</div><!-- #optionsframework-sidebar -->
