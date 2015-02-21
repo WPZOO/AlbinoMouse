@@ -221,7 +221,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name'              => __('Reduced selection of Bootstrap components', 'albinomouse'),
-		'desc'              => __('Load only a selection of Bootstrap components [All common CSS], [Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], [Responsive Embed], [Dropdown jQuery Plugin]', 'albinomouse'),
+		'desc'              => __('Load only a selection of Bootstrap components [All common CSS], [Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], [Responsive Embed], [Colapse jQuery Plugin], [Dropdown jQuery Plugin]', 'albinomouse'),
 		'id'                => 'reduced-bootstrap',
 		'std'               => '',
 		'type'              => 'checkbox');
@@ -245,12 +245,10 @@ function optionsframework_options() {
 		'name'              => 	__('There is even more great stuff included:', 'albinomouse'),
 		'desc'              => 	'<ul>
 		                          <li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> ' . __('by @tittem – GPL v2', 'albinomouse') . '</li>
-		                          <li><a href="https://github.com/davatron5000/FitVids.js">FitVids]</a> ' . __('by Chris Coyier and Paravel – WTFPL', 'albinomouse') . '</li>
+		                          <li><a href="https://github.com/davatron5000/FitVids.js">FitVids</a> ' . __('by Chris Coyier and Paravel – WTFPL', 'albinomouse') . '</li>
 		                          <li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a> ' . __('by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2', 'albinomouse') . '</li>
 		                          <li><a href="https://github.com/scottjehl/Respond">Respond.js</a> ' . __('by Scott Jehl – MIT', 'albinomouse') . '</li>
 		                          <li>' . __('Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license', 'albinomouse') . '</li>
-		                          <li>' . __('Some icons from Socialicous by Shali Nguyen – MIT', 'albinomouse') . '</li>
-		                          <li>' . __('Some icons from Font Awesome by Dave Gandy – SIL OFL 1.1', 'albinomouse') . '</li>
 		                         </ul>',
 		'type'              => 	'info');
 
