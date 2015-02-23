@@ -45,7 +45,8 @@ module.exports = function(grunt) {
 			my_target: {
 				files: {
 					'scripts.min.js': ['scripts/bootstrap.js', 'scripts/bootstrap-classes.js', 'scripts/jquery.fitvids.js'],
-					'scripts-reduced.min.js': ['scripts/bootstrap-reduced.js', 'scripts/bootstrap-classes.js', 'scripts/jquery.fitvids.js']
+					'scripts-reduced.min.js': ['scripts/bootstrap-reduced.js', 'scripts/bootstrap-classes.js', 'scripts/jquery.fitvids.js'],
+					'scripts-ie.min.js': ['scripts/html5shiv.js', 'scripts/respond.js']
 				}
 			}
 		},
@@ -67,7 +68,7 @@ grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-wp-i18n');
 
-grunt.registerTask('default', ['sass','fixindent','cssmin', 'uglify']);
+grunt.registerTask('default', ['sass','fixindent','cssmin','uglify','makepot']);
 grunt.registerTask('css', ['sass','fixindent','cssmin']);
 grunt.registerTask('js', ['uglify']);
 grunt.registerTask('pot', ['makepot']);
