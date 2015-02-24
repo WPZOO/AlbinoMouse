@@ -496,11 +496,11 @@ footer.entry-meta {
 	position: absolute;
 	left: -21px;
 }
-.bypostauthor .comment-body {
+.bypostauthor > .comment-body {
 	background-color: #dadcdc;
 	background-color: rgba(196,198,199,0.6);
 }
-.bypostauthor .comment-body:before {
+.bypostauthor > .comment-body:before {
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid #dadcdc;
 	border-bottom: 20px solid rgba(196,198,199,0.6);
