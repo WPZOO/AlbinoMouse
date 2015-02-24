@@ -226,42 +226,5 @@ function optionsframework_options() {
 		'std'               => '',
 		'type'              => 'checkbox');
 
-	/*-----------------------------------------------*/
-
-	$options[] = array(
-		'name'              => __('Credits', 'albinomouse'),
-		'type'              => 'heading');
-		
-	$options[] = array(
-		'name'              => 	__('AlbinoMouse is built on the following frameworks:', 'albinomouse'),
-		'desc'              => 	'<ul>
-		                          <li><a href="https://github.com/twbs/bootstrap">Bootstrap 3</a> ' . __('by Mark Otto and Jacob Thornton – MIT License', 'albinomouse') . '</li>
-		                          <li>The starter theme <a href="https://github.com/Automattic/_s/">underscores</a> ' . __('by Automattic', 'albinomouse') . ' </li>
-		                          <li><a href="http://wptheming.com/options-framework-theme/">Options Framework Theme</a> ' . __('by Devin Price – GPL v2', 'albinomouse') . '</li>
-		                         </ul>',
-		'type'              => 	'info');
-
-	$options[] = array(
-		'name'              => 	__('There is even more great stuff included:', 'albinomouse'),
-		'desc'              => 	'<ul>
-		                          <li><a href="https://github.com/twittem/wp-bootstrap-navwalker">wp-bootstrap-navwalker</a> ' . __('by @tittem – GPL v2', 'albinomouse') . '</li>
-		                          <li><a href="https://github.com/davatron5000/FitVids.js">FitVids</a> ' . __('by Chris Coyier and Paravel – WTFPL', 'albinomouse') . '</li>
-		                          <li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a> ' . __('by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2', 'albinomouse') . '</li>
-		                          <li><a href="https://github.com/scottjehl/Respond">Respond.js</a> ' . __('by Scott Jehl – MIT', 'albinomouse') . '</li>
-		                          <li>' . __('Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same license', 'albinomouse') . '</li>
-		                         </ul>',
-		'type'              => 	'info');
-
-	$options[] = array(
-		'name'              => 	__('These guys make AlbinoMouse international:', 'albinomouse'),
-		'desc'              => 	'<ul>
-		                          <li>' . __('French translation by', 'albinomouse') . ' <a href="http://effingo.be/contact/">Alexis Jurdant</a></li>
-		                          <li>' . __('German translation by', 'albinomouse') . ' <a href="http://pixelstrol.ch/">Stefan Brechbühl</a></li>
-		                          <li>' . __('Polish translation by', 'albinomouse') . ' <a href="http://blog.13mhz.kapa.pl/">Micha&#322; Hunger</a></li>
-		                          <li>' . __('Roumain translation by', 'albinomouse') . ' Van Testing</li>
-		                          <li>' . __('Spanish translation by', 'albinomouse') . ' <a href="http://pablolaguna.es/">Pablo Laguna</a></li>
-		                         </ul>',
-		'type'              => 	'info');
-	
 	return $options;
 }

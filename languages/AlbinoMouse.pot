@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AlbinoMouse\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-02-23 17:51:49+00:00\n"
+"POT-Creation-Date: 2015-02-24 08:39:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -545,76 +545,6 @@ msgid ""
 "Load only a selection of Bootstrap components [All common CSS], "
 "[Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], "
 "[Responsive Embed], [Colapse jQuery Plugin], [Dropdown jQuery Plugin]"
-msgstr ""
-
-#: options.php:232
-msgid "Credits"
-msgstr ""
-
-#: options.php:236
-msgid "AlbinoMouse is built on the following frameworks:"
-msgstr ""
-
-#: options.php:238
-msgid "by Mark Otto and Jacob Thornton – MIT License"
-msgstr ""
-
-#: options.php:239
-msgid "by Automattic"
-msgstr ""
-
-#: options.php:240
-msgid "by Devin Price – GPL v2"
-msgstr ""
-
-#: options.php:245
-msgid "There is even more great stuff included:"
-msgstr ""
-
-#: options.php:247
-msgid "by @tittem – GPL v2"
-msgstr ""
-
-#: options.php:248
-msgid "by Chris Coyier and Paravel – WTFPL"
-msgstr ""
-
-#: options.php:249
-msgid "by Alexander Farkas, Jonathan Neal and Paul Irish – MIT/GPL v2"
-msgstr ""
-
-#: options.php:250
-msgid "by Scott Jehl – MIT"
-msgstr ""
-
-#: options.php:251
-msgid ""
-"Glyphicons Halflings by Jan Kova&#345;ík comes with Bootstrap 3 – same "
-"license"
-msgstr ""
-
-#: options.php:256
-msgid "These guys make AlbinoMouse international:"
-msgstr ""
-
-#: options.php:258
-msgid "French translation by"
-msgstr ""
-
-#: options.php:259
-msgid "German translation by"
-msgstr ""
-
-#: options.php:260
-msgid "Polish translation by"
-msgstr ""
-
-#: options.php:261
-msgid "Roumain translation by"
-msgstr ""
-
-#: options.php:262
-msgid "Spanish translation by"
 msgstr ""
 
 #: search.php:18
