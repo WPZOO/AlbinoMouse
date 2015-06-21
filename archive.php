@@ -1,8 +1,11 @@
 <?php
 /**
  * The template for displaying Archive pages.
+ *
  * @package AlbinoMouse
  */
+
+$sidebar = get_theme_mod( 'sidebar-layout' );
 
 get_header(); ?>
 
@@ -81,10 +84,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-$options = get_option( 'albinomouse' );
-if($options['sidebar-layout'] != '1col') :
-	get_sidebar();
-endif; ?>
+<?php 
+	if( $sidebar != '1col' ) :
+		get_sidebar();
+	endif; 
+?>
 
 <?php get_footer(); ?>

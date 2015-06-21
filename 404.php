@@ -1,10 +1,9 @@
 <?php
 /**
  * The template for displaying 404 pages (Not Found).
+ *
  * @package AlbinoMouse
  */
-
-$options = get_option( 'albinomouse' );
 
 get_header(); ?>
 

@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Full Width
+ *
  * @package AlbinoMouse
  */
 

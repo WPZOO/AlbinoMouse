@@ -618,7 +618,7 @@ input[type="submit"] {
 	background-color: #dfe0e0;
 	background-color: rgba(196,198,199,0.3);
 	background-image: url('search-icon.png');
-   	background-position: 13px center;
+	background-position: 13px center;
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	border: 1px solid transparent;
@@ -633,11 +633,11 @@ input[type="submit"] {
 	box-shadow: none;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    .search-field.form-control {
-	   	background-image: url('search-icon@2x.png');
-	   	background-position: 13px center;
+	.search-field.form-control {
+		background-image: url('search-icon@2x.png');
+		background-position: 13px center;
 		background-size: 18px 18px;
-	} 	
+	}
 }
 @media screen and (min-width: 768px) {
 	.comment-form-author,

@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying search form in header
+ *
  * @package AlbinoMouse
  */
 ?>

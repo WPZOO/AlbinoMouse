@@ -1,11 +1,17 @@
 <?php
 /**
  * The Header for AlbinoMouse.
+ *
  * @package AlbinoMouse
  */
+
+$headerbg     = get_theme_mod( 'header-background' );
+$description  = get_theme_mod( 'site-description' );
+$headeralign  = get_theme_mod( 'branding-alignment' );
+$headersearch = get_theme_mod( 'search-box' );
+
 ?>
 <!DOCTYPE html>
-<?php $options = get_option( 'albinomouse' ); ?>
 
 <html <?php language_attributes(); ?>>
 <head>
@@ -14,10 +20,6 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<?php if(isset($options['favicon-upload']) and $options['favicon-upload'] != '' ) : ?>
-	<link rel="shortcut icon" type="image/ico" href="<?php echo $options['favicon-upload']; ?>" />
-<?php endif ?>
 
 <?php wp_head(); ?>
 <!--[if lt IE 9]>
@@ -28,25 +30,27 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header hidden-print<?php if(!isset($options['header-background']) or $options['header-background'] == 'light-gray' ) : ?> header-gray<?php endif; ?>" role="banner">
-		<div class="site-branding container hidden-xs<?php if(!isset($options['site-description']) or $options['site-description'] == '1' ) : ?> with-site-description<?php endif; ?><?php if ($options['branding-alignment'] == 'center' ) : ?> centred<?php endif; ?>">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php if(isset($options['logo-upload']) and $options['logo-upload'] != '' ) : ?>
-					<img src="<?php echo $options['logo-upload']; ?>" alt="<?php bloginfo('name'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-				<?php else : ?>
-					<?php bloginfo( 'name' ); ?>
-				<?php endif; ?>
-			</a></h1>
-			<?php if(!isset($options['site-description']) or $options['site-description'] == true ) : ?>
+	<header id="masthead" class="site-header hidden-print<?php if( $headerbg == 'light-gray' ) : ?> header-gray<?php endif; ?>" role="banner">
+		<div class="site-branding container hidden-xs<?php if( $description == '1' ) : ?> with-site-description<?php endif; ?><?php if ( $headeralign == 'center' ) : ?> centred<?php endif; ?>">
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php if ( get_header_image() ) : ?>
+						<img src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="auto" style="max-width:<?php echo esc_attr( albinomouse_header_image_max_width( get_custom_header()->height, get_custom_header()->width ) ); ?>px" alt="<?php esc_attr( bloginfo( 'name' ) ); ?>">
+					<?php else : ?>
+						<?php bloginfo( 'name' ); ?>
+					<?php endif; ?>
+				</a>
+			</h1>
+			<?php if( $description == true ) : ?>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<?php endif; ?>
 			<?php if ( has_nav_menu( 'secondary' ) ) { ?>
 				<nav class="secondary-menu hidden-sm hidden-xs pull-right">
 					<?php wp_nav_menu( array(
-						'theme_location'	=> 'secondary',
-						'depth'				=> 1,
-						'container'			=> '',
-						'fallback_cb'		=> false ));?>
+						'theme_location' => 'secondary',
+						'depth'          => 1,
+						'container'      => '',
+						'fallback_cb'    => false ));?>
 				</nav>
 			<?php } ?>
 		</div>
@@ -61,7 +65,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					
+
 					<a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
 						<?php bloginfo('name'); ?>
 					</a>
@@ -69,22 +73,22 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">			
-					
+
 				<?php wp_nav_menu( array(
-					'theme_location'	=> 'primary',
-					'depth'				=> 2,
-					'container'			=> '',
-					'menu_class'		=> 'nav navbar-nav',
-					'fallback_cb'		=> 'wp_bootstrap_navwalker::fallback',
-					'walker'			=> new wp_bootstrap_navwalker()));
+					'theme_location' => 'primary',
+					'depth'          => 2,
+					'container'      => '',
+					'menu_class'     => 'nav navbar-nav',
+					'fallback_cb'    => 'wp_bootstrap_navwalker::fallback',
+					'walker'         => new wp_bootstrap_navwalker()));
 				?>
-		
+
 				<?php $bodyclasses = get_body_class();
-					if(!isset($options['search-box']) or $options['search-box'] == true && !in_array('error404',$bodyclasses)) :
+					if( $headersearch == true && !in_array('error404',$bodyclasses) ) :
 						get_template_part( 'searchform', 'header' );
 					endif; 
 				?>
-							   
+
 				</div><!-- .navbar-collapse -->				
 			</div><!-- .container -->
 		</nav>
@@ -94,10 +98,10 @@
 	<?php if ( has_nav_menu( 'secondary' ) ) { ?>
 		<nav class="secondary-menu visible-sm visible-xs">
 		<?php wp_nav_menu( array(
-			'theme_location'	=> 'secondary',
-			'depth'				=> 1,
-			'container'			=> '',
-			'fallback_cb'		=> false ));
+			'theme_location' => 'secondary',
+			'depth'          => 1,
+			'container'      => '',
+			'fallback_cb'    => false ));
 		?>
 		</nav>
 	<?php } ?>	

@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: No Breadcrumbs & Full Width
+ *
  * @package AlbinoMouse
  */
 

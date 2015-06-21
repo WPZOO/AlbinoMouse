@@ -2,7 +2,8 @@
 /**
  * @package AlbinoMouse
  */
- $options = get_option( 'albinomouse' );
+
+$postthumb = get_theme_mod( 'thumbnail-size' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -39,7 +40,7 @@
 			</small>
 		</div><!-- .entry-meta -->
 
-		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
+		<?php if ( has_post_thumbnail() && $postthumb == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
 			</div><!-- .post-thumbnail-banner -->
@@ -48,7 +49,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content clearfix">
-		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'thumbnail' ) : ?>
+		<?php if ( has_post_thumbnail() && $postthumb == 'thumbnail' ) : ?>
 			<p class="post-thumbnail-thumbnail">
 				<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
 			</p><!-- .post-thumbnail-thumbnail -->

@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying search forms in AlbinoMouse
+ *
  * @package AlbinoMouse
  */
 ?>

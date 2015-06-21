@@ -1,6 +1,16 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
+##[2.3]
+**Added**
+- Use Customizer instead of options page
+- Update theme screenshot
+
+**Removed**
+- Favicon Option
+
+**Bug fixes**
+
 ##[2.2]
 **Added**
 - New option: Reduced Bootstrap files
