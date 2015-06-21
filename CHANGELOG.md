@@ -1,27 +1,18 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
-##[2.3]
+##[2.2]
 **Added**
 - Use Customizer instead of options page
 - Update theme screenshot
-
-**Removed**
-- Favicon Option
-
-**Bug fixes**
-
-##[2.2]
-**Added**
 - New option: Reduced Bootstrap files
 - Update Bootstrap 3.3.2
 - Update Options Framework 1.9.1
 
 **Removed**
 - Removed Option: Jetpack social buttons styling
+- Favicon Option
 
-**Bug fixes**
-- Exchange options sidebar
 
 ##[2.1.2]
 **Bug fixes**
