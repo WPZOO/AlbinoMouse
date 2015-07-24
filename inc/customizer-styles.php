@@ -45,7 +45,7 @@ if ( ! function_exists( 'customizer_library_albinomouse_build_styles' ) && class
 function customizer_library_albinomouse_build_styles() {
 
 	// Link and footer color
-	$setting = 'link-color';
+	$setting = 'link_footer_color';
 	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $mod !== customizer_library_get_default( $setting ) ) {
@@ -267,7 +267,7 @@ function customizer_library_albinomouse_build_styles() {
 	}
 
 	// Primary font
-	$setting = 'primary-font';
+	$setting = 'general_font';
 	$primaryfont = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $primaryfont !== customizer_library_get_default( $setting ) ) {
@@ -288,7 +288,7 @@ function customizer_library_albinomouse_build_styles() {
 	}
 
 	// Secondary font
-	$setting = 'secondary-font';
+	$setting = 'title_font';
 	$secondaryfont = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $secondaryfont !== customizer_library_get_default( $setting ) ) {
