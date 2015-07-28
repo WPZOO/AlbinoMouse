@@ -5,6 +5,7 @@
  * @package AlbinoMouse
  */
 ?>
+
 <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<div class="form-group">
 		<span class="sr-only"><?php _ex( 'Search for:', 'label', 'albinomouse' ); ?></span>

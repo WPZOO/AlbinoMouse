@@ -1,7 +1,7 @@
 <?php
 
 function albinomouse_get_content_class() {
-$sidebar = get_theme_mod( 'sidebar-layout' );
+$sidebar = get_theme_mod( 'sidebar-layout', '2c-r' );
 
 	if ( !isset( $sidebar ) || '2c-r' == $sidebar ) {
 		$class = 'col-md-7';
@@ -18,7 +18,7 @@ $sidebar = get_theme_mod( 'sidebar-layout' );
 }
 
 function albinomouse_get_sidebar_class() {
-$sidebar = get_theme_mod( 'sidebar-layout' );
+$sidebar = get_theme_mod( 'sidebar-layout', '2c-r' );
 
 	if ( !isset( $sidebar ) || '2c-r' == $sidebar ) {
 		$class = 'col-md-4 col-md-offset-1';

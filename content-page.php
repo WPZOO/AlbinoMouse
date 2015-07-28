@@ -4,7 +4,7 @@
  * @package AlbinoMouse
  */
 
-$postthumb = get_theme_mod( 'thumbnail-size' );
+$postthumb = get_theme_mod( 'thumbnail-size', 'banner' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -12,7 +12,7 @@ $postthumb = get_theme_mod( 'thumbnail-size' );
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
-		<?php if ( has_post_thumbnail() && $postthumb == 'banner' ) : ?>
+		<?php if ( has_post_thumbnail() && ! isset( $postthumb ) || $postthumb == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
 			</div><!-- .post-thumbnail-banner -->

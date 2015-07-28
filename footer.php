@@ -7,10 +7,9 @@
  * @package AlbinoMouse
  */
 
-$layout    = get_theme_mod( 'footer-layout' );
-$love      = get_theme_mod( 'love' );
-$copyright = get_theme_mod( 'copyright' );
-
+$layout    = get_theme_mod( 'footer-layout', '3col' );
+$love      = get_theme_mod( 'love', '1' );
+$copyright = get_theme_mod( 'copyright', '' );
 ?>
 
 	</div><!-- .row -->
@@ -29,7 +28,7 @@ $copyright = get_theme_mod( 'copyright' );
 					<div id="footer1" class="col-md-6">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '3col') : ?>
+				<?php elseif (is_active_sidebar( 'footer-1' ) && ! isset( $layout ) || $layout == '3col') : ?>
 					<div id="footer1" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
@@ -43,7 +42,7 @@ $copyright = get_theme_mod( 'copyright' );
 					<div id="footer2" class="col-md-6">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-2' ) && $layout == '3col') : ?>
+				<?php elseif (is_active_sidebar( 'footer-2' ) && ! isset( $layout ) || $layout == '3col') : ?>
 					<div id="footer2" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
@@ -53,7 +52,7 @@ $copyright = get_theme_mod( 'copyright' );
 					</div>
 				<?php endif; ?>
 
-				<?php if (is_active_sidebar( 'footer-3' ) && $layout == '3col') : ?>
+				<?php if (is_active_sidebar( 'footer-3' ) && ! isset( $layout ) || $layout == '3col') : ?>
 					<div id="footer3" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-3' ); ?>
 					</div>
@@ -74,11 +73,11 @@ $copyright = get_theme_mod( 'copyright' );
 			<div class="site-info">
 				<?php do_action( 'albinomouse_credits' ); ?>
 				
-				<?php if( $love == '1' ) : ?>
+				<?php if( ! isset( $love ) || $love == '1' ) : ?>
 					<a href="http://wordpress.org/themes/albinomouse">AlbinoMouse WordPress Theme</a>, 
 				<?php endif ?>	
 
-				<?php if( $copyright == '' ) { ?>
+				<?php if( ! isset( $copyright ) || $copyright == '' ) { ?>
 						&#169; Copyright <?php echo date("Y"); ?> <?php echo(bloginfo( 'name' ));
 					} else {
 						echo $copyright;

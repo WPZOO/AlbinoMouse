@@ -5,9 +5,10 @@
  * @package AlbinoMouse
  */
 
-$sidebar = get_theme_mod( 'sidebar-layout' );
+$sidebar = get_theme_mod( 'sidebar-layout', '2c-r' );
 
-get_header(); ?>
+get_header(); 
+?>
 
 	<div id="primary" class="content-area <?php echo albinomouse_get_content_class(); ?>">
 
@@ -85,9 +86,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php 
-	if( $sidebar != '1col' ) :
+	if( ! isset( $sidebar ) || $sidebar != '1col' ) {
 		get_sidebar();
-	endif; 
+	}
 ?>
 
 <?php get_footer(); ?>

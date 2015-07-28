@@ -3,8 +3,8 @@
  * @package AlbinoMouse
  */
 
-$postthumb     = get_theme_mod( 'thumbnail-size' );
-$contentoutput = get_theme_mod( 'content-excerpt' );
+$postthumb     = get_theme_mod( 'thumbnail-size', 'banner' );
+$contentoutput = get_theme_mod( 'content-excerpt', 'content' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -43,7 +43,7 @@ $contentoutput = get_theme_mod( 'content-excerpt' );
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
-		<?php if ( has_post_thumbnail() && $postthumb == 'banner' ) : ?>
+		<?php if ( has_post_thumbnail() && ! isset( $postthumb ) || $postthumb == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
@@ -69,7 +69,7 @@ $contentoutput = get_theme_mod( 'content-excerpt' );
 	<?php endif; ?>
 
 
-	<?php if ( $contentoutput == 'content') : ?>
+	<?php if ( ! isset( $contentoutput ) || $contentoutput == 'content') : ?>
 	<div class="entry-content clearfix">
 
 		<?php if ( has_post_thumbnail() && $postthumb == 'thumbnail' ) : ?>

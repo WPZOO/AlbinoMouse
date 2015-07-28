@@ -267,7 +267,7 @@ function customizer_library_albinomouse_build_styles() {
 	}
 
 	// Primary font
-	$setting = 'general_font';
+	$setting = 'general-font';
 	$primaryfont = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $primaryfont !== customizer_library_get_default( $setting ) ) {
@@ -288,7 +288,7 @@ function customizer_library_albinomouse_build_styles() {
 	}
 
 	// Secondary font
-	$setting = 'title_font';
+	$setting = 'title-font';
 	$secondaryfont = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $secondaryfont !== customizer_library_get_default( $setting ) ) {

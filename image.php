@@ -5,7 +5,8 @@
  * @package AlbinoMouse
  */
 
-get_header(); ?>
+get_header();
+?>
 
 <div id="primary" class="content-area image-attachment col-md-12">
 	<main id="main" class="site-main" role="main">

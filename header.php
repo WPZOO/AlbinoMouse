@@ -5,10 +5,10 @@
  * @package AlbinoMouse
  */
 
-$headerbg     = get_theme_mod( 'header-background' );
-$description  = get_theme_mod( 'site-description' );
-$headeralign  = get_theme_mod( 'branding-alignment' );
-$headersearch = get_theme_mod( 'search-box' );
+$headerbg     = get_theme_mod( 'header-background', 'light-gray' );
+$description  = get_theme_mod( 'site-description', '1' );
+$headeralign  = get_theme_mod( 'branding-alignment', 'left' );
+$headersearch = get_theme_mod( 'search-box', '1' );
 
 ?>
 <!DOCTYPE html>
@@ -30,8 +30,9 @@ $headersearch = get_theme_mod( 'search-box' );
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header hidden-print<?php if( $headerbg == 'light-gray' ) : ?> header-gray<?php endif; ?>" role="banner">
-		<div class="site-branding container hidden-xs<?php if( $description == '1' ) : ?> with-site-description<?php endif; ?><?php if ( $headeralign == 'center' ) : ?> centred<?php endif; ?>">
+	<header id="masthead" class="site-header hidden-print<?php if( ! isset( $headerbg ) || $headerbg == 'light-gray' ) { echo ' header-gray'; } ?>" role="banner">
+		<div class="site-branding container hidden-xs<?php if( ! isset( $description ) || $description == '1' ) { echo ' with-site-description'; } if ( $headeralign != 'left' ) { echo ' centred'; } ?>">
+
 			<h1 class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php if ( get_header_image() ) : ?>
@@ -40,20 +41,29 @@ $headersearch = get_theme_mod( 'search-box' );
 						<?php bloginfo( 'name' ); ?>
 					<?php endif; ?>
 				</a>
-			</h1>
-			<?php if( $description == true ) : ?>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			<?php endif; ?>
-			<?php if ( has_nav_menu( 'secondary' ) ) { ?>
-				<nav class="secondary-menu hidden-sm hidden-xs pull-right">
-					<?php wp_nav_menu( array(
+			</h1><!-- .site-title -->
+
+			<?php
+
+			if( ! isset( $description ) || $description == '1' ) {
+				echo '<h2 class="site-description">';
+				bloginfo( 'description' );
+				echo '</h2>';
+			}
+
+			if ( has_nav_menu( 'secondary' ) ) {
+				echo '<nav class="secondary-menu hidden-sm hidden-xs pull-right">';
+					wp_nav_menu( array(
 						'theme_location' => 'secondary',
 						'depth'          => 1,
 						'container'      => '',
-						'fallback_cb'    => false ));?>
-				</nav>
-			<?php } ?>
-		</div>
+						'fallback_cb'    => false
+					));
+				echo '</nav>';
+			}
+
+			?>
+		</div> <!-- .site-branding -->
 
 		<nav class="navbar navbar-default" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -69,40 +79,45 @@ $headersearch = get_theme_mod( 'search-box' );
 					<a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
 						<?php bloginfo('name'); ?>
 					</a>
-				</div>
+				</div> <!-- .navbar-header -->
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">			
 
-				<?php wp_nav_menu( array(
-					'theme_location' => 'primary',
-					'depth'          => 2,
-					'container'      => '',
-					'menu_class'     => 'nav navbar-nav',
-					'fallback_cb'    => 'wp_bootstrap_navwalker::fallback',
-					'walker'         => new wp_bootstrap_navwalker()));
-				?>
+				<?php 
 
-				<?php $bodyclasses = get_body_class();
-					if( $headersearch == true && !in_array('error404',$bodyclasses) ) :
+					wp_nav_menu( array(
+						'theme_location' => 'primary',
+						'depth'          => 2,
+						'container'      => '',
+						'menu_class'     => 'nav navbar-nav',
+						'fallback_cb'    => 'wp_bootstrap_navwalker::fallback',
+						'walker'         => new wp_bootstrap_navwalker()
+					));
+ 
+					$bodyclasses = get_body_class();
+					if( ! isset( $headersearch ) || $headersearch == '1' && ! in_array( 'error404', $bodyclasses ) ) {
 						get_template_part( 'searchform', 'header' );
-					endif; 
+					}
+
 				?>
 
-				</div><!-- .navbar-collapse -->				
+				</div><!-- .navbar-collapse -->
 			</div><!-- .container -->
-		</nav>
+		</nav><!-- .navbar .navbar-default -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
-	<?php if ( has_nav_menu( 'secondary' ) ) { ?>
-		<nav class="secondary-menu visible-sm visible-xs">
-		<?php wp_nav_menu( array(
+
+	<?php 
+	if ( has_nav_menu( 'secondary' ) ) {
+		echo '<nav class="secondary-menu visible-sm visible-xs">';
+		wp_nav_menu( array(
 			'theme_location' => 'secondary',
 			'depth'          => 1,
 			'container'      => '',
 			'fallback_cb'    => false ));
-		?>
-		</nav>
-	<?php } ?>	
+		echo '</nav>';
+	} ?>
+
 	<div class="row">
