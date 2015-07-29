@@ -1,13 +1,15 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
-##[2.2]
+##[3.0.0]
+**Attention: You need to reset your theme options**
+
 **Added**
 - Use Customizer instead of options page
 - Update theme screenshot
 - New option: Reduced Bootstrap files
 - Update Bootstrap 3.3.2
-- Update Options Framework 1.9.1
+– Improve the use of a child theme
 
 **Removed**
 - Removed Option: Jetpack social buttons styling
