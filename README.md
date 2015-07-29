@@ -23,7 +23,7 @@ AlbinoMouse is licensed under [GPL v3](https://github.com/pixelstrolch/AlbinoMou
 ####AlbinoMouse is built on the following frameworks:####
 * [Bootstrap 3](https://github.com/twbs/bootstrap) by Mark Otto and Jacob Thornton (Apache License)
 * The starter theme [underscores](https://github.com/Automattic/underscores.me) by Automattic
-* [Options Framework Theme](https://github.com/devinsays/options-framework-theme) by Devin Price (GPL v2)
+* [Customizer Library](https://github.com/devinsays/customizer-library) by Devin Price
 
 ####There is even more great stuff included:####
 * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) by @tittem (GPL v2)
