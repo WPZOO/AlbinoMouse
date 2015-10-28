@@ -132,18 +132,17 @@ function albinomouse_scripts() {
 	$albinomouse = wp_get_theme( 'albinomouse' );
 
 	if ( $bootstrap != '1' ) :
-		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/style-bootstrap.css' );
+		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/style-bootstrap.min.css' );
 		wp_enqueue_script( 'albinomouse-scripts', get_template_directory_uri() . '/scripts.min.js', array('jquery'), '', true );
 	else :
-		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/style-bootstrap-reduced.css' );
+		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/style-bootstrap-reduced.min.css' );
 		wp_enqueue_script( 'albinomouse-scripts', get_template_directory_uri() . '/scripts-reduced.min.js', array('jquery'), '', true );
 	endif;
 
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'albinomouse-parent-style', get_template_directory_uri() . '/style' . $suffix . '.css', false, $albinomouse['Version'] );
+		wp_enqueue_style( 'penguin-parent-style', get_template_directory_uri() . '/style.min.css', false, $albinomouse['Version'] );
 	}
-
-	wp_enqueue_style( 'albinomouse-style', get_stylesheet_uri(), false, $theme['Version'] );
+	wp_enqueue_style( 'albinomouse-style', get_template_directory_uri() . '/style.min.css', false, $theme['Version'] );    
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
