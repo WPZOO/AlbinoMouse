@@ -31,7 +31,7 @@ function albinomouse_options() {
 
 	$options['link-color'] = array(
 		'id'            => 'link-color',
-		'label'         => __( 'Link and Footer Color', 'penguin' ),
+		'label'         => __( 'Link and Footer Color', 'albinomouse' ),
 		'section'       => $section,
 		'type'          => 'color',
 		'default'       => '#e3272d',
