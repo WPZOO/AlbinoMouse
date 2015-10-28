@@ -30,6 +30,14 @@ function albinomouse_setup() {
 	 */
 	load_theme_textdomain( 'albinomouse', get_template_directory() . '/languages' );
 
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+    
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
