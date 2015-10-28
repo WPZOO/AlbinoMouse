@@ -208,3 +208,31 @@ function excerpt_read_more_link($output) {
 	return $output . '<p><a href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
+
+
+/**
+ * Display a notice that can be dismissed
+ */
+add_action('admin_notices', 'albinomouse_3_0_0_admin_notice');
+function albinomouse_3_0_0_admin_notice() {
+	global $current_user ;
+		$user_id = $current_user->ID;
+		/* Check that the user hasn't already clicked to ignore the message */
+	if ( ! get_user_meta($user_id, 'albinomouse_3_0_0_ignore_notice') ) {
+		echo '<div class="error"><p>';
+		printf(__('If you updated AlbinoMouse from an earlier version, you need to reset your theme options. <a href="%1$s">Hide Notice</a>', 'albinomouse'), '?albinomouse_3_0_0_nag_ignore=0');
+		echo "</p></div>";
+	}
+}
+/**
+ * Ignore admin notice
+ */
+add_action('admin_init', 'albinomouse_3_0_0_nag_ignore');
+function albinomouse_3_0_0_nag_ignore() {
+	global $current_user;
+		$user_id = $current_user->ID;
+		/* If user clicks to ignore the notice, add that to their user meta */
+		if ( isset($_GET['albinomouse_3_0_0_nag_ignore']) && '0' == $_GET['albinomouse_3_0_0_nag_ignore'] ) {
+			 add_user_meta($user_id, 'albinomouse_3_0_0_ignore_notice', 'true', true);
+	}
+}
