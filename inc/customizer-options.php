@@ -65,13 +65,12 @@ function albinomouse_options() {
 		'light-gray'    => __( 'Gray semi-transparent', 'albinomouse' ),
 	);
 
-	$options['header-background'] = array(
-		'id'            => 'header-background',
-		'label'         => __( 'Header Background', 'albinomouse' ),
+	$options['logo-upload'] = array(
+		'id'            => 'logo-upload',
+		'label'         => __( 'Upload your logo', 'albinomouse' ),
 		'section'       => $section,
-		'type'          => 'radio',
-		'default'       => 'light-gray',
-		'choices'       => $hbchoices,
+		'type'          => 'upload',
+		'default'       => '',
 	);
 
 	$options['branding-alignment'] = array(
@@ -99,14 +98,14 @@ function albinomouse_options() {
 		'default'       => '1',
 	);
 
-	// Logo
-	$section = 'header_image';
-
-	$sections[] = array(
-		'id'            => $section,
-		'title'         => __( 'Logo', 'albinomouse' ),
-		'priority'      => '80'
-	);
+	$options['header-background'] = array(
+		'id'            => 'header-background',
+		'label'         => __( 'Header Background', 'albinomouse' ),
+		'section'       => $section,
+		'type'          => 'radio',
+		'default'       => 'light-gray',
+		'choices'       => $hbchoices,
+	);	
 
 	// Navigation
 	$section = 'nav';

@@ -6,6 +6,7 @@
  */
 
 $headerbg     = get_theme_mod( 'header-background', 'light-gray' );
+$logo         = get_theme_mod( 'logo-upload' );
 $description  = get_theme_mod( 'site-description', '1' );
 $headeralign  = get_theme_mod( 'branding-alignment', 'left' );
 $headersearch = get_theme_mod( 'search-box', '1' );
@@ -22,7 +23,7 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 
 <?php wp_head(); ?>
 <!--[if lt IE 9]>
-    <script src="<?php echo esc_url( home_url( '/' ) );?>wp-content/themes/albinomouse/scripts-ie.js"></script>
+    <script src="<?php echo esc_url( home_url( '/' ) );?>wp-content/themes/albinomouse/html5shiv.min.js"></script>
 <![endif]-->
 </head>
 
@@ -33,9 +34,9 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 		<div class="site-branding container hidden-xs<?php if( ! isset( $description ) || $description == '1' ) { echo ' with-site-description'; } if ( $headeralign != 'left' ) { echo ' centred'; } ?>">
 
 			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if ( get_header_image() ) : ?>
-						<img src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="auto" style="max-width:<?php echo esc_attr( albinomouse_header_image_max_width( get_custom_header()->height, get_custom_header()->width ) ); ?>px" alt="<?php esc_attr( bloginfo( 'name' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php if ( $logo != '' ) : ?>
+						<img src="<?php echo $logo ?>" alt="<?php bloginfo('name'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 					<?php else : ?>
 						<?php bloginfo( 'name' ); ?>
 					<?php endif; ?>
