@@ -6,13 +6,13 @@ All notable changes to this project will be documented in this file. This projec
 
 **Added**
 - Use Customizer instead of options page
-- Update theme screenshot
-- New option: Reduced Bootstrap files
 - Update Bootstrap 3.3.2
 – Improve the use of a child theme
+- Update theme screenshot
 
 **Removed**
-- Removed Option: Jetpack social buttons styling
+– Support of IE8
+- Option: Jetpack social buttons styling
 - Favicon Option
 
 
