@@ -198,6 +198,13 @@ function albinomouse_options() {
 		'default'       => 'banner'
 	);
 
+	$options['page-breadcrumbs'] = array(
+		'id'            => 'page-breadcrumbs',
+		'label'         => __( 'Breadcrumbs on default page template', 'albinomouse' ),
+		'section'       => $section,
+		'type'          => 'checkbox',
+		'default'       => '1'
+	);
 
 	// Footer
 	$section = 'footer';
@@ -238,31 +245,6 @@ function albinomouse_options() {
 		'section'       => $section,
 		'type'          => 'checkbox',
 		'default'       => '1',
-	);
-
-	// Footer
-	$section = 'advanced';
-
-	$sections[] = array(
-		'id'            => $section,
-		'title'         => __( 'Advanced', 'albinomouse' ),
-		'priority'      => '110'
-	);
-
-	$options['page-breadcrumbs'] = array(
-		'id'            => 'page-breadcrumbs',
-		'label'         => __( 'Breadcrumbs on default page template', 'albinomouse' ),
-		'section'       => $section,
-		'type'          => 'checkbox',
-		'default'       => '1'
-	);
-
-	$options['smbootstrap'] = array(
-		'id'            => 'smbootstrap',
-		'label'         => __( 'Load only a selection of Bootstrap components [All common CSS], [Glyphicons], [Navs], [Navbar], [Pager], [Thumbnails], [Media items], [Responsive Embed], [Colapse jQuery Plugin], [Dropdown jQuery Plugin]', 'albinomouse' ),
-		'section'       => $section,
-		'type'          => 'checkbox',
-		'default'       => '0',
 	);
 
 
