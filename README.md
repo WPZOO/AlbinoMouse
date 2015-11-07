@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/pixelstrolch/AlbinoMouse.png?label=ready&title=Ready)](https://waffle.io/pixelstrolch/AlbinoMouse)
 AlbinoMouse
 ===========
 
