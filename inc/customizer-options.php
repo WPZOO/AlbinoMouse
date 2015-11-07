@@ -127,7 +127,7 @@ function albinomouse_options() {
 	);
 
 	$options['primary-font'] = array(
-		'id'            => 'general-font',
+		'id'            => 'primary-font',
 		'label'         => __( 'General Font', 'albinomouse' ),
 		'section'       => $section,
 		'type'          => 'select',
@@ -136,7 +136,7 @@ function albinomouse_options() {
 	);
 
 	$options['secondary-font'] = array(
-		'id'            => 'title-font',
+		'id'            => 'secondary-font',
 		'label'         => __( 'Title Font', 'albinomouse' ),
 		'section'       => $section,
 		'type'          => 'select',
