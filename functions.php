@@ -57,7 +57,9 @@ function albinomouse_setup() {
 		'secondary' => __( 'Secondary Menu', 'albinomouse' )
 	) );
 
-		// Setup the WordPress core custom background feature.
+	/**
+	 * Setup the WordPress core custom background feature.
+	 */
 	add_theme_support( 'custom-background', apply_filters( 'penguin_custom_background_args', array(
 		'default-color' => '#ffffff',
 		'default-image' => '',

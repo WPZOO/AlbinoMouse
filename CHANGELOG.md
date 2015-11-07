@@ -15,7 +15,6 @@ All notable changes to this project will be documented in this file. This projec
 - Option: Jetpack social buttons styling
 - Favicon Option
 
-
 ##[2.1.2]
 **Bug fixes**
 - Loading secondary nav only if needed
