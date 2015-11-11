@@ -105,7 +105,7 @@ function albinomouse_options() {
 		'type'          => 'radio',
 		'default'       => 'light-gray',
 		'choices'       => $hbchoices,
-	);	
+	);
 
 	// Navigation
 	$section = 'nav';

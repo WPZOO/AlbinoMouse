@@ -37,7 +37,7 @@ function albinomouse_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
-    
+
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
@@ -135,7 +135,7 @@ function albinomouse_scripts() {
 	if ( is_child_theme() ) {
 		wp_enqueue_style( 'albinomouse-parent-style', get_template_directory_uri() . '/style.min.css', false, $albinomouse['Version'] );
 	}
-	wp_enqueue_style( 'albinomouse-style', get_template_directory_uri() . '/style.min.css', false, $theme['Version'] );    
+	wp_enqueue_style( 'albinomouse-style', get_template_directory_uri() . '/style.min.css', false, $theme['Version'] );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.2', true );
 	wp_enqueue_script( 'albinomouse-bootstrap-classes-js', get_template_directory_uri() . '/js/bootstrap-classes.min.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'fluidvids', get_template_directory_uri() . '/js/fluidvids.js', array(), '2.4.1', true );
@@ -207,30 +207,25 @@ function excerpt_read_more_link($output) {
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
-
-/**
- * Display a notice that can be dismissed
- */
-add_action('admin_notices', 'albinomouse_3_0_0_admin_notice');
-function albinomouse_3_0_0_admin_notice() {
-	global $current_user ;
-		$user_id = $current_user->ID;
-		/* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'albinomouse_3_0_0_ignore_notice') ) {
-		echo '<div class="error"><p>';
-		printf(__('If you updated AlbinoMouse from an earlier version, you need to reset your theme options. <a href="%1$s">Hide Notice</a>', 'albinomouse'), '?albinomouse_3_0_0_nag_ignore=0');
-		echo "</p></div>";
+function albinomouse_settings_update() {
+	$options = get_option( 'albinomouse' );
+	if ( ! $options ) {
+		return;
 	}
-}
-/**
- * Ignore admin notice
- */
-add_action('admin_init', 'albinomouse_3_0_0_nag_ignore');
-function albinomouse_3_0_0_nag_ignore() {
-	global $current_user;
-		$user_id = $current_user->ID;
-		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset($_GET['albinomouse_3_0_0_nag_ignore']) && '0' == $_GET['albinomouse_3_0_0_nag_ignore'] ) {
-			 add_user_meta($user_id, 'albinomouse_3_0_0_ignore_notice', 'true', true);
+	$options['link-color']            = $options['link_footer_color'];
+	$options['background_image']      = preg_replace( '/-\d+[Xx]\d+\./', '.', $options['general-background']['image'] );
+	$options['background_repeat']     = $options['general-background']['repeat'];
+	$background_position              = explode( ' ', $options['general-background']['position'] );
+	$options['background_position_x'] = $background_position[1];
+	$options['background_attachment'] = $options['general-background']['attachment'];
+	$options['secondary-font']        = $options['title_font'];
+	$options['primary-font']          = $options['general_font'];
+	$options['copyright']             = $options['copyright-text'];
+	$options['love']                  = $options['show-love'];
+	foreach( $options as $key => $value ) {
+		set_theme_mod( $key, $value );
 	}
+	delete_option( 'albinomouse' );
+	delete_option( 'albinomouseoptions' );
 }
+add_action( 'after_setup_theme', 'albinomouse_settings_update' );
