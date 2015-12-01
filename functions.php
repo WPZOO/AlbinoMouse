@@ -138,7 +138,7 @@ function albinomouse_scripts() {
 	wp_enqueue_style( 'albinomouse-style', get_template_directory_uri() . '/style.min.css', false, $theme['Version'] );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.2', true );
 	wp_enqueue_script( 'albinomouse-bootstrap-classes-js', get_template_directory_uri() . '/js/bootstrap-classes.min.js', array('jquery'), '1.0', true );
-	wp_enqueue_script( 'fluidvids', get_template_directory_uri() . '/js/fluidvids.js', array(), '2.4.1', true );
+	wp_enqueue_script( 'fluidvids', get_template_directory_uri() . '/js/fluidvids.min.js', array(), '2.4.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -156,6 +156,21 @@ function albinomouse_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'albinomouse_scripts' );
 
+/**
+ * Add script to footer
+ */
+function albinomouse_wp_footer() {
+	// Do not add script if FluidVids plugin is installed
+	if ( ! class_exists( 'FluidVids' ) ) { ?>
+	<script>
+		fluidvids.init({
+			selector: ['iframe'],
+			players: ['www.youtube.com', 'www.youtube-nocookie.com', 'player.vimeo.com']
+		});
+	</script>
+	<?php }
+}
+add_action( 'wp_footer', 'albinomouse_wp_footer', 21 );
 
 /**
  * Custom template tags for this theme.
