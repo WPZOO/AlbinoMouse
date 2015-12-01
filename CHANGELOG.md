@@ -2,8 +2,6 @@
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
 ##[3.0.0]
-**Attention: You need to reset your theme options**
-
 **Added**
 - Use Customizer instead of options page
 - Update Bootstrap 3.3.2
@@ -11,7 +9,7 @@ All notable changes to this project will be documented in this file. This projec
 - Update theme screenshot
 
 **Removed**
-– Support of IE8
+– Support of IE8 (respond.js)
 - Option: Jetpack social buttons styling
 - Favicon Option
 
