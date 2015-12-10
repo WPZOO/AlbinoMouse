@@ -31,7 +31,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
+<?php
 	if( ! isset( $sidebar ) || $sidebar != '1col' ) {
 		get_sidebar();
 	}

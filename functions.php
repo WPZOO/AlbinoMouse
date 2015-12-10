@@ -5,12 +5,6 @@
  * @package AlbinoMouse
  */
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) )
-	$content_width = 750; /* pixels */
-
 if ( ! function_exists( 'albinomouse_setup' ) ) :
 
 /**
@@ -75,6 +69,18 @@ function albinomouse_setup() {
 }
 endif; // albinomouse_setup
 add_action( 'after_setup_theme', 'albinomouse_setup' );
+
+/**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */
+function albinomouse__content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'albinomouse__content_width', 750 );
+}
+add_action( 'after_setup_theme', 'albinomouse__content_width', 0 );
 
 /**
  * Register widgetized area and update sidebar with default widgets
@@ -173,6 +179,49 @@ function albinomouse_wp_footer() {
 add_action( 'wp_footer', 'albinomouse_wp_footer', 21 );
 
 /**
+ * Changing the [...] string in the excerpt
+ */
+function albinomouse_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'albinomouse_excerpt_more');
+
+/**
+ * Read more link on all excerpts
+ */
+function albinomouse_excerpt_read_more_link($output) {
+	global $post;
+	return $output . '<p><a href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
+}
+add_filter('the_excerpt', 'albinomouse_excerpt_read_more_link');
+
+/**
+ * Switch from theme options to theme mod
+ */
+function albinomouse_settings_update() {
+	$options = get_option( 'albinomouse' );
+	if ( ! $options ) {
+		return;
+	}
+	$options['link-color']            = $options['link_footer_color'];
+	$options['background_image']      = preg_replace( '/-\d+[Xx]\d+\./', '.', $options['general-background']['image'] );
+	$options['background_repeat']     = $options['general-background']['repeat'];
+	$background_position              = explode( ' ', $options['general-background']['position'] );
+	$options['background_position_x'] = $background_position[1];
+	$options['background_attachment'] = $options['general-background']['attachment'];
+	$options['secondary-font']        = $options['title_font'];
+	$options['primary-font']          = $options['general_font'];
+	$options['copyright']             = $options['copyright-text'];
+	$options['love']                  = $options['show-love'];
+	foreach( $options as $key => $value ) {
+		set_theme_mod( $key, $value );
+	}
+	delete_option( 'albinomouse' );
+	delete_option( 'albinomouseoptions' );
+}
+add_action( 'after_setup_theme', 'albinomouse_settings_update' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -203,44 +252,3 @@ require get_template_directory() . '/inc/customizer-styles.php';
  * Custom font list
  */
 require get_template_directory() . '/inc/fonts.php';
-
-
-/**
- * Changing the [...] string in the excerpt
- */
-function new_excerpt_more( $more ) {
-	return '...';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
-/**
- * Read more link on all excerpts
- */
-function excerpt_read_more_link($output) {
-	global $post;
-	return $output . '<p><a href="'. get_permalink($post->ID) . '"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( "Continue reading", "albinomouse" ) . '</a></p>';
-}
-add_filter('the_excerpt', 'excerpt_read_more_link');
-
-function albinomouse_settings_update() {
-	$options = get_option( 'albinomouse' );
-	if ( ! $options ) {
-		return;
-	}
-	$options['link-color']            = $options['link_footer_color'];
-	$options['background_image']      = preg_replace( '/-\d+[Xx]\d+\./', '.', $options['general-background']['image'] );
-	$options['background_repeat']     = $options['general-background']['repeat'];
-	$background_position              = explode( ' ', $options['general-background']['position'] );
-	$options['background_position_x'] = $background_position[1];
-	$options['background_attachment'] = $options['general-background']['attachment'];
-	$options['secondary-font']        = $options['title_font'];
-	$options['primary-font']          = $options['general_font'];
-	$options['copyright']             = $options['copyright-text'];
-	$options['love']                  = $options['show-love'];
-	foreach( $options as $key => $value ) {
-		set_theme_mod( $key, $value );
-	}
-	delete_option( 'albinomouse' );
-	delete_option( 'albinomouseoptions' );
-}
-add_action( 'after_setup_theme', 'albinomouse_settings_update' );

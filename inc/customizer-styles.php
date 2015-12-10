@@ -6,7 +6,7 @@
  */
 
 /**
- * Define colors dynamically 
+ * Define colors dynamically
  */
 function albinomouse_change_color( $color, $per ) {
 
@@ -274,10 +274,10 @@ function customizer_library_albinomouse_build_styles() {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
-				'body', 
-				'button', 
-				'input', 
-				'select', 
+				'body',
+				'button',
+				'input',
+				'select',
 				'textarea'
 			),
 			'declarations' => array(
@@ -295,12 +295,12 @@ function customizer_library_albinomouse_build_styles() {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
-				'h1', 
-				'h2', 
-				'h3', 
-				'h4', 
-				'h5', 
-				'h6', 
+				'h1',
+				'h2',
+				'h3',
+				'h4',
+				'h5',
+				'h6',
 				'.navbar-brand'
 			),
 			'declarations' => array(

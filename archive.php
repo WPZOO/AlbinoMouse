@@ -7,7 +7,7 @@
 
 $sidebar = get_theme_mod( 'sidebar-layout', '2c-r' );
 
-get_header(); 
+get_header();
 ?>
 
 	<div id="primary" class="content-area <?php echo albinomouse_get_content_class(); ?>">
@@ -47,7 +47,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
+<?php
 	if( ! isset( $sidebar ) || $sidebar != '1col' ) {
 		get_sidebar();
 	}

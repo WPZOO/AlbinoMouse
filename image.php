@@ -18,7 +18,7 @@ get_header();
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 				<div class="entry-meta">
-					<?php 
+					<?php
 						$metadata = wp_get_attachment_metadata();
 							printf( _x( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> in <a href="%3$s" rel="gallery">%4$s</a> | Full size: <a href="%5$s">%6$s pixels &times; %7$s pixels</a>', '1: date attribute, 2: date, 3: parent post link, 4: parent post title, 5: image link, 6: image width, 7: image height', 'albinomouse' ),
 								esc_attr( get_the_date( 'c' ) ),
@@ -28,7 +28,7 @@ get_header();
 								esc_url( wp_get_attachment_url() ),
 								$metadata['width'],
 								$metadata['height']
-							); 
+							);
 					?>
 				</div><!-- .entry-meta -->
 
@@ -57,7 +57,7 @@ get_header();
 				<?php the_content( '<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;' . __( 'Continue reading', 'albinomouse' ) ); ?>
 				<?php wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'albinomouse' ),
-					'after'  => '</div>')); 
+					'after'  => '</div>'));
 				?>
 
 			</div><!-- .entry-content -->
@@ -67,7 +67,7 @@ get_header();
 
 		<?php // If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || '0' != get_comments_number() )
-					comments_template(); 
+					comments_template();
 		?>
 
 	<?php endwhile; // end of the loop. ?>

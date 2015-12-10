@@ -20,39 +20,39 @@ $copyright = get_theme_mod( 'copyright', '' );
 
 			<div id="footer-widgets" class="row">
 
-				<?php if (is_active_sidebar( 'footer-1' ) && $layout == '1col') : ?>
+				<?php if ( is_active_sidebar( 'footer-1' ) && $layout == '1col' ) : ?>
 					<div id="footer1" class="col-md-12">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '2col') : ?>
+				<?php elseif ( is_active_sidebar( 'footer-1' ) && $layout == '2col' ) : ?>
 					<div id="footer1" class="col-md-6">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-1' ) && ! isset( $layout ) || $layout == '3col') : ?>
+				<?php elseif ( is_active_sidebar( 'footer-1' ) && ! isset( $layout ) || $layout == '3col' ) : ?>
 					<div id="footer1" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-1' ) && $layout == '4col') : ?>
+				<?php elseif ( is_active_sidebar( 'footer-1' ) && $layout == '4col' ) : ?>
 					<div id="footer1" class="col-md-3">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if (is_active_sidebar( 'footer-2' ) && $layout == '2col') : ?>
+				<?php if ( is_active_sidebar( 'footer-2' ) && $layout == '2col' ) : ?>
 					<div id="footer2" class="col-md-6">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-2' ) && ! isset( $layout ) || $layout == '3col') : ?>
+				<?php elseif ( is_active_sidebar( 'footer-2' ) && ! isset( $layout ) || $layout == '3col' ) : ?>
 					<div id="footer2" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
-				<?php elseif (is_active_sidebar( 'footer-2' ) && $layout == '4col') : ?>
+				<?php elseif ( is_active_sidebar( 'footer-2' ) && $layout == '4col' ) : ?>
 					<div id="footer2" class="col-md-3">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if (is_active_sidebar( 'footer-3' ) && ! isset( $layout ) || $layout == '3col') : ?>
+				<?php if ( is_active_sidebar( 'footer-3' ) && ! isset( $layout ) || $layout == '3col' ) : ?>
 					<div id="footer3" class="col-md-4">
 						<?php dynamic_sidebar( 'footer-3' ); ?>
 					</div>
@@ -62,7 +62,7 @@ $copyright = get_theme_mod( 'copyright', '' );
 					</div>
 				<?php endif; ?>
 
-				<?php if (is_active_sidebar( 'footer-4' ) && $layout == '4col') : ?>
+				<?php if ( is_active_sidebar( 'footer-4' ) && $layout == '4col' ) : ?>
 					<div id="footer4" class="col-md-3">
 						<?php dynamic_sidebar( 'footer-4' ); ?>
 					</div>
@@ -72,19 +72,19 @@ $copyright = get_theme_mod( 'copyright', '' );
 
 			<div class="site-info">
 				<?php do_action( 'albinomouse_credits' ); ?>
-				
-				<?php if( ! isset( $love ) || $love == '1' ) : ?>
-					<a href="http://wordpress.org/themes/albinomouse">AlbinoMouse WordPress Theme</a>, 
-				<?php endif ?>	
 
-				<?php if( ! isset( $copyright ) || $copyright == '' ) { ?>
-						&#169; Copyright <?php echo date("Y"); ?> <?php echo(bloginfo( 'name' ));
+				<?php if( ! isset( $love ) || $love == '1' ) : ?>
+					<a href="<?php _e( 'https://wordpress.org/themes/albinomouse', 'albinomouse' ); ?>"><?php _e( 'AlbinoMouse WordPress Theme', 'albinomouse' ); ?></a>,
+				<?php endif ?>
+
+				<?php if( ! isset( $copyright ) || $copyright == '' ) {
+						printf( _x( '&#169; Copyright %1$s %2$s', '1: year 2: Site name' 'albinomouse' ), date( 'Y' ), bloginfo( 'name' ) );
 					} else {
 						echo $copyright;
 					} ?>
 
 			</div><!-- .site-info -->
-			
+
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

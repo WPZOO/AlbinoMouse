@@ -36,7 +36,7 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 			<h1 class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<?php if ( $logo != '' ) : ?>
-						<img src="<?php echo $logo ?>" alt="<?php bloginfo('name'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+						<img src="<?php echo esc_url( $logo ) ?>" alt="<?php bloginfo('name'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 					<?php else : ?>
 						<?php bloginfo( 'name' ); ?>
 					<?php endif; ?>
@@ -70,7 +70,7 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only"><?php _e( 'Toggle navigation', 'albinomouse' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -82,9 +82,9 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 				</div> <!-- .navbar-header -->
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">			
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
 
-				<?php 
+				<?php
 
 					wp_nav_menu( array(
 						'theme_location' => 'primary',
@@ -94,7 +94,7 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 						'fallback_cb'    => 'wp_bootstrap_navwalker::fallback',
 						'walker'         => new wp_bootstrap_navwalker()
 					));
- 
+
 					$bodyclasses = get_body_class();
 					if( ! isset( $headersearch ) || $headersearch == '1' && ! in_array( 'error404', $bodyclasses ) ) {
 						get_template_part( 'searchform', 'header' );
@@ -109,7 +109,7 @@ $headersearch = get_theme_mod( 'search-box', '1' );
 
 	<div id="content" class="site-content container">
 
-	<?php 
+	<?php
 	if ( has_nav_menu( 'secondary' ) ) {
 		echo '<nav class="secondary-menu visible-sm visible-xs">';
 		wp_nav_menu( array(
