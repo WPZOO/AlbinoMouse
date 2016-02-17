@@ -2,7 +2,8 @@
 /**
  * @package AlbinoMouse
  */
-$options = get_option( 'albinomouse' );
+
+$postthumb = get_theme_mod( 'thumbnail-size', 'banner' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -41,7 +42,7 @@ $options = get_option( 'albinomouse' );
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
-		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'banner' ) : ?>
+		<?php if ( has_post_thumbnail() && ! isset( $postthumb ) || $postthumb == 'banner' ) : ?>
 			<div class="post-thumbnail-banner">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail-banner'); ?>
@@ -52,7 +53,7 @@ $options = get_option( 'albinomouse' );
 
 	<div class="entry-summary clearfix">
 
-		<?php if (has_post_thumbnail() && $options['thumbnail-size'] == 'thumbnail' ) : ?>
+		<?php if ( has_post_thumbnail() && $postthumb == 'thumbnail' ) : ?>
 			<p class="post-thumbnail-thumbnail">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'albinomouse' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 			<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>

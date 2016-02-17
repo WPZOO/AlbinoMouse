@@ -1,10 +1,15 @@
 <?php
 /**
  * Template Name: No Breadcrumbs
+ *
  * @package AlbinoMouse
  */
 
-get_header(); ?>
+$sidebar = get_theme_mod( 'sidebar-layout', '2c-r' );
+
+get_header(); 
+
+?>
 
 	<div id="primary" class="content-area <?php echo albinomouse_get_content_class(); ?>">
 
@@ -25,10 +30,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-$options = get_option( 'albinomouse' );
-if($options['sidebar-layout'] != '1col') :
-	get_sidebar();
-endif; ?>
-
+<?php 
+	if( ! isset( $sidebar ) || $sidebar != '1col' ) {
+		get_sidebar();
+	}
+?>
 <?php get_footer(); ?>

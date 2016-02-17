@@ -9,15 +9,18 @@
  *
  * @package AlbinoMouse
  */
-$options = get_option( 'albinomouse' );
 
-get_header(); ?>
+$breadcrumbs = get_theme_mod( 'page-breadcrumbs', '1' );
+$sidebar     = get_theme_mod( 'sidebar-layout', '2c-r' );
+
+get_header();
+?>
 
 	<div id="primary" class="content-area <?php echo albinomouse_get_content_class(); ?>">
 
 		<main id="main" class="site-main" role="main">
 
-			<?php if(!isset($options['page-breadcrumbs']) or $options['page-breadcrumbs'] == 'yes') : ?>
+			<?php if( ! isset( $breadcrumbs ) || $breadcrumbs == '1' ) : ?>
 				<div id="breadcrumbs">
 					<?php echo albinomouse_breadcrumb(); ?>
 				</div>
@@ -38,8 +41,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if($options['sidebar-layout'] != '1col') :
-	get_sidebar();
-endif; ?>
-
+<?php
+	if( ! isset( $sidebar ) || $sidebar != '1col' ) {
+		get_sidebar();
+	}
+?>
 <?php get_footer(); ?>

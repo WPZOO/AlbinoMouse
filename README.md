@@ -1,9 +1,12 @@
 AlbinoMouse
 ===========
 
-AlbinoMouse is a responsive WordPress theme with a clean and flat design.
-* It is based on the awesome <a href="https://github.com/twbs/bootstrap">framework Bootstrap 3</a>.
-* It is perfect for blogging, but can be used for other purposes as well.
+![Screenshot of WordPress theme AlbinoMouse](screenshot.png "AlbinoMouse Screenshot")
+
+**AlbinoMouse is a responsive WordPress theme with a clean and flat design.**
+
+* It's based on the awesome [starter theme underscores](https://github.com/Automattic/underscores.me) and [framework Bootstrap 3](http://getbootstrap.com/).
+* It's a clean blogging theme, however you might use it for something else.
 * There are theme options available which allow you to customize the theme in your way. 
 	* Upload your own logo,
 	* change the primary color which is used for links and the footer background,
@@ -11,32 +14,23 @@ AlbinoMouse is a responsive WordPress theme with a clean and flat design.
 	* choose from different sidebar layouts,
 	* and so on
 * It comes with four different page templates.
-* AlbinoMouse has been translated into seven different languages so far.
+* AlbinoMouse has been translated into five different languages so far.
 
 ##License##
-AlbinoMouse is licensed under [GPLv3](https://github.com/pixelstrolch/AlbinoMouse/blob/master/license.txt). The theme was built on some awesome frameworks and other great includes. Anyway, all code is open source.
+AlbinoMouse is licensed under [GPL v3](https://github.com/pixelstrolch/AlbinoMouse/blob/master/license.txt). The theme was built on some awesome frameworks and other great includes. Anyway, all code is open source.
 
 ##Credits##
-####AlbinoMouse is built on the following frameworks:####
+###AlbinoMouse is built on the following frameworks:###
 * [Bootstrap 3](https://github.com/twbs/bootstrap) by Mark Otto and Jacob Thornton (Apache License)
-* The starter theme [underscores](https://github.com/Automattic/_s) by Automattic
-* [Options Framework Theme](https://github.com/devinsays/options-framework-theme) by Devin Price (GPL v2)
+* The starter theme [underscores](https://github.com/Automattic/underscores.me) by Automattic
+* [Customizer Library](https://github.com/devinsays/customizer-library) by Devin Price
 
-####There is even more great stuff included:####
+###There is even more great stuff included:###
 * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) by @tittem (GPL v2)
-* [FitVids](https://github.com/davatron5000/FitVids.js) by Chris Coyier and Paravel (WTFPL)
+* [Fluidvids](https://github.com/toddmotto/fluidvids) by Todd Motto (MIT)
 * [HTML5 Shiv](https://github.com/aFarkas/html5shiv) by Alexander Farkas, Jonathan Neal and Paul Irish (MIT/GPL v2)
-* [Respond.js](https://github.com/scottjehl/Respond) by Scott Jehl (MIT)
 * [Glyphicons Halflings](http://glyphicons.com) by Jan Kovařík comes with Bootstrap 3 (same license)
-* Some icons from [Socialicous](https://github.com/shalinguyen/socialicious) by Shali Nguyen (MIT)
-* Some icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome/) by Dave Gandy (SIL OFL 1.1)
 
-####These guys make AlbinoMouse international:####
-* French translation by [Alexis Jurdant](http://effingo.be/)
-* German translation by myself, [Stefan Brechbühl](http://www.pixelstrol.ch/)
-* Roumain translation by Van Testing
-* Polish translation by [Michał Hunger](http://blog.13mhz.kapa.pl/)
-* Spanish translation by [Pablo Laguna](http://pablolaguna.es)
-
-Your language is not listed above and you wanna make AlbinoMouse even more international?<br/>
-[You might collaborate on POEditor.com](https://poeditor.com/join/project?hash=a014ba485142acb471bb0b5394ee345a)
+###Translations###
+__Thanks to all the folks who translated AlbinoMouse into another language!__
+You can help us on [wordpress.org](https://translate.wordpress.org/projects/wp-themes/albinomouse) to make it even more international.

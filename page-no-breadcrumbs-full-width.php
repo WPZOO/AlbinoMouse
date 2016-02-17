@@ -1,10 +1,12 @@
 <?php
 /**
  * Template Name: No Breadcrumbs & Full Width
+ *
  * @package AlbinoMouse
  */
 
-get_header(); ?>
+get_header();
+?>
 
 	<div id="primary" class="content-area col-md-12">
 
