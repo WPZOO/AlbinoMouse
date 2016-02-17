@@ -32,5 +32,5 @@ AlbinoMouse is licensed under [GPL v3](https://github.com/pixelstrolch/AlbinoMou
 * [Glyphicons Halflings](http://glyphicons.com) by Jan Kovařík comes with Bootstrap 3 (same license)
 
 ###Translations###
-__ Thanks to all the folks who translated AlbinoMouse into another language! __
+__Thanks to all the folks who translated AlbinoMouse into another language!__
 You can help us on [wordpress.org](https://translate.wordpress.org/projects/wp-themes/albinomouse) to make it even more international.
