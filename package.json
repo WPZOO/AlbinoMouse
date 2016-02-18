@@ -4,7 +4,7 @@
   "description": "WP Theme AlbinoMouse",
   "author": "Stefan Brechbühl",
   "homepage": "https://wpzoo.ch/",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "copyright": "2015",
   "license": "GPL-2.0+",
   "private": true,
@@ -30,10 +30,10 @@
   },
   "theme": {
     "name": "AlbinoMouse",
-    "uri": "http://wpzoo.ch/themes/albinomouse/",
+    "uri": "https://wpzoo.ch/en/themes/albinomouse/",
     "description": "AlbinoMouse is a responsive WordPress theme with a clean and flat design. It's based on the awesome starter theme underscores and framework Bootstrap 3. There are theme options available which allow you to customize the theme in your way. You may upload your own logo, change the color for links and the footer, choose from a few Google fonts, choose from different sidebar layouts, ...",
     "author": "WPZOO",
-    "authoruri": "http://wpzoo.ch",
+    "authoruri": "https://wpzoo.ch/en",
     "license": "GPL-2.0+",
     "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",
     "textdomain": "albinomouse",
@@ -55,6 +55,7 @@
     "url": "https://github.com/WPZOO/albinomouse.git"
   },
   "devDependencies": {
+    "autoprefixer": "*",
     "grunt": "*",
     "load-grunt-config": "*",
     "grunt-checktextdomain": "*",
@@ -65,10 +66,12 @@
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
     "grunt-wp-i18n": "*",
     "grunt-newer": "*",
     "grunt-potomo": "*",
     "grunt-banner": "*",
+    "grunt-postcss": "*",
     "grunt-exec": "*"
   }
 }
