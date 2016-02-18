@@ -1,9 +1,6 @@
 body {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
 	hyphens: auto;
 
 	@media screen and (min-width: 768px) {
@@ -162,7 +159,6 @@ object {
 /* Links */
 
 a {
-	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 
 	&:hover,
@@ -329,7 +325,6 @@ a {
 		background-position: center center;
 		cursor: pointer;
 		position: relative;
-		-webkit-transition: width 400ms ease, background 400ms ease;
 		transition: width 400ms ease, background 400ms ease;
 		width: 0;
 	}
@@ -591,7 +586,6 @@ footer.entry-meta {
 
 .comment-author img {
 	border: 1px solid #d1d1d1;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	padding: 5px;
 	position: absolute;
@@ -714,7 +708,6 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	width: auto;
 }
@@ -741,7 +734,6 @@ input[type="submit"] {
 
 .search-field.form-control:focus {
 	border: 1px solid #4c4b4a;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
