@@ -1,6 +1,10 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
+##[3.0.1]
+- Fixed Theme and Author URI
+- Automate vendor prefixes using Grunt
+
 ##[3.0.0]
 **Added**
 - Use Customizer instead of options page
