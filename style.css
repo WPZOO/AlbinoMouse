@@ -4,7 +4,7 @@ Theme URI:   https://wpzoo.ch/en/themes/albinomouse/
 Description: AlbinoMouse is a responsive WordPress theme with a clean and flat design. It's based on the awesome starter theme underscores and framework Bootstrap 3. There are theme options available which allow you to customize the theme in your way. You may upload your own logo, change the color for links and the footer, choose from a few Google fonts, choose from different sidebar layouts, ...
 Author:      WPZOO
 Author URI:  https://wpzoo.ch/en
-Version:     3.0.1
+Version:     3.0.3
 Tags:        gray, silver, light, one-column, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: albinomouse
 Domain Path: /languages
@@ -8700,7 +8700,8 @@ a:focus {
 .blog .post,
 .search-results .post,
 .search-results .page,
-.archive .post {
+.archive .post,
+.sticky {
 	margin-bottom: 2.5em;
 }
 
@@ -8708,7 +8709,8 @@ a:focus {
 	.blog .post,
 	.search-results .post,
 	.search-results .page,
-	.archive .post {
+	.archive .post,
+	.sticky {
 		margin-bottom: 4.5em;
 	}
 }
@@ -9069,4 +9071,36 @@ input[type="submit"] {
 	.comment-form-url {
 		width: 500px;
 	}
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	top: 5px;
+	left: 5px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
 }
