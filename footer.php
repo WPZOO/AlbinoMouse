@@ -78,7 +78,7 @@ $copyright = get_theme_mod( 'copyright', '' );
 				<?php endif ?>
 
 				<?php if( ! isset( $copyright ) || $copyright == '' ) {
-						printf( _x( '&#169; Copyright %1$s %2$s', '1: year 2: Site name', 'albinomouse' ), date( 'Y' ), bloginfo( 'name' ) );
+						printf( _x( '&#169; Copyright %1$s %2$s', '1: year 2: Site name', 'albinomouse' ), date( 'Y' ), get_bloginfo( 'name' ) );
 					} else {
 						echo $copyright;
 					} ?>
