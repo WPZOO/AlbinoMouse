@@ -1,13 +1,18 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
+##[3.0.4]
+- Fixed copyright in footer
+- Fixed position of banner thumbnail
+
+##[3.0.3]
+- Add required css classes
+
 ##[3.0.2]
-**Fixed**
-- Copyright in footer
-- Position of banner thumbnail
+- Failed the theme check
 
 ##[3.0.1]
-- Fixed Theme and Author URI
+- Changed Theme and Author URI
 - Automate vendor prefixes using Grunt
 
 ##[3.0.0]
