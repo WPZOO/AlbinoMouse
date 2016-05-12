@@ -11,6 +11,8 @@ Domain Path: /languages
 License:     GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
 	font-family: sans-serif;
 
@@ -578,7 +580,7 @@ th {
 	content: "\e051";
 }
 
-.glyphicon-align-right:before {
+.glyphicon-align-left:before {
 	content: "\e052";
 }
 
@@ -586,7 +588,7 @@ th {
 	content: "\e053";
 }
 
-.glyphicon-align-left:before {
+.glyphicon-align-right:before {
 	content: "\e054";
 }
 
@@ -598,11 +600,11 @@ th {
 	content: "\e056";
 }
 
-.glyphicon-indent-right:before {
+.glyphicon-indent-left:before {
 	content: "\e057";
 }
 
-.glyphicon-indent-left:before {
+.glyphicon-indent-right:before {
 	content: "\e058";
 }
 
@@ -682,11 +684,11 @@ th {
 	content: "\e078";
 }
 
-.glyphicon-chevron-right:before {
+.glyphicon-chevron-left:before {
 	content: "\e079";
 }
 
-.glyphicon-chevron-left:before {
+.glyphicon-chevron-right:before {
 	content: "\e080";
 }
 
@@ -730,11 +732,11 @@ th {
 	content: "\e090";
 }
 
-.glyphicon-arrow-right:before {
+.glyphicon-arrow-left:before {
 	content: "\e091";
 }
 
-.glyphicon-arrow-left:before {
+.glyphicon-arrow-right:before {
 	content: "\e092";
 }
 
@@ -862,11 +864,11 @@ th {
 	content: "\e126";
 }
 
-.glyphicon-hand-left:before {
+.glyphicon-hand-right:before {
 	content: "\e127";
 }
 
-.glyphicon-hand-right:before {
+.glyphicon-hand-left:before {
 	content: "\e128";
 }
 
@@ -878,11 +880,11 @@ th {
 	content: "\e130";
 }
 
-.glyphicon-circle-arrow-left:before {
+.glyphicon-circle-arrow-right:before {
 	content: "\e131";
 }
 
-.glyphicon-circle-arrow-right:before {
+.glyphicon-circle-arrow-left:before {
 	content: "\e132";
 }
 
@@ -1326,7 +1328,7 @@ th {
 	content: "\e246";
 }
 
-.glyphicon-object-align-right:before {
+.glyphicon-object-align-left:before {
 	content: "\e247";
 }
 
@@ -1334,15 +1336,15 @@ th {
 	content: "\e248";
 }
 
-.glyphicon-object-align-left:before {
+.glyphicon-object-align-right:before {
 	content: "\e249";
 }
 
-.glyphicon-triangle-left:before {
+.glyphicon-triangle-right:before {
 	content: "\e250";
 }
 
-.glyphicon-triangle-right:before {
+.glyphicon-triangle-left:before {
 	content: "\e251";
 }
 
@@ -1366,11 +1368,11 @@ th {
 	content: "\e256";
 }
 
-.glyphicon-menu-right:before {
+.glyphicon-menu-left:before {
 	content: "\e257";
 }
 
-.glyphicon-menu-left:before {
+.glyphicon-menu-right:before {
 	content: "\e258";
 }
 
@@ -1907,18 +1909,18 @@ blockquote.pull-right {
 .blockquote-reverse footer:before,
 .blockquote-reverse small:before,
 .blockquote-reverse .small:before,
-blockquote.pull-left footer:before,
-blockquote.pull-left small:before,
-blockquote.pull-left .small:before {
+blockquote.pull-right footer:before,
+blockquote.pull-right small:before,
+blockquote.pull-right .small:before {
 	content: "";
 }
 
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
 .blockquote-reverse .small:after,
-blockquote.pull-left footer:after,
-blockquote.pull-left small:after,
-blockquote.pull-left .small:after {
+blockquote.pull-right footer:after,
+blockquote.pull-right small:after,
+blockquote.pull-right .small:after {
 	content: "\00A0 \2014";
 }
 
@@ -6518,8 +6520,8 @@ a.thumbnail.active {
 	padding-left: 10px;
 }
 
-.media-right,
 .media-left,
+.media-right,
 .media-body {
 	display: table-cell;
 	vertical-align: top;
@@ -7851,8 +7853,8 @@ button.close {
 
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .glyphicon-chevron-left {
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -7939,8 +7941,8 @@ button.close {
 }
 
 @media screen and (min-width: 768px) {
-	.carousel-control .glyphicon-chevron-right,
 	.carousel-control .glyphicon-chevron-left,
+	.carousel-control .glyphicon-chevron-right,
 	.carousel-control .icon-prev,
 	.carousel-control .icon-next {
 		font-size: 30px;
@@ -8382,8 +8384,8 @@ h6,
 }
 
 @media screen and (max-width: 767px) {
-	.content-area.pull-right,
-	.content-area.pull-left {
+	.content-area.pull-left,
+	.content-area.pull-right {
 		float: none !important;
 	}
 
@@ -8400,6 +8402,8 @@ code {
 	padding: 4px 4px 2px;
 	white-space: normal;
 }
+
+/* Media */
 .alignnone,
 .aligncenter,
 .alignleft,
@@ -8463,6 +8467,8 @@ object {
 .children > .children > .children > .children > .children {
 	margin-right: 0;
 }
+
+/* Links */
 a {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
@@ -8528,6 +8534,8 @@ a:focus {
 	bottom: -20px;
 	right: 20px;
 }
+
+/* Navigation */
 .navbar {
 	border: none;
 	position: relative;
@@ -8675,6 +8683,8 @@ a:focus {
 #nav-below a {
 	margin-bottom: 10px;
 }
+
+/* Content */
 #content {
 	margin-bottom: 1.5em;
 	margin-top: 1.5em;
@@ -8774,7 +8784,7 @@ h1.entry-title {
 		right: -50px;
 	}
 
-	.post-thumbnail-banner {
+	.post .post-thumbnail-banner {
 		position: relative;
 		right: 50px;
 	}
@@ -8842,6 +8852,8 @@ footer.entry-meta {
 	margin-bottom: 20px;
 	padding: 20px 0;
 }
+
+/* Comments */
 .comments-area {
 	margin-bottom: 40px;
 }
@@ -8923,6 +8935,8 @@ footer.entry-meta {
 #comments .reply {
 	margin: 0 0 5px 10px;
 }
+
+/* Widget Areas */
 .sidebar-widget,
 .footer-widget {
 	margin-bottom: 30px;
@@ -8972,6 +8986,8 @@ footer.entry-meta {
 #wp-calendar #next {
 	text-align: left;
 }
+
+/* Footer */
 .site-footer {
 	background-color: #e3272d;
 	padding-top: 25px;
@@ -9004,6 +9020,8 @@ footer.entry-meta {
 	font-size: 75%;
 	margin: 15px 0;
 }
+
+/* Forms */
 button,
 html input[type="button"],
 input[type="reset"],
