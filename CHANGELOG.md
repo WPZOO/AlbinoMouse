@@ -1,6 +1,9 @@
 # Change Log AlbinoMouse
 All notable changes to this project will be documented in this file. This project follows [Semantic Versioning](http://semver.org/).
 
+##[3.0.5]
+- Fixed the automatic loading of child themes
+
 ##[3.0.4]
 - Fixed copyright in footer
 - Fixed position of banner thumbnail
