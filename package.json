@@ -38,7 +38,7 @@
     "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",
     "textdomain": "albinomouse",
     "domainpath": "/languages",
-    "tags": "gray, silver, light, one-column, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready"
+    "tags": "blog, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready"
   },
   "bugs": {
     "url": "https://github.com/WPZOO/albinomouse/issues",
